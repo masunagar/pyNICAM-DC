@@ -1,0 +1,67 @@
+
+########################################################################
+
+This is pyNICAM-DC
+NICAM-DC (dynamical core package of NICAM)
+*** Basename of log file = msg
+*** Detailed log output = True
++++ Module[cnst]
+*** input toml file is  prep.toml
+
+*** Precision ***
+*** kind (floating point value) = float64
+*** precision(floating point value) = 15
+*** range (floating point value) = (-1.7976931348623157e+308, 1.7976931348623157e+308)
+
+*** List of constants ***
+*** PI : PI = 3.141592653589793
+*** Small number : EPS = 2.220446049250313e-16
+*** Small number (1-EPS) : EPS1 = 0.9999999999999998
+*** Huge number : HUGE = 1.7976931348623157e+308
+*** undefined number (INT2) : UNDEF2 = 0
+*** undefined number (REAL, general use) : UNDEF = -9.9999e+30
+*** undefined number (REAL4) : UNDEF4 = -9.999900111863089e+30
+*** undefined number (REAL8) : UNDEF8 = -9.9999e+30
+*** radius of the planet [m] : RADIUS = 6371220.0
+*** angular velocity of the planet [1/s] : OHM = 7.292e-05
+*** standard acceleration of gravity [m/s2] : GRAV = 9.80665
+*** Stefan-Boltzman constant [W/m2/K4] : STB = 5.670373e-08
+*** von Karman constant : KARMAN = 0.4
+*** universal gas constant [J/mol/K] : R = 8.3144621
+*** mass weight (dry air) [g/mol] : Mdry = 28.97
+*** specific gas constant (dry air) [J/kg/K] : Rdry = 287.04
+*** specific heat (dry air, const. pressure) [J/kg/K] : CPdry = 1004.64
+*** specific heat (dry air, const. volume) [J/kg/K] : Cvdry = 717.5999999999999
+*** lapse rate of ISA [K/m] : LAPS = 0.0065
+*** dry adiabatic lapse rate [K/m] : LAPSdry = 0.00976135730211817
+*** mass weight (water vapor) [g/mol] : Rvap = 461.46
+*** specific gas constant (water vapor) [J/kg/K] : Rvap = 461.46
+*** specific heat (vapor, const. pressure) [J/kg/K] : CPvap = 1845.6
+*** specific heat (vapor, const. volume) [J/kg/K] : CVvap = 1384.1399999999999
+*** specific heat (liquid water) [J/kg/K] : CL = 4218.0
+*** specific heat (ice) [J/kg/K] : CI = 2006.0
+*** Rdry / Rvap : EPSvap = 0.6220257443765441
+*** 1 / EPSvap - 1 : EPSTvap = 0.6076505016722404
+*** latent heat of vaporization at 0C [J/kg] : LHV0 = 2500800.0
+*** latent heat of sublimation at 0C [J/kg] : LHS0 = 2834200.0
+*** latent heat of fusion at 0C [J/kg] : LHF0 = 333400.0
+*** latent heat of vaporization at 0K [J/kg] : LHV00 = 3148821.06
+*** latent heat of sublimation at 0K [J/kg] : LHS00 = 2878013.2600000002
+*** latent heat of fusion at 0K [J/kg] : LHF00 = -270807.79999999993
+*** Thermodynamics calculation type : SIMPLE
+*** latent heat of vaporization (used) [J/kg] : LHV = 2500800.0
+*** latent heat of sublimation (used) [J/kg] : LHS = 2834200.0
+*** latent heat of fusion (used) [J/kg] : LHF = 333400.0
+*** saturate pressure of water vapor at 0C [Pa] : PSAT0 = 610.7
+*** density of water [kg/m3] : DWATR = 1000.0
+*** density of ice [kg/m3] : DICE = 916.8
+*** speed of sound (dry air at 0C) [m/s] : SOUND = 331.3109814056878
+*** standard pressure [Pa] : Pstd = 101325.0
+*** pressure reference [Pa] : PRE00 = 100000.0
+*** standard temperature (15C) [K] : Tstd = 288.15
+*** temperature reference (0C) [K] : TEM00 = 273.15
++++ Module[adm]
+*** input toml file is  prep.toml
++++ Module[rgnmng]
+*** input toml file is  prep.toml
+*** rgnmngparam not specified in toml file. use default.
