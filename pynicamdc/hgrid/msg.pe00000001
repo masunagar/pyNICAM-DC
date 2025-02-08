@@ -1,8 +1,7 @@
 
 ########################################################################
 
-This is pyNICAM-DC
-NICAM-DC (dynamical core package of NICAM)
+ NICAM-DC (dynamical core package of NICAM)
 *** Basename of log file = msg
 *** Detailed log output = True
 +++ Module[cnst]
@@ -63,5 +62,5 @@ NICAM-DC (dynamical core package of NICAM)
 +++ Module[adm]
 *** input toml file is  prep.toml
 +++ Module[rgnmng]
-*** input toml file is  prep.toml
-*** rgnmngparam not specified in toml file. use default.
+*** input toml file is  ./prep.toml
+{'RGNMNG_in_fname': 'rl01-prc000008.toml', 'RGNMNG_out_fname': 'tempout'}

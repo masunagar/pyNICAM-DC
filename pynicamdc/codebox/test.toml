@@ -1,0 +1,16 @@
+first = "hi"
+
+[namelist1]
+name = "tomoki"
+fname = "Miyakawa"
+birthd = 1981-09-28T16:00:00+09:00
+
+[namelist2]
+name = "miki"
+fname = "miyakawa"
+birthd = 1982-02-03T09:25:05+9:00
+
+[family]
+names = ["sakine", "haruna",
+"yuto"
+]
