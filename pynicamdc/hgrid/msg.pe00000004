@@ -63,4 +63,9 @@
 *** input toml file is  prep.toml
 +++ Module[rgnmng]
 *** input toml file is  ./prep.toml
-{'RGNMNG_in_fname': 'rl01-prc000008.toml', 'RGNMNG_out_fname': 'tempout'}
++++ Module[comm]/Category[common share]
+*** input toml file is  prep.toml
+{'COMM_apply_barrier': 'tmp', 'COMM_varmax': 'tmp', 'debug': False, 'testonly': False}
+
+====== communication information ======
+*** rellist_nmax: 336
