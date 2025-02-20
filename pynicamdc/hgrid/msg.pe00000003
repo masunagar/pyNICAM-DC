@@ -69,3 +69,20 @@
 
 ====== communication information ======
 *** rellist_nmax: 337
+
+*** Recv_nmax_r2r(global) = 6
+*** Recv_nmax_r2r(local)  = 4
+*** Send_nmax_r2r(local)  = 4
+*** Send_size_r2r(global) = 68
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_r2r        167         3         3
+| Recv_r2r         50         2         3
+| Recv_r2r         50         5         3
+| Recv_r2r         36         4         3
+| Recv_r2r         34         0         3
+| Send_r2r         34         3         0
+| Send_r2r         49         3         2
+| Send_r2r         35         3         4
+| Send_r2r         50         3         5
