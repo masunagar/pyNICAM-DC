@@ -563,3 +563,15 @@ number |ifrom |jfrom |rfrom |lfrom |pfrom   |rto   |ito   |jto   |lto   |pto
 
 *** Send_size_p2r,r2p     =   10
 
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Singular 4 5 5
+
+--- Singular_list
+
+number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
+     0     17      1     25      0      5     17      0     25      0      5
+     1      1     17     26      1      5      0     17     26      1      5
+     2      1      0     28      3      5      0      0     28      3      5
+     3     17      1     29      4      5     17      0     29      4      5

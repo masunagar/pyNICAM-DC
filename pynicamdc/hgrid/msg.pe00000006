@@ -560,3 +560,15 @@ number |ifrom |jfrom |rfrom |lfrom |pfrom   |rto   |ito   |jto   |lto   |pto
 
 *** Send_size_p2r,r2p     =   10
 
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Singular 4 6 6
+
+--- Singular_list
+
+number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
+     0      1     17     30      0      6      0     17     30      0      6
+     1      1      0     32      2      6      0      0     32      2      6
+     2     17      1     33      3      6     17      0     33      3      6
+     3      1     17     34      4      6      0     17     34      4      6
