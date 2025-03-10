@@ -72,7 +72,7 @@
 
 ====== Process management info. ======
 --- Total number of process           : 8
---- My Process number = (my rank) : 1
+--- My Process number = (my rank) : 5
 ====== Region/Grid topology info. ======
 --- Grid system                      : ICO
 --- #  of diamond                     : 10
@@ -80,7 +80,7 @@
 --- Region level (RL)                 : 1
 --- Total number of region            : 40 (2 x 2 x 10)
 --- #  of region per process          : 5
---- ID of region in my process        : [5 6 7 8 9]
+--- ID of region in my process        : [25 26 27 28 29]
 --- Region ID, contains north pole    : 2
 --- Region ID, contains south pole    : 21
 --- Process rank, managing north pole : 0
@@ -94,68 +94,68 @@
 
 --- # of region in this node : 5
 --- (l,prc_me) => (rgn)
---- (0,1) => (5)
---- (1,1) => (6)
---- (2,1) => (7)
---- (3,1) => (8)
---- (4,1) => (9)
+--- (0,5) => (25)
+--- (1,5) => (26)
+--- (2,5) => (27)
+--- (3,5) => (28)
+--- (4,5) => (29)
 
 --- Link information
 
 --- edge link: (rgn,direction)
-     (5,SW) -> (39,NE)
-     (5,NW) -> (4,SE)
-     (5,NE) -> (7,SW)
-     (5,SE) -> (32,NW)
+     (25,SW) -> (29,SE)
+     (25,NW) -> (24,SE)
+     (25,NE) -> (27,SW)
+     (25,SE) -> (21,SW)
 --- vertex link: (rgn)
-     (5,W ) -> (39,N ) -> (38,E ) -> (4,S )
-     (5,N ) -> (4,E ) -> (6,S ) -> (7,W )
-     (5,E ) -> (7,S ) -> (34,W ) -> (32,N )
-     (5,S ) -> (32,W ) -> (39,E )
+     (25,W ) -> (29,E ) -> (31,S ) -> (24,S )
+     (25,N ) -> (24,E ) -> (26,S ) -> (27,W )
+     (25,E ) -> (27,S ) -> (20,S ) -> (21,W )
+     (25,S ) -> (21,S ) -> (37,S ) -> (33,S ) -> (29,S )
 
 --- edge link: (rgn,direction)
-     (6,SW) -> (4,NE)
-     (6,NW) -> (2,NE)
-     (6,NE) -> (10,NW)
-     (6,SE) -> (7,NW)
+     (26,SW) -> (24,NE)
+     (26,NW) -> (15,SE)
+     (26,NE) -> (16,SW)
+     (26,SE) -> (27,NW)
 --- vertex link: (rgn)
-     (6,W ) -> (4,N ) -> (3,N ) -> (2,E )
-     (6,N ) -> (2,N ) -> (18,N ) -> (14,N ) -> (10,N )
-     (6,E ) -> (10,W ) -> (8,N ) -> (7,N )
-     (6,S ) -> (7,W ) -> (5,N ) -> (4,E )
+     (26,W ) -> (24,N ) -> (13,E ) -> (15,S )
+     (26,N ) -> (15,E ) -> (16,W )
+     (26,E ) -> (16,S ) -> (17,W ) -> (27,N )
+     (26,S ) -> (27,W ) -> (25,N ) -> (24,E )
 
 --- edge link: (rgn,direction)
-     (7,SW) -> (5,NE)
-     (7,NW) -> (6,SE)
-     (7,NE) -> (8,NW)
-     (7,SE) -> (34,NW)
+     (27,SW) -> (25,NE)
+     (27,NW) -> (26,SE)
+     (27,NE) -> (17,SW)
+     (27,SE) -> (20,SW)
 --- vertex link: (rgn)
-     (7,W ) -> (5,N ) -> (4,E ) -> (6,S )
-     (7,N ) -> (6,E ) -> (10,W ) -> (8,N )
-     (7,E ) -> (8,W ) -> (34,N )
-     (7,S ) -> (34,W ) -> (32,N ) -> (5,E )
+     (27,W ) -> (25,N ) -> (24,E ) -> (26,S )
+     (27,N ) -> (26,E ) -> (16,S ) -> (17,W )
+     (27,E ) -> (17,S ) -> (20,W )
+     (27,S ) -> (20,S ) -> (21,W ) -> (25,E )
 
 --- edge link: (rgn,direction)
-     (8,SW) -> (34,NE)
-     (8,NW) -> (7,NE)
-     (8,NE) -> (10,SW)
-     (8,SE) -> (9,NW)
+     (28,SW) -> (35,SE)
+     (28,NW) -> (9,SE)
+     (28,NE) -> (30,SW)
+     (28,SE) -> (29,NW)
 --- vertex link: (rgn)
-     (8,W ) -> (34,N ) -> (7,E )
-     (8,N ) -> (7,N ) -> (6,E ) -> (10,W )
-     (8,E ) -> (10,S ) -> (11,W ) -> (9,N )
-     (8,S ) -> (9,W ) -> (35,N ) -> (34,E )
+     (28,W ) -> (35,E ) -> (9,S )
+     (28,N ) -> (9,E ) -> (11,S ) -> (30,W )
+     (28,E ) -> (30,S ) -> (31,W ) -> (29,N )
+     (28,S ) -> (29,W ) -> (33,E ) -> (35,S )
 
 --- edge link: (rgn,direction)
-     (9,SW) -> (35,NE)
-     (9,NW) -> (8,SE)
-     (9,NE) -> (11,SW)
-     (9,SE) -> (28,NW)
+     (29,SW) -> (33,SE)
+     (29,NW) -> (28,SE)
+     (29,NE) -> (31,SW)
+     (29,SE) -> (25,SW)
 --- vertex link: (rgn)
-     (9,W ) -> (35,N ) -> (34,E ) -> (8,S )
-     (9,N ) -> (8,E ) -> (10,S ) -> (11,W )
-     (9,E ) -> (11,S ) -> (30,W ) -> (28,N )
-     (9,S ) -> (28,W ) -> (35,E )
+     (29,W ) -> (33,E ) -> (35,S ) -> (28,S )
+     (29,N ) -> (28,E ) -> (30,S ) -> (31,W )
+     (29,E ) -> (31,S ) -> (24,S ) -> (25,W )
+     (29,S ) -> (25,S ) -> (21,S ) -> (37,S ) -> (33,S )
 --- Pole information (in the global scope)
 --- region, having north pole data : 2
 --- vertex link: (north pole)
@@ -167,36 +167,38 @@
 --- process, managing south pole : 0
 +++ Module[comm]/Category[common share]
 *** input toml file is  prep.toml
-{'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}
+{'COMM_apply_barrier': False, 'COMM_varmax': 8, 'debug': False, 'testonly': False}
 
 ====== communication information ======
-*** rellist_nmax: 335
+*** rellist_nmax: 334
 
 *** Recv_nmax_r2r(global) = 6
-*** Recv_nmax_r2r(local)  = 5
-*** Send_nmax_r2r(local)  = 5
+*** Recv_nmax_r2r(local)  = 6
+*** Send_nmax_r2r(local)  = 6
 *** Send_size_r2r(global) = 68
 
 |---------------------------------------
 |               size  prc_from    prc_to
-| Copy_r2r        131         1         1
-| Recv_r2r         34         7         1
-| Recv_r2r         50         0         1
-| Recv_r2r         52         6         1
-| Recv_r2r         52         2         1
-| Recv_r2r         16         5         1
-| Send_r2r         51         1         0
-| Send_r2r         51         1         2
-| Send_r2r         16         1         5
-| Send_r2r         52         1         6
-| Send_r2r         34         1         7
+| Copy_r2r        130         5         5
+| Recv_r2r         67         4         5
+| Recv_r2r         52         6         5
+| Recv_r2r         50         3         5
+| Recv_r2r          2         2         5
+| Recv_r2r         17         7         5
+| Recv_r2r         16         1         5
+| Send_r2r         16         5         1
+| Send_r2r          2         5         2
+| Send_r2r         50         5         3
+| Send_r2r         68         5         4
+| Send_r2r         52         5         6
+| Send_r2r         18         5         7
 
 *** Recv_nmax_p2r(local) = 1
 *** Send_nmax_p2r(local) = 0
 |---------------------------------------
 |               size  prc_from    prc_to
 | Copy_p2r [ 0 -1 -1]
-| Recv_p2r [1 0 1]
+| Recv_p2r [2 0 5]
 
 *** Recv_nmax_r2p(local)  = 0
 *** Send_nmax_r2p(local)  = 1
@@ -204,22 +206,22 @@
 |---------------------------------------
 |               size  prc_from    prc_to
 | Copy_r2p 0 -1 -1
-| Send_r2p 1 1 0
+| Send_r2p 2 5 0
 
 *** Send_size_p2r,r2p     =   10
 
 
 |---------------------------------------
 |               size  prc_from    prc_to
-| Singular 4 1 1
+| Singular 4 5 5
 
 --- Singular_list
 
 number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
-     0     17      1      5      0      1     17      0      5      0      1
-     1      1     17      6      1      1      0     17      6      1      1
-     2      1      0      8      3      1      0      0      8      3      1
-     3     17      1      9      4      1     17      0      9      4      1
+     0     17      1     25      0      5     17      0     25      0      5
+     1      1     17     26      1      5      0     17     26      1      5
+     2      1      0     28      3      5      0      0     28      3      5
+     3     17      1     29      4      5     17      0     29      4      5
 
 +++ Program[mkgrd]/Category[prep]
 {'mkgrd_dospring': True, 'mkgrd_doprerotate': False, 'mkgrd_dostretch': False, 'mkgrd_doshrink': False, 'mkgrd_dorotate': False, 'mkgrd_in_basename': '', 'mkgrd_in_io_mode': '', 'mkgrd_out_basename': 'rawgrid', 'mkgrd_out_io_mode': 'ADVANCED', 'mkgrd_spring_beta': 1.15, 'mkgrd_prerotation_tilt': 0.0, 'mkgrd_stretch_alpha': 1.0, 'mkgrd_shrink_level': 0.0, 'mkgrd_rotation_lon': 0.0, 'mkgrd_rotation_lat': 90.0, 'mkgrd_precision_single': False}
@@ -437,19 +439,10 @@ ite, Ek_max, Fsum_max:
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     0.040 N=1
-*** ID=001 : MAIN_Main_MKGRD T=    15.941 N=1
-*** ID=002 : MAIN_MKGRD_standard T=     0.008 N=1
-*** ID=003 : MAIN_COMM_data_transfer T=     0.851 N=102
-*** ID=004 : MAIN_MKGRD_spring T=    15.853 N=1
-*** ID=005 : MAIN_mkgrd_spring_1 T=     0.505 N=500
-*** ID=006 : MAIN_mkgrd_spring_2 T=    12.446 N=500
-*** ID=007 : MAIN_mkgrd_spring_loop_cross1 T=     2.097 N=768000
-*** ID=008 : MAIN_mkgrd_spring_loop_cross2 T=     1.975 N=768000
-*** ID=009 : MAIN_mkgrd_spring_loop_abs T=     1.096 N=768000
-*** ID=010 : MAIN_mkgrd_spring_loop_angle T=     3.816 N=768000
-*** ID=011 : MAIN_mkgrd_spring_loop_calF T=     1.292 N=768000
-*** ID=012 : MAIN_mkgrd_spring_3 T=     1.209 N=500
-*** ID=013 : MAIN_mkgrd_spring_4 T=     0.840 N=100
+*** ID=000 : INIT_Initialize T=     0.045 N=1
+*** ID=001 : MAIN_Main_MKGRD T=    11.729 N=1
+*** ID=002 : MAIN_MKGRD_standard T=     0.010 N=1
+*** ID=003 : MAIN_COMM_data_transfer T=     0.720 N=102
+*** ID=004 : MAIN_MKGRD_spring T=    11.638 N=1
 ------------
 +++ finalize MPI

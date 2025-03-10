@@ -248,12 +248,218 @@ ite, Ek_max, Fsum_max:
                0  1.23734101E-08  2.00294867E-01
 ite, Ek_max, Fsum_max: 
                1  4.85087170E-08  2.00294867E-01
+ite, Ek_max, Fsum_max: 
+               2  1.06904065E-07  2.00086055E-01
+ite, Ek_max, Fsum_max: 
+               3  1.86030778E-07  1.99672549E-01
+ite, Ek_max, Fsum_max: 
+               4  2.84340514E-07  1.99058663E-01
+ite, Ek_max, Fsum_max: 
+               5  4.00272280E-07  1.98248896E-01
+ite, Ek_max, Fsum_max: 
+               6  5.32259279E-07  1.97247929E-01
+ite, Ek_max, Fsum_max: 
+               7  6.78735565E-07  1.96060613E-01
+ite, Ek_max, Fsum_max: 
+               8  8.38142470E-07  1.94691968E-01
+ite, Ek_max, Fsum_max: 
+               9  1.00893481E-06  1.93147170E-01
+ite, Ek_max, Fsum_max: 
+              10  1.18958682E-06  1.91431548E-01
+ite, Ek_max, Fsum_max: 
+              11  1.37859783E-06  1.89550575E-01
+ite, Ek_max, Fsum_max: 
+              12  1.57449759E-06  1.87509861E-01
+ite, Ek_max, Fsum_max: 
+              13  1.77585141E-06  1.85315144E-01
+ite, Ek_max, Fsum_max: 
+              14  1.98126481E-06  1.82972285E-01
+ite, Ek_max, Fsum_max: 
+              15  2.18938802E-06  1.80487261E-01
+ite, Ek_max, Fsum_max: 
+              16  2.39891998E-06  1.77866153E-01
+ite, Ek_max, Fsum_max: 
+              17  2.60861209E-06  1.75115141E-01
+ite, Ek_max, Fsum_max: 
+              18  2.81727156E-06  1.72240495E-01
+ite, Ek_max, Fsum_max: 
+              19  3.02376441E-06  1.69248567E-01
+ite, Ek_max, Fsum_max: 
+              20  3.22701811E-06  1.66145783E-01
+ite, Ek_max, Fsum_max: 
+              21  3.42602386E-06  1.62938631E-01
+ite, Ek_max, Fsum_max: 
+              22  3.61983847E-06  1.59633657E-01
+ite, Ek_max, Fsum_max: 
+              23  3.80758593E-06  1.56237451E-01
+ite, Ek_max, Fsum_max: 
+              24  3.98845857E-06  1.52756641E-01
+ite, Ek_max, Fsum_max: 
+              25  4.16171789E-06  1.49197881E-01
+ite, Ek_max, Fsum_max: 
+              26  4.32669505E-06  1.45567845E-01
+ite, Ek_max, Fsum_max: 
+              27  4.48279102E-06  1.41873213E-01
+ite, Ek_max, Fsum_max: 
+              28  4.62947635E-06  1.38120664E-01
+ite, Ek_max, Fsum_max: 
+              29  4.76629072E-06  1.34316866E-01
+ite, Ek_max, Fsum_max: 
+              30  4.89284205E-06  1.30468462E-01
+ite, Ek_max, Fsum_max: 
+              31  5.00880547E-06  1.26582066E-01
+ite, Ek_max, Fsum_max: 
+              32  5.11392188E-06  1.22664251E-01
+ite, Ek_max, Fsum_max: 
+              33  5.20799629E-06  1.18721534E-01
+ite, Ek_max, Fsum_max: 
+              34  5.29089597E-06  1.14760375E-01
+ite, Ek_max, Fsum_max: 
+              35  5.36254830E-06  1.10787157E-01
+ite, Ek_max, Fsum_max: 
+              36  5.42293842E-06  1.06808187E-01
+ite, Ek_max, Fsum_max: 
+              37  5.47210672E-06  1.02829675E-01
+ite, Ek_max, Fsum_max: 
+              38  5.51014614E-06  9.88577340E-02
+ite, Ek_max, Fsum_max: 
+              39  5.53719930E-06  9.48983657E-02
+ite, Ek_max, Fsum_max: 
+              40  5.55345555E-06  9.09574524E-02
+ite, Ek_max, Fsum_max: 
+              41  5.55914783E-06  8.70407483E-02
+ite, Ek_max, Fsum_max: 
+              42  5.55454954E-06  8.31538708E-02
+ite, Ek_max, Fsum_max: 
+              43  5.53997123E-06  7.94688065E-02
+ite, Ek_max, Fsum_max: 
+              44  5.51575732E-06  7.58508429E-02
+ite, Ek_max, Fsum_max: 
+              45  5.48228276E-06  7.22810392E-02
+ite, Ek_max, Fsum_max: 
+              46  5.43994968E-06  7.35094277E-02
+ite, Ek_max, Fsum_max: 
+              47  5.38918404E-06  7.49846304E-02
+ite, Ek_max, Fsum_max: 
+              48  5.33043232E-06  7.63908356E-02
+ite, Ek_max, Fsum_max: 
+              49  5.26415824E-06  7.77257634E-02
+ite, Ek_max, Fsum_max: 
+              50  5.19083956E-06  7.89873265E-02
+ite, Ek_max, Fsum_max: 
+              51  5.11096492E-06  8.01736304E-02
+ite, Ek_max, Fsum_max: 
+              52  5.02503080E-06  8.12829734E-02
+ite, Ek_max, Fsum_max: 
+              53  4.93353859E-06  8.23138460E-02
+ite, Ek_max, Fsum_max: 
+              54  4.83699172E-06  8.32649299E-02
+ite, Ek_max, Fsum_max: 
+              55  4.73589302E-06  8.41350966E-02
+ite, Ek_max, Fsum_max: 
+              56  4.63074208E-06  8.49234056E-02
+ite, Ek_max, Fsum_max: 
+              57  4.52203288E-06  8.56291027E-02
+ite, Ek_max, Fsum_max: 
+              58  4.41025153E-06  8.62516173E-02
+ite, Ek_max, Fsum_max: 
+              59  4.29587413E-06  8.67905600E-02
+ite, Ek_max, Fsum_max: 
+              60  4.17936485E-06  8.72457194E-02
+ite, Ek_max, Fsum_max: 
+              61  4.06117417E-06  8.76170588E-02
+ite, Ek_max, Fsum_max: 
+              62  3.94173727E-06  8.79047130E-02
+ite, Ek_max, Fsum_max: 
+              63  3.82147258E-06  8.81089845E-02
+ite, Ek_max, Fsum_max: 
+              64  3.70078059E-06  8.82303393E-02
+ite, Ek_max, Fsum_max: 
+              65  3.58715691E-06  8.82694028E-02
+ite, Ek_max, Fsum_max: 
+              66  3.47460444E-06  8.82269555E-02
+ite, Ek_max, Fsum_max: 
+              67  3.36247675E-06  8.81039285E-02
+ite, Ek_max, Fsum_max: 
+              68  3.25106889E-06  8.79013985E-02
+ite, Ek_max, Fsum_max: 
+              69  3.14065653E-06  8.76205834E-02
+ite, Ek_max, Fsum_max: 
+              70  3.03149585E-06  8.72628367E-02
+ite, Ek_max, Fsum_max: 
+              71  2.92382337E-06  8.68296430E-02
+ite, Ek_max, Fsum_max: 
+              72  2.81785605E-06  8.63226120E-02
+ite, Ek_max, Fsum_max: 
+              73  2.71379144E-06  8.57434742E-02
+ite, Ek_max, Fsum_max: 
+              74  2.61180791E-06  8.50940744E-02
+ite, Ek_max, Fsum_max: 
+              75  2.51206501E-06  8.43763669E-02
+ite, Ek_max, Fsum_max: 
+              76  2.41470393E-06  8.35924099E-02
+ite, Ek_max, Fsum_max: 
+              77  2.31984797E-06  8.27443598E-02
+ite, Ek_max, Fsum_max: 
+              78  2.22760316E-06  8.18344653E-02
+ite, Ek_max, Fsum_max: 
+              79  2.17953217E-06  8.08650623E-02
+ite, Ek_max, Fsum_max: 
+              80  2.22346017E-06  7.98385680E-02
+ite, Ek_max, Fsum_max: 
+              81  2.26511962E-06  7.87574750E-02
+ite, Ek_max, Fsum_max: 
+              82  2.30440123E-06  7.76243463E-02
+ite, Ek_max, Fsum_max: 
+              83  2.34120452E-06  7.66355880E-02
+ite, Ek_max, Fsum_max: 
+              84  2.37543824E-06  7.58506522E-02
+ite, Ek_max, Fsum_max: 
+              85  2.40702067E-06  7.50038934E-02
+ite, Ek_max, Fsum_max: 
+              86  2.43587992E-06  7.40976905E-02
+ite, Ek_max, Fsum_max: 
+              87  2.46195411E-06  7.31345064E-02
+ite, Ek_max, Fsum_max: 
+              88  2.48519157E-06  7.21168813E-02
+ite, Ek_max, Fsum_max: 
+              89  2.50555091E-06  7.10474257E-02
+ite, Ek_max, Fsum_max: 
+              90  2.52300110E-06  6.99288135E-02
+ite, Ek_max, Fsum_max: 
+              91  2.53752145E-06  6.87637748E-02
+ite, Ek_max, Fsum_max: 
+              92  2.54910156E-06  6.75550894E-02
+ite, Ek_max, Fsum_max: 
+              93  2.55774117E-06  6.63055795E-02
+ite, Ek_max, Fsum_max: 
+              94  2.56345007E-06  6.50181034E-02
+ite, Ek_max, Fsum_max: 
+              95  2.56624783E-06  6.36955482E-02
+ite, Ek_max, Fsum_max: 
+              96  2.56616357E-06  6.23408238E-02
+ite, Ek_max, Fsum_max: 
+              97  2.56323565E-06  6.09568558E-02
+ite, Ek_max, Fsum_max: 
+              98  2.55751132E-06  5.95465796E-02
+ite, Ek_max, Fsum_max: 
+              99  2.54904639E-06  5.81129335E-02
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     0.037 N=1
-*** ID=001 : MAIN_Main_MKGRD T=     0.322 N=1
-*** ID=002 : MAIN_MKGRD_standard T=     0.009 N=1
-*** ID=003 : MAIN_MKGRD_spring T=     0.233 N=1
+*** ID=000 : INIT_Initialize T=     0.044 N=1
+*** ID=001 : MAIN_Main_MKGRD T=    15.941 N=1
+*** ID=002 : MAIN_MKGRD_standard T=     0.011 N=1
+*** ID=003 : MAIN_COMM_data_transfer T=     1.022 N=102
+*** ID=004 : MAIN_MKGRD_spring T=    15.849 N=1
+*** ID=005 : MAIN_mkgrd_spring_1 T=     0.515 N=500
+*** ID=006 : MAIN_mkgrd_spring_2 T=    12.512 N=500
+*** ID=007 : MAIN_mkgrd_spring_loop_cross1 T=     2.117 N=768000
+*** ID=008 : MAIN_mkgrd_spring_loop_cross2 T=     1.999 N=768000
+*** ID=009 : MAIN_mkgrd_spring_loop_abs T=     1.096 N=768000
+*** ID=010 : MAIN_mkgrd_spring_loop_angle T=     3.820 N=768000
+*** ID=011 : MAIN_mkgrd_spring_loop_calF T=     1.293 N=768000
+*** ID=012 : MAIN_mkgrd_spring_3 T=     1.194 N=500
+*** ID=013 : MAIN_mkgrd_spring_4 T=     0.608 N=100
 ------------
 +++ finalize MPI

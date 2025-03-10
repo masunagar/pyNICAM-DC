@@ -167,7 +167,7 @@
 --- process, managing south pole : 0
 +++ Module[comm]/Category[common share]
 *** input toml file is  prep.toml
-{'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}
+{'COMM_apply_barrier': False, 'COMM_varmax': 8, 'debug': False, 'testonly': False}
 
 ====== communication information ======
 *** rellist_nmax: 335
@@ -437,19 +437,10 @@ ite, Ek_max, Fsum_max:
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     0.040 N=1
-*** ID=001 : MAIN_Main_MKGRD T=    15.941 N=1
-*** ID=002 : MAIN_MKGRD_standard T=     0.008 N=1
-*** ID=003 : MAIN_COMM_data_transfer T=     0.851 N=102
-*** ID=004 : MAIN_MKGRD_spring T=    15.853 N=1
-*** ID=005 : MAIN_mkgrd_spring_1 T=     0.505 N=500
-*** ID=006 : MAIN_mkgrd_spring_2 T=    12.446 N=500
-*** ID=007 : MAIN_mkgrd_spring_loop_cross1 T=     2.097 N=768000
-*** ID=008 : MAIN_mkgrd_spring_loop_cross2 T=     1.975 N=768000
-*** ID=009 : MAIN_mkgrd_spring_loop_abs T=     1.096 N=768000
-*** ID=010 : MAIN_mkgrd_spring_loop_angle T=     3.816 N=768000
-*** ID=011 : MAIN_mkgrd_spring_loop_calF T=     1.292 N=768000
-*** ID=012 : MAIN_mkgrd_spring_3 T=     1.209 N=500
-*** ID=013 : MAIN_mkgrd_spring_4 T=     0.840 N=100
+*** ID=000 : INIT_Initialize T=     0.038 N=1
+*** ID=001 : MAIN_Main_MKGRD T=    11.735 N=1
+*** ID=002 : MAIN_MKGRD_standard T=     0.013 N=1
+*** ID=003 : MAIN_COMM_data_transfer T=     0.710 N=102
+*** ID=004 : MAIN_MKGRD_spring T=    11.641 N=1
 ------------
 +++ finalize MPI
