@@ -83,8 +83,8 @@
 --- ID of region in my process        : [10 11 12 13 14]
 --- Region ID, contains north pole    : 2
 --- Region ID, contains south pole    : 21
---- Process rank, managing north pole : 0
---- Process rank, managing south pole : 0
+--- Process rank, managing north pole : 3
+--- Process rank, managing south pole : 3
 ====== Grid management info. ======
 --- Grid level (GL)                   : 5
 --- Total number of grid (horizontal) : 10240 (16 x 16 x 40)
@@ -160,11 +160,11 @@
 --- region, having north pole data : 2
 --- vertex link: (north pole)
  -> (18,N ) -> (14,N ) -> (10,N ) -> (6,N )
---- process, managing north pole : 0
+--- process, managing north pole : 3
 --- region, having south pole data : 21
 --- vertex link: (south pole)
  -> (37,S ) -> (33,S ) -> (29,S ) -> (25,S )
---- process, managing south pole : 0
+--- process, managing south pole : 3
 +++ Module[comm]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}
@@ -196,7 +196,7 @@
 |---------------------------------------
 |               size  prc_from    prc_to
 | Copy_p2r [ 0 -1 -1]
-| Recv_p2r [2 0 2]
+| Recv_p2r [2 3 2]
 
 *** Recv_nmax_r2p(local)  = 0
 *** Send_nmax_r2p(local)  = 1
@@ -204,7 +204,7 @@
 |---------------------------------------
 |               size  prc_from    prc_to
 | Copy_r2p 0 -1 -1
-| Send_r2p 2 2 0
+| Send_r2p 2 2 3
 
 *** Send_size_p2r,r2p     =   10
 
