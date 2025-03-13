@@ -88,7 +88,7 @@
 ====== Grid management info. ======
 --- Grid level (GL)                   : 5
 --- Total number of grid (horizontal) : 10240 (16 x 16 x 40)
---- Number of vertical layer          : 1
+--- Number of vertical layer          : 40
 
 ====== Region Management Information ======
 
@@ -222,4 +222,11 @@ number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
      3     17      1      9      4      1     17      0      9      4      1
 +++ Module[grd]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
-{'hgrid_io_mode': 'ADVANCED', 'hgrid_fname': 'boundary_GL05RL00', 'vgrid_fname': 'vgrid40_stretch_45km.dat', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'GRD_grid_type': 0, 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}
+{'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/boundary_GL05RL01pe08_', 'vgrid_fname': 'vgrid40_stretch_45km.dat', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}
+*** Topography data input
+*** Make ideal topography
++++ Module[ideal topo]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'topo_type': 'JW'}
+------------
++++ finalize MPI
