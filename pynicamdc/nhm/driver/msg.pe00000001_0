@@ -1,0 +1,567 @@
+
+########################################################################
+
+ NICAM-DC (dynamical core package of NICAM)
+*** Basename of log file = msg
+*** Detailed log output = True
++++ Module[prof]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'prof_mpi_barrier': True, 'prof_rap_level': 10}
+
+*** Rap output level              =  10
+*** Add MPI_barrier in every rap? =  True
++++ Module[cnst]
+*** input toml file is  ../../case/config/nhm_driver.toml
+
+*** Precision ***
+*** kind (floating point value) = float64
+*** precision(floating point value) = 15
+*** range (floating point value) = (np.float64(-1.7976931348623157e+308), np.float64(1.7976931348623157e+308))
+
+*** List of constants ***
+*** PI : PI = 3.141592653589793
+*** Small number : EPS = 2.220446049250313e-16
+*** Small number (1-EPS) : EPS1 = 0.9999999999999998
+*** Huge number : HUGE = 1.7976931348623157e+308
+*** undefined number (INT2) : UNDEF2 = -32768
+*** undefined number (REAL, general use) : UNDEF = -9.9999e+30
+*** undefined number (REAL4) : UNDEF4 = -9.999900111863089e+30
+*** undefined number (REAL8) : UNDEF8 = -9.9999e+30
+*** radius of the planet [m] : RADIUS = 6371220.0
+*** angular velocity of the planet [1/s] : OHM = 7.292e-05
+*** standard acceleration of gravity [m/s2] : GRAV = 9.80665
+*** Stefan-Boltzman constant [W/m2/K4] : STB = 5.670373e-08
+*** von Karman constant : KARMAN = 0.4
+*** universal gas constant [J/mol/K] : R = 8.3144621
+*** mass weight (dry air) [g/mol] : Mdry = 28.97
+*** specific gas constant (dry air) [J/kg/K] : Rdry = 287.04
+*** specific heat (dry air, const. pressure) [J/kg/K] : CPdry = 1004.64
+*** specific heat (dry air, const. volume) [J/kg/K] : Cvdry = 717.5999999999999
+*** lapse rate of ISA [K/m] : LAPS = 0.0065
+*** dry adiabatic lapse rate [K/m] : LAPSdry = 0.00976135730211817
+*** mass weight (water vapor) [g/mol] : Rvap = 461.46
+*** specific gas constant (water vapor) [J/kg/K] : Rvap = 461.46
+*** specific heat (vapor, const. pressure) [J/kg/K] : CPvap = 1845.6
+*** specific heat (vapor, const. volume) [J/kg/K] : CVvap = 1384.1399999999999
+*** specific heat (liquid water) [J/kg/K] : CL = 4218.0
+*** specific heat (ice) [J/kg/K] : CI = 2006.0
+*** Rdry / Rvap : EPSvap = 0.6220257443765441
+*** 1 / EPSvap - 1 : EPSTvap = 0.6076505016722404
+*** latent heat of vaporization at 0C [J/kg] : LHV0 = 2500800.0
+*** latent heat of sublimation at 0C [J/kg] : LHS0 = 2834200.0
+*** latent heat of fusion at 0C [J/kg] : LHF0 = 333400.0
+*** latent heat of vaporization at 0K [J/kg] : LHV00 = 3148821.06
+*** latent heat of sublimation at 0K [J/kg] : LHS00 = 2878013.2600000002
+*** latent heat of fusion at 0K [J/kg] : LHF00 = -270807.79999999993
+*** Thermodynamics calculation type : SIMPLE
+*** latent heat of vaporization (used) [J/kg] : LHV = 2500800.0
+*** latent heat of sublimation (used) [J/kg] : LHS = 2834200.0
+*** latent heat of fusion (used) [J/kg] : LHF = 333400.0
+*** saturate pressure of water vapor at 0C [Pa] : PSAT0 = 610.7
+*** density of water [kg/m3] : DWATR = 1000.0
+*** density of ice [kg/m3] : DICE = 916.8
+*** speed of sound (dry air at 0C) [m/s] : SOUND = 331.3109814056878
+*** standard pressure [Pa] : Pstd = 101325.0
+*** pressure reference [Pa] : PRE00 = 100000.0
+*** standard temperature (15C) [K] : Tstd = 288.15
+*** temperature reference (0C) [K] : TEM00 = 273.15
++++ Module[calender]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** cldrparam not found in toml file! use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'vmtrparam': {'VMTR_deep_atmos': False}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
++++ Module[adm]
+*** input toml file is  ../../case/config/nhm_driver.toml
++++ Module[rgnmng]
+*** input toml file is  ../../case/config/nhm_driver.toml
+
+====== Process management info. ======
+--- Total number of process           : 8
+--- My Process number = (my rank) : 1
+====== Region/Grid topology info. ======
+--- Grid system                      : ICO
+--- #  of diamond                     : 10
+====== Region management info. ======
+--- Region level (RL)                 : 1
+--- Total number of region            : 40 (2 x 2 x 10)
+--- #  of region per process          : 5
+--- ID of region in my process        : [5 6 7 8 9]
+--- Region ID, contains north pole    : 2
+--- Region ID, contains south pole    : 21
+--- Process rank, managing north pole : 0
+--- Process rank, managing south pole : 0
+====== Grid management info. ======
+--- Grid level (GL)                   : 5
+--- Total number of grid (horizontal) : 10240 (16 x 16 x 40)
+--- Number of vertical layer          : 40
+
+====== Region Management Information ======
+
+--- # of region in this node : 5
+--- (l,prc_me) => (rgn)
+--- (0,1) => (5)
+--- (1,1) => (6)
+--- (2,1) => (7)
+--- (3,1) => (8)
+--- (4,1) => (9)
+
+--- Link information
+
+--- edge link: (rgn,direction)
+     (5,SW) -> (39,NE)
+     (5,NW) -> (4,SE)
+     (5,NE) -> (7,SW)
+     (5,SE) -> (32,NW)
+--- vertex link: (rgn)
+     (5,W ) -> (39,N ) -> (38,E ) -> (4,S )
+     (5,N ) -> (4,E ) -> (6,S ) -> (7,W )
+     (5,E ) -> (7,S ) -> (34,W ) -> (32,N )
+     (5,S ) -> (32,W ) -> (39,E )
+
+--- edge link: (rgn,direction)
+     (6,SW) -> (4,NE)
+     (6,NW) -> (2,NE)
+     (6,NE) -> (10,NW)
+     (6,SE) -> (7,NW)
+--- vertex link: (rgn)
+     (6,W ) -> (4,N ) -> (3,N ) -> (2,E )
+     (6,N ) -> (2,N ) -> (18,N ) -> (14,N ) -> (10,N )
+     (6,E ) -> (10,W ) -> (8,N ) -> (7,N )
+     (6,S ) -> (7,W ) -> (5,N ) -> (4,E )
+
+--- edge link: (rgn,direction)
+     (7,SW) -> (5,NE)
+     (7,NW) -> (6,SE)
+     (7,NE) -> (8,NW)
+     (7,SE) -> (34,NW)
+--- vertex link: (rgn)
+     (7,W ) -> (5,N ) -> (4,E ) -> (6,S )
+     (7,N ) -> (6,E ) -> (10,W ) -> (8,N )
+     (7,E ) -> (8,W ) -> (34,N )
+     (7,S ) -> (34,W ) -> (32,N ) -> (5,E )
+
+--- edge link: (rgn,direction)
+     (8,SW) -> (34,NE)
+     (8,NW) -> (7,NE)
+     (8,NE) -> (10,SW)
+     (8,SE) -> (9,NW)
+--- vertex link: (rgn)
+     (8,W ) -> (34,N ) -> (7,E )
+     (8,N ) -> (7,N ) -> (6,E ) -> (10,W )
+     (8,E ) -> (10,S ) -> (11,W ) -> (9,N )
+     (8,S ) -> (9,W ) -> (35,N ) -> (34,E )
+
+--- edge link: (rgn,direction)
+     (9,SW) -> (35,NE)
+     (9,NW) -> (8,SE)
+     (9,NE) -> (11,SW)
+     (9,SE) -> (28,NW)
+--- vertex link: (rgn)
+     (9,W ) -> (35,N ) -> (34,E ) -> (8,S )
+     (9,N ) -> (8,E ) -> (10,S ) -> (11,W )
+     (9,E ) -> (11,S ) -> (30,W ) -> (28,N )
+     (9,S ) -> (28,W ) -> (35,E )
+--- Pole information (in the global scope)
+--- region, having north pole data : 2
+--- vertex link: (north pole)
+ -> (18,N ) -> (14,N ) -> (10,N ) -> (6,N )
+--- process, managing north pole : 0
+--- region, having south pole data : 21
+--- vertex link: (south pole)
+ -> (37,S ) -> (33,S ) -> (29,S ) -> (25,S )
+--- process, managing south pole : 0
++++ Module[comm]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}
+
+====== communication information ======
+*** rellist_nmax: 335
+
+*** Recv_nmax_r2r(global) = 6
+*** Recv_nmax_r2r(local)  = 5
+*** Send_nmax_r2r(local)  = 5
+*** Send_size_r2r(global) = 68
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_r2r        131         1         1
+| Recv_r2r         34         7         1
+| Recv_r2r         50         0         1
+| Recv_r2r         52         6         1
+| Recv_r2r         52         2         1
+| Recv_r2r         16         5         1
+| Send_r2r         51         1         0
+| Send_r2r         51         1         2
+| Send_r2r         16         1         5
+| Send_r2r         52         1         6
+| Send_r2r         34         1         7
+
+*** Recv_nmax_p2r(local) = 1
+*** Send_nmax_p2r(local) = 0
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_p2r [ 0 -1 -1]
+| Recv_p2r [1 0 1]
+
+*** Recv_nmax_r2p(local)  = 0
+*** Send_nmax_r2p(local)  = 1
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_r2p 0 -1 -1
+| Send_r2p 1 1 0
+
+*** Send_size_p2r,r2p     =   10
+
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Singular 4 1 1
+
+--- Singular_list
+
+number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
+     0     17      1      5      0      1     17      0      5      0      1
+     1      1     17      6      1      1      0     17      6      1      1
+     2      1      0      8      3      1      0      0      8      3      1
+     3     17      1      9      4      1     17      0      9      4      1
++++ Module[grd]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}
+search north 0 1 14 2
+search north 1 2 10 2
+search north 2 3 6 1
+search north 3 4 2 0
+search north 4 0 18 3
+rgntab [14 10  6  2 18]
+sending north 2 1 0 6
+1 16 0 1 1
+[-0.00556744  0.01713483  0.99983769]
+search south 0 37 7
+search south 1 33 6
+search south 2 29 5
+search south 3 25 5
+search south 4 21 4
+rgntab [37 33 29 25 21]
+kmax, vmax 1 3
+myrank 1 source rank 7 tag 7 imax 34 recv_slices (102,)
+myrank 1 source rank 0 tag 0 imax 50 recv_slices (150,)
+myrank 1 source rank 6 tag 6 imax 52 recv_slices (156,)
+myrank 1 source rank 2 tag 2 imax 52 recv_slices (156,)
+myrank 1 source rank 5 tag 5 imax 16 recv_slices (48,)
+myrank 1 dest rank 0 tag 1 imax 51 sendbuf (153,)
+myrank 1 dest rank 2 tag 1 imax 51 sendbuf (153,)
+myrank 1 dest rank 5 tag 1 imax 16 sendbuf (48,)
+myrank 1 dest rank 6 tag 1 imax 52 sendbuf (156,)
+myrank 1 dest rank 7 tag 1 imax 34 sendbuf (102,)
+recv from rank 6 region 32 1 1 17 1 0
+-0.262865556059566
+recv from rank 6 region 32 1 2 17 2 0
+-0.27383559281880854
+recv from rank 6 region 32 1 3 17 3 0
+-0.2845504640178445
+recv from rank 6 region 32 1 4 17 4 0
+-0.2951273857844339
+recv from rank 6 region 32 1 5 17 5 0
+-0.30563944529510734
+recv from rank 6 region 32 1 6 17 6 0
+-0.316121306709561
+recv from rank 6 region 32 1 7 17 7 0
+-0.32658135422721046
+recv from rank 6 region 32 1 8 17 8 0
+-0.33701266809215646
+recv from rank 6 region 32 1 9 17 9 0
+-0.3474004336860091
+recv from rank 6 region 32 1 10 17 10 0
+-0.3577259236820405
+recv from rank 6 region 32 1 11 17 11 0
+-0.3679677111684408
+recv from rank 6 region 32 1 12 17 12 0
+-0.37810050519126437
+recv from rank 6 region 32 1 13 17 13 0
+-0.3880915867852199
+recv from rank 6 region 32 1 14 17 14 0
+-0.3978945824257754
+recv from rank 6 region 32 1 15 17 15 0
+-0.40744071821865907
+recv from rank 6 region 32 1 16 17 16 0
+-0.4166296084431322
+recv from rank 6 region 34 1 1 17 17 0
+-0.9510565162951526
+recv from rank 6 region 34 1 1 17 1 0
+-0.9510565162951526
+recv from rank 6 region 34 1 2 17 2 0
+-0.9566426678335906
+recv from rank 6 region 34 1 3 17 3 0
+-0.9607124118747097
+recv from rank 6 region 34 1 4 17 4 0
+-0.9632197677868134
+recv from rank 6 region 34 1 5 17 5 0
+-0.9641305409267251
+recv from rank 6 region 34 1 6 17 6 0
+-0.9634232126714317
+recv from rank 6 region 34 1 7 17 7 0
+-0.96108723162368
+recv from rank 6 region 34 1 8 17 8 0
+-0.9571206112373098
+recv from rank 6 region 34 1 9 17 9 0
+-0.9515279298122765
+recv from rank 6 region 34 1 10 17 10 0
+-0.9443191152650853
+recv from rank 6 region 34 1 11 17 11 0
+-0.9355090563634735
+recv from rank 6 region 34 1 12 17 12 0
+-0.9251179614142544
+recv from rank 6 region 34 1 13 17 13 0
+-0.9131723150405995
+recv from rank 6 region 34 1 14 17 14 0
+-0.8997061473339438
+recv from rank 6 region 34 1 15 17 15 0
+-0.8847620578925038
+recv from rank 6 region 34 1 16 17 16 0
+-0.8683911127876727
+recv from rank 6 region 32 1 16 17 0 0
+-0.4166296084431322
+recv from rank 6 region 34 1 16 1 0 0
+-0.8683911127876727
+recv from rank 6 region 34 2 16 2 0 0
+-0.8853071840947861
+recv from rank 6 region 34 3 16 3 0 0
+-0.9008184682700637
+recv from rank 6 region 34 4 16 4 0 0
+-0.91488131127041
+recv from rank 6 region 34 5 16 5 0 0
+-0.9274576607004773
+recv from rank 6 region 34 6 16 6 0 0
+-0.9385157226629415
+recv from rank 6 region 34 7 16 7 0 0
+-0.9480297342332098
+recv from rank 6 region 34 8 16 8 0 0
+-0.9559792995220601
+recv from rank 6 region 34 9 16 9 0 0
+-0.9623487230729324
+recv from rank 6 region 34 10 16 10 0 0
+-0.9671266267783876
+recv from rank 6 region 34 11 16 11 0 0
+-0.9703060156643676
+recv from rank 6 region 34 12 16 12 0 0
+-0.9718848802856135
+recv from rank 6 region 34 13 16 13 0 0
+-0.971867348120832
+recv from rank 6 region 34 14 16 14 0 0
+-0.9702652520978577
+recv from rank 6 region 34 15 16 15 0 0
+-0.9670996795884769
+recv from rank 6 region 34 16 16 16 0 0
+-0.9624015821572377
+recv from rank 6 region 34 16 16 0 0 0
+-0.9624015821572377
+recv from rank 6 region 30 1 1 17 17 0
+-2.8002740848008443e-15
+recv from rank 6 region 32 1 1 17 1 1
+0.8090169943749406
+recv from rank 6 region 32 1 2 17 2 1
+0.7854228523220251
+recv from rank 6 region 32 1 3 17 3 1
+0.7605975646825198
+recv from rank 6 region 32 1 4 17 4 1
+0.734562790043774
+recv from rank 6 region 32 1 5 17 5 1
+0.707351751922395
+recv from rank 6 region 32 1 6 17 6 1
+0.6790080165705216
+recv from rank 6 region 32 1 7 17 7 1
+0.6495823673790789
+recv from rank 6 region 32 1 8 17 8 1
+0.6191301133594996
+recv from rank 6 region 32 1 9 17 9 1
+0.5877095315032809
+recv from rank 6 region 32 1 10 17 10 1
+0.5553812676291955
+recv from rank 6 region 32 1 11 17 11 1
+0.5222082579573859
+recv from rank 6 region 32 1 12 17 12 1
+0.4882556577560956
+recv from rank 6 region 32 1 13 17 13 1
+0.4535901534533938
+recv from rank 6 region 32 1 14 17 14 1
+0.41827788077919176
+recv from rank 6 region 32 1 15 17 15 1
+0.3823802524494148
+recv from rank 6 region 32 1 16 17 16 1
+0.34594806122790334
+recv from rank 6 region 34 1 1 17 17 1
+0.30901699437495006
+recv from rank 6 region 34 1 1 17 1 1
+0.30901699437495006
+recv from rank 6 region 34 1 2 17 2 1
+0.28933447390083844
+recv from rank 6 region 34 1 3 17 3 1
+0.26933715374556383
+recv from rank 6 region 34 1 4 17 4 1
+0.24916526188266813
+recv from rank 6 region 34 1 5 17 5 1
+0.2289299666332129
+recv from rank 6 region 34 1 6 17 6 1
+0.20871565343028117
+recv from rank 6 region 34 1 7 17 7 1
+0.18858686318118492
+recv from rank 6 region 34 1 8 17 8 1
+0.16859532071059014
+recv from rank 6 region 34 1 9 17 9 1
+0.14878521323016441
+recv from rank 6 region 34 1 10 17 10 1
+0.12919636730577097
+recv from rank 6 region 34 1 11 17 11 1
+0.10986533427179572
+recv from rank 6 region 34 1 12 17 12 1
+0.09082421224875663
+recv from rank 6 region 34 1 13 17 13 1
+0.07209667373988077
+recv from rank 6 region 34 1 14 17 14 1
+0.05369043782844267
+recv from rank 6 region 34 1 15 17 15 1
+0.03558599965188505
+recv from rank 6 region 34 1 16 17 16 1
+0.017724115805903478
+recv from rank 6 region 32 1 16 17 0 1
+0.34594806122790334
+recv from rank 6 region 34 1 16 1 0 1
+0.017724115805903478
+recv from rank 6 region 34 2 16 2 0 1
+-1.3973438834092017e-15
+recv from rank 6 region 34 3 16 3 0 1
+-0.017905696827138603
+recv from rank 6 region 34 4 16 4 0 1
+-0.0360740669499503
+recv from rank 6 region 34 5 16 5 0 1
+-0.05454494456342549
+recv from rank 6 region 34 6 16 6 0 1
+-0.0733269915022006
+recv from rank 6 region 34 7 16 7 0 1
+-0.09240861090031273
+recv from rank 6 region 34 8 16 8 0 1
+-0.11176620709779174
+recv from rank 6 region 34 9 16 9 0 1
+-0.13136927710156962
+recv from rank 6 region 34 10 16 10 0 1
+-0.15118280269783874
+recv from rank 6 region 34 11 16 11 0 1
+-0.17116745291471464
+recv from rank 6 region 34 12 16 12 0 1
+-0.19127786688298987
+recv from rank 6 region 34 13 16 13 0 1
+-0.21145905441335391
+recv from rank 6 region 34 14 16 14 0 1
+-0.23164092012369178
+recv from rank 6 region 34 15 16 15 0 1
+-0.2517314168453948
+recv from rank 6 region 34 16 16 16 0 1
+-0.27161035809494705
+recv from rank 6 region 34 16 16 0 0 1
+-0.27161035809494705
+recv from rank 6 region 30 1 1 17 17 1
+1.0
+recv from rank 6 region 32 1 1 17 1 2
+0.5257311121191447
+recv from rank 6 region 32 1 2 17 2 2
+0.5550900928280974
+recv from rank 6 region 32 1 3 17 3 2
+0.5835429530259527
+recv from rank 6 region 32 1 4 17 4 2
+0.6109969997006143
+recv from rank 6 region 32 1 5 17 5 2
+0.6373680479377811
+recv from rank 6 region 32 1 6 17 6 2
+0.662582397047496
+recv from rank 6 region 32 1 7 17 7 2
+0.6865765558634468
+recv from rank 6 region 32 1 8 17 8 2
+0.709295681839992
+recv from rank 6 region 32 1 9 17 9 2
+0.730691758031365
+recv from rank 6 region 32 1 10 17 10 2
+0.7507221930197742
+recv from rank 6 region 32 1 11 17 11 2
+0.7693492697459142
+recv from rank 6 region 32 1 12 17 12 2
+0.7865407940108847
+recv from rank 6 region 32 1 13 17 13 2
+0.8022723309180347
+recv from rank 6 region 32 1 14 17 14 2
+0.8165313929832007
+recv from rank 6 region 32 1 15 17 15 2
+0.8293234614275573
+recv from rank 6 region 32 1 16 17 16 2
+0.8406781240767345
+recv from rank 6 region 34 1 1 17 17 2
+2.3802329720805522e-14
+recv from rank 6 region 34 1 1 17 1 2
+2.3802329720805522e-14
+recv from rank 6 region 34 1 2 17 2 2
+0.033471903034566555
+recv from rank 6 region 34 1 3 17 3 2
+0.06700118866196933
+recv from rank 6 region 34 1 4 17 4 2
+0.1006198351005342
+recv from rank 6 region 34 1 5 17 5 2
+0.1343256134534905
+recv from rank 6 region 34 1 6 17 6 2
+0.1680877428577938
+recv from rank 6 region 34 1 7 17 7 2
+0.20185719765569923
+recv from rank 6 region 34 1 8 17 8 2
+0.235575366664708
+recv from rank 6 region 34 1 9 17 9 2
+0.26917941806761153
+recv from rank 6 region 34 1 10 17 10 2
+0.3026048697889029
+recv from rank 6 region 34 1 11 17 11 2
+0.3357862620585752
+recv from rank 6 region 34 1 12 17 12 2
+0.3686566423355574
+recv from rank 6 region 34 1 13 17 13 2
+0.40114634820603506
+recv from rank 6 region 34 1 14 17 14 2
+0.43318146928891343
+recv from rank 6 region 34 1 15 17 15 2
+0.46468240502799085
+recv from rank 6 region 34 1 16 17 16 2
+0.4955630443750691
+recv from rank 6 region 32 1 16 17 0 2
+0.8406781240767345
+recv from rank 6 region 34 1 16 1 0 2
+0.4955630443750691
+recv from rank 6 region 34 2 16 2 0 2
+0.4650066556407125
+recv from rank 6 region 34 3 16 3 0 2
+0.4338265474181018
+recv from rank 6 region 34 4 16 4 0 2
+0.4021080053689875
+recv from rank 6 region 34 5 16 5 0 2
+0.36992855611667913
+recv from rank 6 region 34 6 16 6 0 2
+0.3373594383320154
+recv from rank 6 region 34 7 16 7 0 2
+0.30446719304579356
+recv from rank 6 region 34 8 16 8 0 2
+0.27131511907058314
+recv from rank 6 region 34 9 16 9 0 2
+0.23796438438074596
+recv from rank 6 region 34 10 16 10 0 2
+0.20447456552022197
+recv from rank 6 region 34 11 16 11 0 2
+0.17090330315189645
+recv from rank 6 region 34 12 16 12 0 2
+0.13730461431762625
+recv from rank 6 region 34 13 16 13 0 2
+0.10372524265188224
+recv from rank 6 region 34 14 16 14 0 2
+0.07019846647705387
+recv from rank 6 region 34 15 16 15 0 2
+0.03673558918644804
+recv from rank 6 region 34 16 16 16 0 2
+0.003317836159334552
+recv from rank 6 region 34 16 16 0 0 2
+0.003317836159334552
+recv from rank 6 region 30 1 1 17 17 2
+-1.4001370424004221e-15
