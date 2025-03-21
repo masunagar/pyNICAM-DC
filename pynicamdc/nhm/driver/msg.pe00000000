@@ -47092,9 +47092,13 @@ vT [-138403.85417909 -190496.56261559       0.        ]
 AAA: length? 235466.70087293163
 BBB: length? 1499953992948.7976
 000: stopping here?
-vT [6.37115629e+37 6.37115629e+37 6.37115629e+37]
-AAA: length? 1.103516639343152e+38
-BBB: length? 5.7920549060587105e+44
+vT [-128336.77033453  -41699.14443261       0.        ]
+AAA: length? 134941.2659875037
+BBB: length? 859692283040.419
+000: stopping here?
+vT [-7.93164861e+04  1.09169777e+05 -1.86264515e-09]
+AAA: length? 134941.26598752302
+BBB: length? 859692283040.5421
 000: stopping here?
 vT [7.93164861e+04 1.09169777e+05 1.86264515e-09]
 AAA: length? 134941.2659875146
@@ -47107,10 +47111,6 @@ BBB: length? 859692283040.4716
 vT [-1.20053301e-08 -1.34941266e+05  0.00000000e+00]
 AAA: length? 134941.26598752587
 BBB: length? 859692283040.5602
-000: stopping here?
-vT [-6.37115629e+37 -6.37115629e+37 -6.37115629e+37]
-AAA: length? 1.103516639343152e+38
-BBB: length? 5.729574923054546e+44
 000: stopping here?
 vT [162046.05497725 117733.35043646   3149.31708031]
 AAA: length? 200324.69627272116
@@ -47152,9 +47152,13 @@ vT [8.41100700e-09 2.35466701e+05 9.31322575e-10]
 AAA: length? 235466.70087295963
 BBB: length? 1499953992948.976
 000: stopping here?
-vT [6.37115629e+37 6.37115629e+37 6.37115629e+37]
-AAA: length? 1.103516639343152e+38
-BBB: length? 5.729574923054546e+44
+vT [-7.93164861e+04  1.09169777e+05 -9.31322575e-10]
+AAA: length? 134941.26598748314
+BBB: length? 859692283040.288
+000: stopping here?
+vT [-1.28336770e+05 -4.16991444e+04  9.31322575e-10]
+AAA: length? 134941.265987481
+BBB: length? 859692283040.2743
 000: stopping here?
 vT [ 4.36557457e-11 -1.34941266e+05  0.00000000e+00]
 AAA: length? 134941.26598752596
@@ -47167,21 +47171,17 @@ BBB: length? 859692283040.4004
 vT [7.93164861e+04 1.09169777e+05 9.31322575e-10]
 AAA: length? 134941.2659874709
 BBB: length? 859692283040.2101
-000: stopping here?
-vT [-6.37115629e+37 -6.37115629e+37 -6.37115629e+37]
-AAA: length? 1.103516639343152e+38
-BBB: length? 5.7920549060587026e+44
 *** Diagnose grid property
 
 ------ Diagnosis result ---
 --- ideal  global surface area  = 510099699.07076156 [km²]
---- actual global surface area  = 513110780.2459043 [km²]
+--- actual global surface area  = 510099699.0707617 [km²]
 --- global total number of grid = 10242
 
---- average grid interval       = 223.82736591634773 [km]
---- max grid interval           = 1550.7875831866033 [km]
+--- average grid interval       = 223.1696580130042 [km]
+--- max grid interval           = 226.0604592160497 [km]
 --- min grid interval           = 177.0105155700054 [km]
---- ratio max/min grid interval = 8.76099127892369
+--- ratio max/min grid interval = 1.277101863062173
 --- average length of arc(side) = 138.7218286649926 [km]
 
 --- max length distortion       = 6.596792351931572e-05 [km]
@@ -47264,9 +47264,9 @@ myrank 0 dest rank 7 tag 0 imax 51 sendbuf (14994,)
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=    41.649 N=1
-*** ID=001 : INIT_COMM_var T=     0.149 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.233 N=6
+*** ID=000 : INIT_Initialize T=    41.116 N=1
+*** ID=001 : INIT_COMM_var T=     0.157 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.260 N=6
 *** ID=003 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=004 : MAIN__Atmos T=     0.000 N=3
 *** ID=005 : MAIN__History T=     0.000 N=3

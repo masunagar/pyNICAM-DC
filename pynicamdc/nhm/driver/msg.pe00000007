@@ -47023,13 +47023,13 @@ BBB: length? 875694661494.8365
 
 ------ Diagnosis result ---
 --- ideal  global surface area  = 510099699.07076156 [km²]
---- actual global surface area  = 513110780.2459043 [km²]
+--- actual global surface area  = 510099699.0707617 [km²]
 --- global total number of grid = 10242
 
---- average grid interval       = 223.82736591634773 [km]
---- max grid interval           = 1550.7875831866033 [km]
+--- average grid interval       = 223.1696580130042 [km]
+--- max grid interval           = 226.0604592160497 [km]
 --- min grid interval           = 177.0105155700054 [km]
---- ratio max/min grid interval = 8.76099127892369
+--- ratio max/min grid interval = 1.277101863062173
 --- average length of arc(side) = 138.7851989076392 [km]
 
 --- max length distortion       = 6.596792351931572e-05 [km]
@@ -47114,9 +47114,9 @@ myrank 7 dest rank 6 tag 7 imax 67 sendbuf (19698,)
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=    41.653 N=1
-*** ID=001 : INIT_COMM_var T=     0.182 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.271 N=6
+*** ID=000 : INIT_Initialize T=    41.114 N=1
+*** ID=001 : INIT_COMM_var T=     0.193 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.282 N=6
 *** ID=003 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=004 : MAIN__Atmos T=     0.000 N=3
 *** ID=005 : MAIN__History T=     0.000 N=3
