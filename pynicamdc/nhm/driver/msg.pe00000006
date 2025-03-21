@@ -47020,6 +47020,21 @@ BBB: length? 864423641337.6
 vT [ -42521.5341646  -115016.12758419  -57325.3448184 ]
 AAA: length? 135362.4232596366
 BBB: length? 862375115864.0831
+*** Diagnose grid property
+
+------ Diagnosis result ---
+--- ideal  global surface area  = 510099699.07076156 [km²]
+--- actual global surface area  = 513110780.2459043 [km²]
+--- global total number of grid = 10242
+
+--- average grid interval       = 223.82736591634773 [km]
+--- max grid interval           = 1550.7875831866033 [km]
+--- min grid interval           = 177.0105155700054 [km]
+--- ratio max/min grid interval = 8.76099127892369
+--- average length of arc(side) = 138.90751642787313 [km]
+
+--- max length distortion       = 6.596792351931572e-05 [km]
+--- max angle distortion        = 8.089721219583177 [deg]
 +++ Module[oprt]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}
@@ -47100,9 +47115,9 @@ myrank 6 dest rank 7 tag 6 imax 67 sendbuf (19698,)
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=    40.261 N=1
-*** ID=001 : INIT_COMM_var T=     0.202 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.290 N=6
+*** ID=000 : INIT_Initialize T=    41.655 N=1
+*** ID=001 : INIT_COMM_var T=     0.188 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.270 N=6
 *** ID=003 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=004 : MAIN__Atmos T=     0.000 N=3
 *** ID=005 : MAIN__History T=     0.000 N=3
