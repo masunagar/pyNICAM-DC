@@ -47040,7 +47040,34 @@ BBB: length? 875694661494.8365
 *** setup coefficient of divergence operator
 *** setup coefficient of rotation operator
 *** setup coefficient of gradient operator
-*** setup coefficient of divergence operator
+*** setup coefficient of laplacian operator
+i = 1, j = 1, 6: True:  True 0 1
+5.239387481251412e-11
+-8091.54693257299 -58918.93728451369
+-117752.75294662942 -58918.93728451369
+105321.26405070713 -58918.93728451369
+-8091.54693257299 -50241.28189824534
+-117752.75294662942 -50241.28189824534
+105321.26405070713 -50241.28189824534
+coef lap= 0.15863780277966333
+i = 1, j = 1, 6: True:  True 1 1
+5.239387481251412e-11
+165152.09189042228 115811.9695633835
+162072.7602412004 115811.9695633835
+-2.928076202794918e-07 115811.9695633835
+165152.09189042228 -36502.427960442
+162072.7602412004 -36502.427960442
+-2.928076202794918e-07 -36502.427960442
+coef lap= 4.06339983291195
+i = 1, j = 1, 6: True:  True 2 1
+5.239387481251412e-11
+167660.94561801897 36413.90582303056
+-2.77477378380042e-07 36413.90582303056
+170413.38497181618 36413.90582303056
+167660.94561801897 -119804.89283957044
+-2.77477378380042e-07 -119804.89283957044
+170413.38497181618 -119804.89283957044
+coef lap= 4.040871369524211
 *** setup coefficient of divergence operator
 +++ Module[vmtr]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
@@ -47119,9 +47146,9 @@ myrank 7 dest rank 6 tag 7 imax 67 sendbuf (19698,)
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=    41.305 N=1
-*** ID=001 : INIT_COMM_var T=     0.181 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.266 N=6
+*** ID=000 : INIT_Initialize T=    42.285 N=1
+*** ID=001 : INIT_COMM_var T=     0.198 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.278 N=6
 *** ID=003 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=004 : MAIN__Atmos T=     0.000 N=3
 *** ID=005 : MAIN__History T=     0.000 N=3
