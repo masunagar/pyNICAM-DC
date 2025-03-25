@@ -237,53 +237,10 @@ number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
 +++ Module[grd]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}
-search north 0 1 14 2
-search north 1 2 10 2
-search north 2 3 6 1
-search north 3 4 2 0
-search north 4 0 18 3
-receiving north 0 2 14
-receiving north 1 2 10
-receiving north 2 1 6
-receiving north 3 0 2
-receiving north 4 3 18
-rgntab [14 10  6  2 18]
-sending north 3 2 0 2
-1 16 0 2 1
-[0.01457576 0.01058991 0.99983769]
-unpacking north 0 0
-[-0.00556744 -0.01713483  0.99983769]
-unpacking north 1 0
-[-0.01801663  0.          0.99983769]
-unpacking north 2 0
-[-0.00556744  0.01713483  0.99983769]
-unpacking north 3 0
-[0.01457576 0.01058991 0.99983769]
-unpacking north 4 0
-[ 0.01457576 -0.01058991  0.99983769]
-search south 0 37 7
-search south 1 33 6
-search south 2 29 5
-search south 3 25 5
-search south 4 21 4
-receiving south 0 7 37
-receiving south 1 6 33
-receiving south 2 5 29
-receiving south 3 5 25
-receiving south 4 4 21
-rgntab [37 33 29 25 21]
-[array([ 0.00556744,  0.01713483, -0.99983769]), array([-0.01457576,  0.01058991, -0.99983769]), array([-0.01457576, -0.01058991, -0.99983769]), array([ 0.00556744, -0.01713483, -0.99983769]), array([ 0.01801663,  0.        , -0.99983769])]
-unpacking south 0 0
-[ 0.00556744  0.01713483 -0.99983769]
-unpacking south 1 0
-[-0.01457576  0.01058991 -0.99983769]
-unpacking south 2 0
-[-0.01457576 -0.01058991 -0.99983769]
-unpacking south 3 0
-[ 0.00556744 -0.01713483 -0.99983769]
-unpacking south 4 0
-[ 0.01801663  0.         -0.99983769]
 kmax, vmax 1 3
+Copy NPLorSPL: var_pl[0,0,0,0] = -2.809405756262126e-15
+Copy NPLorSPL: var_pl[0,0,0,1] = -0.0
+Copy NPLorSPL: var_pl[0,0,0,2] = 1.0
 myrank 0 source rank 4 tag 4 imax 34 recv_slices (102,)
 myrank 0 source rank 3 tag 3 imax 34 recv_slices (102,)
 myrank 0 source rank 7 tag 7 imax 51 recv_slices (153,)
@@ -292,206 +249,42 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (150,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (102,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (102,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (153,)
-GRD input check
-LOOK
-GRD_x,    l0: [[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
-GRD_xt_i, l0: [[1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62
-  2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62
-  2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62]]
-GRD_xt_j, l0: [[1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00
-  1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 1.00000e+00 2.99994e+62]
- [2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62
-  2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62
-  2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62 2.99994e+62]]
-GRD_x, l1: [[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
-GRD_x, l2: [[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
-GRD_x, l3: [[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
-GRD_x, l4: [[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
+sending from pole:   0 0 0
+towards 1 1 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 1
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+1.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 0
+towards 2 4 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 1
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+1.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+1.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 1
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+1.0
 myrank 0 source rank 4 tag 4 imax 34 recv_slices (102,)
 myrank 0 source rank 3 tag 3 imax 34 recv_slices (102,)
 myrank 0 source rank 7 tag 7 imax 51 recv_slices (153,)
@@ -500,12 +293,50 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (150,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (102,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (102,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (153,)
+sending from pole:   0 0 0
+towards 1 1 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 1
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+1.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 0
+towards 2 4 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 1
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+1.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+1.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 1
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+1.0
 *** Topography data input
 *** Make ideal topography
 +++ Module[ideal topo]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'topo_type': 'JW'}
 kmax, vmax 1 2
+Copy NPLorSPL: var_pl[0,0,0,0] = 112.73427850035053
+Copy NPLorSPL: var_pl[0,0,0,1] = 0.0
 myrank 0 source rank 4 tag 4 imax 34 recv_slices (68,)
 myrank 0 source rank 3 tag 3 imax 34 recv_slices (68,)
 myrank 0 source rank 7 tag 7 imax 51 recv_slices (102,)
@@ -514,6 +345,30 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (100,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (68,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (68,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (102,)
+sending from pole:   0 0 0
+towards 1 1 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+112.73427850035053
+sending from pole:   0 0 0
+towards 2 4 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
 *** Read vertical grid file:  ../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json
 myrank 0 source rank 4 tag 4 imax 34 recv_slices (2856,)
 myrank 0 source rank 3 tag 3 imax 34 recv_slices (2856,)
@@ -523,6 +378,1014 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (4200,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (2856,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (2856,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (4284,)
+sending from pole:   0 0 0
+towards 1 1 1 17
+83.4281108190707
+sending from pole:   0 0 0
+towards 1 1 1 17
+142.04050711919507
+sending from pole:   0 0 0
+towards 1 1 1 17
+244.09119721685846
+sending from pole:   0 0 0
+towards 1 1 1 17
+426.5155988359876
+sending from pole:   0 0 0
+towards 1 1 1 17
+679.8324704577728
+sending from pole:   0 0 0
+towards 1 1 1 17
+999.1344279724518
+sending from pole:   0 0 0
+towards 1 1 1 17
+1381.0827890202543
+sending from pole:   0 0 0
+towards 1 1 1 17
+1823.16679835307
+sending from pole:   0 0 0
+towards 1 1 1 17
+2323.3878231049794
+sending from pole:   0 0 0
+towards 1 1 1 17
+2880.0944175958093
+sending from pole:   0 0 0
+towards 1 1 1 17
+3491.8853037431036
+sending from pole:   0 0 0
+towards 1 1 1 17
+4157.547541520334
+sending from pole:   0 0 0
+towards 1 1 1 17
+4876.014762220822
+sending from pole:   0 0 0
+towards 1 1 1 17
+5646.337670077708
+sending from pole:   0 0 0
+towards 1 1 1 17
+6467.662461169292
+sending from pole:   0 0 0
+towards 1 1 1 17
+7339.214575553163
+sending from pole:   0 0 0
+towards 1 1 1 17
+8260.286170065014
+sending from pole:   0 0 0
+towards 1 1 1 17
+9230.226263691491
+sending from pole:   0 0 0
+towards 1 1 1 17
+10248.432850753017
+sending from pole:   0 0 0
+towards 1 1 1 17
+11314.346494158739
+sending from pole:   0 0 0
+towards 1 1 1 17
+12427.445052592795
+sending from pole:   0 0 0
+towards 1 1 1 17
+13587.239290634865
+sending from pole:   0 0 0
+towards 1 1 1 17
+14793.269186312165
+sending from pole:   0 0 0
+towards 1 1 1 17
+16045.100796548353
+sending from pole:   0 0 0
+towards 1 1 1 17
+17342.323574060145
+sending from pole:   0 0 0
+towards 1 1 1 17
+18684.54805329549
+sending from pole:   0 0 0
+towards 1 1 1 17
+20071.40384080692
+sending from pole:   0 0 0
+towards 1 1 1 17
+21502.53785888271
+sending from pole:   0 0 0
+towards 1 1 1 17
+22977.612801401356
+sending from pole:   0 0 0
+towards 1 1 1 17
+24496.30576873584
+sending from pole:   0 0 0
+towards 1 1 1 17
+26058.307054597244
+sending from pole:   0 0 0
+towards 1 1 1 17
+27663.319062484057
+sending from pole:   0 0 0
+towards 1 1 1 17
+29311.05533320271
+sending from pole:   0 0 0
+towards 1 1 1 17
+31001.239667894373
+sending from pole:   0 0 0
+towards 1 1 1 17
+32733.605333452957
+sending from pole:   0 0 0
+towards 1 1 1 17
+34507.89433917569
+sending from pole:   0 0 0
+towards 1 1 1 17
+36323.856775049484
+sending from pole:   0 0 0
+towards 1 1 1 17
+38181.25020338083
+sending from pole:   0 0 0
+towards 1 1 1 17
+40079.83909654088
+sending from pole:   0 0 0
+towards 1 1 1 17
+42019.394314451434
+sending from pole:   0 0 0
+towards 1 1 1 17
+43999.6926161463
+sending from pole:   0 0 0
+towards 1 1 1 17
+46000.3073838537
+sending from pole:   0 0 1
+towards 1 1 1 17
+54.12200413073115
+sending from pole:   0 0 1
+towards 1 1 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 1 1 1 17
+171.34679662026159
+sending from pole:   0 0 1
+towards 1 1 1 17
+316.83597174308693
+sending from pole:   0 0 1
+towards 1 1 1 17
+536.1960711513287
+sending from pole:   0 0 1
+towards 1 1 1 17
+823.4703079249178
+sending from pole:   0 0 1
+towards 1 1 1 17
+1174.8006775993763
+sending from pole:   0 0 1
+towards 1 1 1 17
+1587.3678019657734
+sending from pole:   0 0 1
+towards 1 1 1 17
+2058.969533364026
+sending from pole:   0 0 1
+towards 1 1 1 17
+2587.8107398435386
+sending from pole:   0 0 1
+towards 1 1 1 17
+3172.3836490855088
+sending from pole:   0 0 1
+towards 1 1 1 17
+3811.3934650294113
+sending from pole:   0 0 1
+towards 1 1 1 17
+4503.709092011895
+sending from pole:   0 0 1
+towards 1 1 1 17
+5248.3288770713925
+sending from pole:   0 0 1
+towards 1 1 1 17
+6044.35587083659
+sending from pole:   0 0 1
+towards 1 1 1 17
+6890.979404423106
+sending from pole:   0 0 1
+towards 1 1 1 17
+7787.461016791351
+sending from pole:   0 0 1
+towards 1 1 1 17
+8733.123472978521
+sending from pole:   0 0 1
+towards 1 1 1 17
+9727.342036606675
+sending from pole:   0 0 1
+towards 1 1 1 17
+10769.537423734198
+sending from pole:   0 0 1
+towards 1 1 1 17
+11859.170035505986
+sending from pole:   0 0 1
+towards 1 1 1 17
+12995.735179864012
+sending from pole:   0 0 1
+towards 1 1 1 17
+14178.75907006172
+sending from pole:   0 0 1
+towards 1 1 1 17
+15407.795441232378
+sending from pole:   0 0 1
+towards 1 1 1 17
+16682.422664691647
+sending from pole:   0 0 1
+towards 1 1 1 17
+18002.241267395333
+sending from pole:   0 0 1
+towards 1 1 1 17
+19366.871784318624
+sending from pole:   0 0 1
+towards 1 1 1 17
+20775.95288677748
+sending from pole:   0 0 1
+towards 1 1 1 17
+22229.13974131647
+sending from pole:   0 0 1
+towards 1 1 1 17
+23726.102562469507
+sending from pole:   0 0 1
+towards 1 1 1 17
+25266.525329739565
+sending from pole:   0 0 1
+towards 1 1 1 17
+26850.10464423024
+sending from pole:   0 0 1
+towards 1 1 1 17
+28476.54870482848
+sending from pole:   0 0 1
+towards 1 1 1 17
+30145.5763869697
+sending from pole:   0 0 1
+towards 1 1 1 17
+31856.916409823876
+sending from pole:   0 0 1
+towards 1 1 1 17
+33610.306579833
+sending from pole:   0 0 1
+towards 1 1 1 17
+35405.493100351654
+sending from pole:   0 0 1
+towards 1 1 1 17
+37242.229938444514
+sending from pole:   0 0 1
+towards 1 1 1 17
+39120.2782412014
+sending from pole:   0 0 1
+towards 1 1 1 17
+41039.405794751365
+sending from pole:   0 0 1
+towards 1 1 1 17
+42999.386520044514
+sending from pole:   0 0 1
+towards 1 1 1 17
+45000.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+83.4281108190707
+sending from pole:   0 0 0
+towards 2 4 1 17
+83.4281108190707
+sending from pole:   0 0 0
+towards 2 0 1 17
+142.04050711919507
+sending from pole:   0 0 0
+towards 2 4 1 17
+142.04050711919507
+sending from pole:   0 0 0
+towards 2 0 1 17
+244.09119721685846
+sending from pole:   0 0 0
+towards 2 4 1 17
+244.09119721685846
+sending from pole:   0 0 0
+towards 2 0 1 17
+426.5155988359876
+sending from pole:   0 0 0
+towards 2 4 1 17
+426.5155988359876
+sending from pole:   0 0 0
+towards 2 0 1 17
+679.8324704577728
+sending from pole:   0 0 0
+towards 2 4 1 17
+679.8324704577728
+sending from pole:   0 0 0
+towards 2 0 1 17
+999.1344279724518
+sending from pole:   0 0 0
+towards 2 4 1 17
+999.1344279724518
+sending from pole:   0 0 0
+towards 2 0 1 17
+1381.0827890202543
+sending from pole:   0 0 0
+towards 2 4 1 17
+1381.0827890202543
+sending from pole:   0 0 0
+towards 2 0 1 17
+1823.16679835307
+sending from pole:   0 0 0
+towards 2 4 1 17
+1823.16679835307
+sending from pole:   0 0 0
+towards 2 0 1 17
+2323.3878231049794
+sending from pole:   0 0 0
+towards 2 4 1 17
+2323.3878231049794
+sending from pole:   0 0 0
+towards 2 0 1 17
+2880.0944175958093
+sending from pole:   0 0 0
+towards 2 4 1 17
+2880.0944175958093
+sending from pole:   0 0 0
+towards 2 0 1 17
+3491.8853037431036
+sending from pole:   0 0 0
+towards 2 4 1 17
+3491.8853037431036
+sending from pole:   0 0 0
+towards 2 0 1 17
+4157.547541520334
+sending from pole:   0 0 0
+towards 2 4 1 17
+4157.547541520334
+sending from pole:   0 0 0
+towards 2 0 1 17
+4876.014762220822
+sending from pole:   0 0 0
+towards 2 4 1 17
+4876.014762220822
+sending from pole:   0 0 0
+towards 2 0 1 17
+5646.337670077708
+sending from pole:   0 0 0
+towards 2 4 1 17
+5646.337670077708
+sending from pole:   0 0 0
+towards 2 0 1 17
+6467.662461169292
+sending from pole:   0 0 0
+towards 2 4 1 17
+6467.662461169292
+sending from pole:   0 0 0
+towards 2 0 1 17
+7339.214575553163
+sending from pole:   0 0 0
+towards 2 4 1 17
+7339.214575553163
+sending from pole:   0 0 0
+towards 2 0 1 17
+8260.286170065014
+sending from pole:   0 0 0
+towards 2 4 1 17
+8260.286170065014
+sending from pole:   0 0 0
+towards 2 0 1 17
+9230.226263691491
+sending from pole:   0 0 0
+towards 2 4 1 17
+9230.226263691491
+sending from pole:   0 0 0
+towards 2 0 1 17
+10248.432850753017
+sending from pole:   0 0 0
+towards 2 4 1 17
+10248.432850753017
+sending from pole:   0 0 0
+towards 2 0 1 17
+11314.346494158739
+sending from pole:   0 0 0
+towards 2 4 1 17
+11314.346494158739
+sending from pole:   0 0 0
+towards 2 0 1 17
+12427.445052592795
+sending from pole:   0 0 0
+towards 2 4 1 17
+12427.445052592795
+sending from pole:   0 0 0
+towards 2 0 1 17
+13587.239290634865
+sending from pole:   0 0 0
+towards 2 4 1 17
+13587.239290634865
+sending from pole:   0 0 0
+towards 2 0 1 17
+14793.269186312165
+sending from pole:   0 0 0
+towards 2 4 1 17
+14793.269186312165
+sending from pole:   0 0 0
+towards 2 0 1 17
+16045.100796548353
+sending from pole:   0 0 0
+towards 2 4 1 17
+16045.100796548353
+sending from pole:   0 0 0
+towards 2 0 1 17
+17342.323574060145
+sending from pole:   0 0 0
+towards 2 4 1 17
+17342.323574060145
+sending from pole:   0 0 0
+towards 2 0 1 17
+18684.54805329549
+sending from pole:   0 0 0
+towards 2 4 1 17
+18684.54805329549
+sending from pole:   0 0 0
+towards 2 0 1 17
+20071.40384080692
+sending from pole:   0 0 0
+towards 2 4 1 17
+20071.40384080692
+sending from pole:   0 0 0
+towards 2 0 1 17
+21502.53785888271
+sending from pole:   0 0 0
+towards 2 4 1 17
+21502.53785888271
+sending from pole:   0 0 0
+towards 2 0 1 17
+22977.612801401356
+sending from pole:   0 0 0
+towards 2 4 1 17
+22977.612801401356
+sending from pole:   0 0 0
+towards 2 0 1 17
+24496.30576873584
+sending from pole:   0 0 0
+towards 2 4 1 17
+24496.30576873584
+sending from pole:   0 0 0
+towards 2 0 1 17
+26058.307054597244
+sending from pole:   0 0 0
+towards 2 4 1 17
+26058.307054597244
+sending from pole:   0 0 0
+towards 2 0 1 17
+27663.319062484057
+sending from pole:   0 0 0
+towards 2 4 1 17
+27663.319062484057
+sending from pole:   0 0 0
+towards 2 0 1 17
+29311.05533320271
+sending from pole:   0 0 0
+towards 2 4 1 17
+29311.05533320271
+sending from pole:   0 0 0
+towards 2 0 1 17
+31001.239667894373
+sending from pole:   0 0 0
+towards 2 4 1 17
+31001.239667894373
+sending from pole:   0 0 0
+towards 2 0 1 17
+32733.605333452957
+sending from pole:   0 0 0
+towards 2 4 1 17
+32733.605333452957
+sending from pole:   0 0 0
+towards 2 0 1 17
+34507.89433917569
+sending from pole:   0 0 0
+towards 2 4 1 17
+34507.89433917569
+sending from pole:   0 0 0
+towards 2 0 1 17
+36323.856775049484
+sending from pole:   0 0 0
+towards 2 4 1 17
+36323.856775049484
+sending from pole:   0 0 0
+towards 2 0 1 17
+38181.25020338083
+sending from pole:   0 0 0
+towards 2 4 1 17
+38181.25020338083
+sending from pole:   0 0 0
+towards 2 0 1 17
+40079.83909654088
+sending from pole:   0 0 0
+towards 2 4 1 17
+40079.83909654088
+sending from pole:   0 0 0
+towards 2 0 1 17
+42019.394314451434
+sending from pole:   0 0 0
+towards 2 4 1 17
+42019.394314451434
+sending from pole:   0 0 0
+towards 2 0 1 17
+43999.6926161463
+sending from pole:   0 0 0
+towards 2 4 1 17
+43999.6926161463
+sending from pole:   0 0 0
+towards 2 0 1 17
+46000.3073838537
+sending from pole:   0 0 0
+towards 2 4 1 17
+46000.3073838537
+sending from pole:   0 0 1
+towards 2 0 1 17
+54.12200413073115
+sending from pole:   0 0 1
+towards 2 4 1 17
+54.12200413073115
+sending from pole:   0 0 1
+towards 2 0 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 2 4 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 2 0 1 17
+171.34679662026159
+sending from pole:   0 0 1
+towards 2 4 1 17
+171.34679662026159
+sending from pole:   0 0 1
+towards 2 0 1 17
+316.83597174308693
+sending from pole:   0 0 1
+towards 2 4 1 17
+316.83597174308693
+sending from pole:   0 0 1
+towards 2 0 1 17
+536.1960711513287
+sending from pole:   0 0 1
+towards 2 4 1 17
+536.1960711513287
+sending from pole:   0 0 1
+towards 2 0 1 17
+823.4703079249178
+sending from pole:   0 0 1
+towards 2 4 1 17
+823.4703079249178
+sending from pole:   0 0 1
+towards 2 0 1 17
+1174.8006775993763
+sending from pole:   0 0 1
+towards 2 4 1 17
+1174.8006775993763
+sending from pole:   0 0 1
+towards 2 0 1 17
+1587.3678019657734
+sending from pole:   0 0 1
+towards 2 4 1 17
+1587.3678019657734
+sending from pole:   0 0 1
+towards 2 0 1 17
+2058.969533364026
+sending from pole:   0 0 1
+towards 2 4 1 17
+2058.969533364026
+sending from pole:   0 0 1
+towards 2 0 1 17
+2587.8107398435386
+sending from pole:   0 0 1
+towards 2 4 1 17
+2587.8107398435386
+sending from pole:   0 0 1
+towards 2 0 1 17
+3172.3836490855088
+sending from pole:   0 0 1
+towards 2 4 1 17
+3172.3836490855088
+sending from pole:   0 0 1
+towards 2 0 1 17
+3811.3934650294113
+sending from pole:   0 0 1
+towards 2 4 1 17
+3811.3934650294113
+sending from pole:   0 0 1
+towards 2 0 1 17
+4503.709092011895
+sending from pole:   0 0 1
+towards 2 4 1 17
+4503.709092011895
+sending from pole:   0 0 1
+towards 2 0 1 17
+5248.3288770713925
+sending from pole:   0 0 1
+towards 2 4 1 17
+5248.3288770713925
+sending from pole:   0 0 1
+towards 2 0 1 17
+6044.35587083659
+sending from pole:   0 0 1
+towards 2 4 1 17
+6044.35587083659
+sending from pole:   0 0 1
+towards 2 0 1 17
+6890.979404423106
+sending from pole:   0 0 1
+towards 2 4 1 17
+6890.979404423106
+sending from pole:   0 0 1
+towards 2 0 1 17
+7787.461016791351
+sending from pole:   0 0 1
+towards 2 4 1 17
+7787.461016791351
+sending from pole:   0 0 1
+towards 2 0 1 17
+8733.123472978521
+sending from pole:   0 0 1
+towards 2 4 1 17
+8733.123472978521
+sending from pole:   0 0 1
+towards 2 0 1 17
+9727.342036606675
+sending from pole:   0 0 1
+towards 2 4 1 17
+9727.342036606675
+sending from pole:   0 0 1
+towards 2 0 1 17
+10769.537423734198
+sending from pole:   0 0 1
+towards 2 4 1 17
+10769.537423734198
+sending from pole:   0 0 1
+towards 2 0 1 17
+11859.170035505986
+sending from pole:   0 0 1
+towards 2 4 1 17
+11859.170035505986
+sending from pole:   0 0 1
+towards 2 0 1 17
+12995.735179864012
+sending from pole:   0 0 1
+towards 2 4 1 17
+12995.735179864012
+sending from pole:   0 0 1
+towards 2 0 1 17
+14178.75907006172
+sending from pole:   0 0 1
+towards 2 4 1 17
+14178.75907006172
+sending from pole:   0 0 1
+towards 2 0 1 17
+15407.795441232378
+sending from pole:   0 0 1
+towards 2 4 1 17
+15407.795441232378
+sending from pole:   0 0 1
+towards 2 0 1 17
+16682.422664691647
+sending from pole:   0 0 1
+towards 2 4 1 17
+16682.422664691647
+sending from pole:   0 0 1
+towards 2 0 1 17
+18002.241267395333
+sending from pole:   0 0 1
+towards 2 4 1 17
+18002.241267395333
+sending from pole:   0 0 1
+towards 2 0 1 17
+19366.871784318624
+sending from pole:   0 0 1
+towards 2 4 1 17
+19366.871784318624
+sending from pole:   0 0 1
+towards 2 0 1 17
+20775.95288677748
+sending from pole:   0 0 1
+towards 2 4 1 17
+20775.95288677748
+sending from pole:   0 0 1
+towards 2 0 1 17
+22229.13974131647
+sending from pole:   0 0 1
+towards 2 4 1 17
+22229.13974131647
+sending from pole:   0 0 1
+towards 2 0 1 17
+23726.102562469507
+sending from pole:   0 0 1
+towards 2 4 1 17
+23726.102562469507
+sending from pole:   0 0 1
+towards 2 0 1 17
+25266.525329739565
+sending from pole:   0 0 1
+towards 2 4 1 17
+25266.525329739565
+sending from pole:   0 0 1
+towards 2 0 1 17
+26850.10464423024
+sending from pole:   0 0 1
+towards 2 4 1 17
+26850.10464423024
+sending from pole:   0 0 1
+towards 2 0 1 17
+28476.54870482848
+sending from pole:   0 0 1
+towards 2 4 1 17
+28476.54870482848
+sending from pole:   0 0 1
+towards 2 0 1 17
+30145.5763869697
+sending from pole:   0 0 1
+towards 2 4 1 17
+30145.5763869697
+sending from pole:   0 0 1
+towards 2 0 1 17
+31856.916409823876
+sending from pole:   0 0 1
+towards 2 4 1 17
+31856.916409823876
+sending from pole:   0 0 1
+towards 2 0 1 17
+33610.306579833
+sending from pole:   0 0 1
+towards 2 4 1 17
+33610.306579833
+sending from pole:   0 0 1
+towards 2 0 1 17
+35405.493100351654
+sending from pole:   0 0 1
+towards 2 4 1 17
+35405.493100351654
+sending from pole:   0 0 1
+towards 2 0 1 17
+37242.229938444514
+sending from pole:   0 0 1
+towards 2 4 1 17
+37242.229938444514
+sending from pole:   0 0 1
+towards 2 0 1 17
+39120.2782412014
+sending from pole:   0 0 1
+towards 2 4 1 17
+39120.2782412014
+sending from pole:   0 0 1
+towards 2 0 1 17
+41039.405794751365
+sending from pole:   0 0 1
+towards 2 4 1 17
+41039.405794751365
+sending from pole:   0 0 1
+towards 2 0 1 17
+42999.386520044514
+sending from pole:   0 0 1
+towards 2 4 1 17
+42999.386520044514
+sending from pole:   0 0 1
+towards 2 0 1 17
+45000.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+45000.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+83.4281108190707
+sending from pole:   0 0 0
+towards 3 3 1 17
+142.04050711919507
+sending from pole:   0 0 0
+towards 3 3 1 17
+244.09119721685846
+sending from pole:   0 0 0
+towards 3 3 1 17
+426.5155988359876
+sending from pole:   0 0 0
+towards 3 3 1 17
+679.8324704577728
+sending from pole:   0 0 0
+towards 3 3 1 17
+999.1344279724518
+sending from pole:   0 0 0
+towards 3 3 1 17
+1381.0827890202543
+sending from pole:   0 0 0
+towards 3 3 1 17
+1823.16679835307
+sending from pole:   0 0 0
+towards 3 3 1 17
+2323.3878231049794
+sending from pole:   0 0 0
+towards 3 3 1 17
+2880.0944175958093
+sending from pole:   0 0 0
+towards 3 3 1 17
+3491.8853037431036
+sending from pole:   0 0 0
+towards 3 3 1 17
+4157.547541520334
+sending from pole:   0 0 0
+towards 3 3 1 17
+4876.014762220822
+sending from pole:   0 0 0
+towards 3 3 1 17
+5646.337670077708
+sending from pole:   0 0 0
+towards 3 3 1 17
+6467.662461169292
+sending from pole:   0 0 0
+towards 3 3 1 17
+7339.214575553163
+sending from pole:   0 0 0
+towards 3 3 1 17
+8260.286170065014
+sending from pole:   0 0 0
+towards 3 3 1 17
+9230.226263691491
+sending from pole:   0 0 0
+towards 3 3 1 17
+10248.432850753017
+sending from pole:   0 0 0
+towards 3 3 1 17
+11314.346494158739
+sending from pole:   0 0 0
+towards 3 3 1 17
+12427.445052592795
+sending from pole:   0 0 0
+towards 3 3 1 17
+13587.239290634865
+sending from pole:   0 0 0
+towards 3 3 1 17
+14793.269186312165
+sending from pole:   0 0 0
+towards 3 3 1 17
+16045.100796548353
+sending from pole:   0 0 0
+towards 3 3 1 17
+17342.323574060145
+sending from pole:   0 0 0
+towards 3 3 1 17
+18684.54805329549
+sending from pole:   0 0 0
+towards 3 3 1 17
+20071.40384080692
+sending from pole:   0 0 0
+towards 3 3 1 17
+21502.53785888271
+sending from pole:   0 0 0
+towards 3 3 1 17
+22977.612801401356
+sending from pole:   0 0 0
+towards 3 3 1 17
+24496.30576873584
+sending from pole:   0 0 0
+towards 3 3 1 17
+26058.307054597244
+sending from pole:   0 0 0
+towards 3 3 1 17
+27663.319062484057
+sending from pole:   0 0 0
+towards 3 3 1 17
+29311.05533320271
+sending from pole:   0 0 0
+towards 3 3 1 17
+31001.239667894373
+sending from pole:   0 0 0
+towards 3 3 1 17
+32733.605333452957
+sending from pole:   0 0 0
+towards 3 3 1 17
+34507.89433917569
+sending from pole:   0 0 0
+towards 3 3 1 17
+36323.856775049484
+sending from pole:   0 0 0
+towards 3 3 1 17
+38181.25020338083
+sending from pole:   0 0 0
+towards 3 3 1 17
+40079.83909654088
+sending from pole:   0 0 0
+towards 3 3 1 17
+42019.394314451434
+sending from pole:   0 0 0
+towards 3 3 1 17
+43999.6926161463
+sending from pole:   0 0 0
+towards 3 3 1 17
+46000.3073838537
+sending from pole:   0 0 1
+towards 3 3 1 17
+54.12200413073115
+sending from pole:   0 0 1
+towards 3 3 1 17
+112.73427850035053
+sending from pole:   0 0 1
+towards 3 3 1 17
+171.34679662026159
+sending from pole:   0 0 1
+towards 3 3 1 17
+316.83597174308693
+sending from pole:   0 0 1
+towards 3 3 1 17
+536.1960711513287
+sending from pole:   0 0 1
+towards 3 3 1 17
+823.4703079249178
+sending from pole:   0 0 1
+towards 3 3 1 17
+1174.8006775993763
+sending from pole:   0 0 1
+towards 3 3 1 17
+1587.3678019657734
+sending from pole:   0 0 1
+towards 3 3 1 17
+2058.969533364026
+sending from pole:   0 0 1
+towards 3 3 1 17
+2587.8107398435386
+sending from pole:   0 0 1
+towards 3 3 1 17
+3172.3836490855088
+sending from pole:   0 0 1
+towards 3 3 1 17
+3811.3934650294113
+sending from pole:   0 0 1
+towards 3 3 1 17
+4503.709092011895
+sending from pole:   0 0 1
+towards 3 3 1 17
+5248.3288770713925
+sending from pole:   0 0 1
+towards 3 3 1 17
+6044.35587083659
+sending from pole:   0 0 1
+towards 3 3 1 17
+6890.979404423106
+sending from pole:   0 0 1
+towards 3 3 1 17
+7787.461016791351
+sending from pole:   0 0 1
+towards 3 3 1 17
+8733.123472978521
+sending from pole:   0 0 1
+towards 3 3 1 17
+9727.342036606675
+sending from pole:   0 0 1
+towards 3 3 1 17
+10769.537423734198
+sending from pole:   0 0 1
+towards 3 3 1 17
+11859.170035505986
+sending from pole:   0 0 1
+towards 3 3 1 17
+12995.735179864012
+sending from pole:   0 0 1
+towards 3 3 1 17
+14178.75907006172
+sending from pole:   0 0 1
+towards 3 3 1 17
+15407.795441232378
+sending from pole:   0 0 1
+towards 3 3 1 17
+16682.422664691647
+sending from pole:   0 0 1
+towards 3 3 1 17
+18002.241267395333
+sending from pole:   0 0 1
+towards 3 3 1 17
+19366.871784318624
+sending from pole:   0 0 1
+towards 3 3 1 17
+20775.95288677748
+sending from pole:   0 0 1
+towards 3 3 1 17
+22229.13974131647
+sending from pole:   0 0 1
+towards 3 3 1 17
+23726.102562469507
+sending from pole:   0 0 1
+towards 3 3 1 17
+25266.525329739565
+sending from pole:   0 0 1
+towards 3 3 1 17
+26850.10464423024
+sending from pole:   0 0 1
+towards 3 3 1 17
+28476.54870482848
+sending from pole:   0 0 1
+towards 3 3 1 17
+30145.5763869697
+sending from pole:   0 0 1
+towards 3 3 1 17
+31856.916409823876
+sending from pole:   0 0 1
+towards 3 3 1 17
+33610.306579833
+sending from pole:   0 0 1
+towards 3 3 1 17
+35405.493100351654
+sending from pole:   0 0 1
+towards 3 3 1 17
+37242.229938444514
+sending from pole:   0 0 1
+towards 3 3 1 17
+39120.2782412014
+sending from pole:   0 0 1
+towards 3 3 1 17
+41039.405794751365
+sending from pole:   0 0 1
+towards 3 3 1 17
+42999.386520044514
+sending from pole:   0 0 1
+towards 3 3 1 17
+45000.0
 
      |========      Vertical Coordinate [m]      ========|
      |                                                   |
@@ -616,487 +1479,6 @@ myrank 0 dest rank 7 tag 0 imax 51 sendbuf (4284,)
 
 --- Vertical layer scheme = HYBRID
 --- e-folding height = 40000
-GRD input check yahoo
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 0 0 xyz values:
-5768244.771895789 -117733.35043606488 2702949.3887403808
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 0 1 xyz values:
-6131672.208271844 1730489.3457016577 -21138.664095229917
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 0 2 xyz values:
-3443030.2373841465 -222923.38872806245 5356145.277680252
-GRD_x, abs: 40592444288399.99
-i, j, l: 0 0 3 xyz values:
-4514401.051063925 3001200.340129743 3347450.3666160665
-GRD_x, abs: 40592444288400.01
-i, j, l: 0 0 4 xyz values:
-1894456.7323481007 5449545.171807425 2702949.38874026
-GRD_x, abs: 40592444288399.99
-i, j, l: 0 1 0 xyz values:
-5668094.802177002 -190496.5626157386 2903249.3281779364
-GRD_x, abs: 40592444288400.01
-i, j, l: 0 1 1 xyz values:
-6092225.44357262 1854843.817247886 191801.5815985055
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 1 2 xyz values:
-3250912.043427443 -222923.38872843172 5474880.851402726
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 1 3 xyz values:
-4352802.325609887 3022913.967243448 3536601.101228358
-GRD_x, abs: 40592444288400.01
-i, j, l: 0 1 4 xyz values:
-1932710.61680847 5331811.821370886 2903249.328177914
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 2 0 xyz values:
-5561285.1347351475 -208683.95947562487 3101774.1606428167
-GRD_x, abs: 40592444288399.99
-i, j, l: 0 2 1 xyz values:
-6043538.879526417 1975830.8370823907 405184.6533210245
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 2 2 xyz values:
-3054742.765420348 -222860.69547968532 5586709.589366746
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 2 3 xyz values:
-4184548.0107316365 3040252.090276602 3720063.0991759608
-GRD_x, abs: 40592444288400.01
-i, j, l: 0 2 4 xyz values:
-1917001.8567035487 5224609.576433734 3101774.1606429173
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 3 0 xyz values:
-5450067.588695367 -213539.5939545323 3292963.469105906
-GRD_x, abs: 40592444288400.01
-i, j, l: 0 3 1 xyz values:
-5985874.931903019 2092407.9003422153 619334.1316288979
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 3 2 xyz values:
-2854848.86567193 -222735.95498061168 5691455.959324518
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 3 3 xyz values:
-4009499.967972228 3054084.2790193753 3897296.9494096036
-GRD_x, abs: 40592444288400.0
-i, j, l: 0 3 4 xyz values:
-1887251.7277164056 5117334.930974014 3292963.4691056972
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 0 0 xyz values:
-5768244.771895789 -117733.35043606488 2702949.3887403808
-GRD_x, abs: 40592444288400.02
-i, j, l: 1 0 1 xyz values:
-6094980.898154737 1843413.5868065078 -213256.85805162534
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 0 2 xyz values:
-3539251.9482149296 -2.9788838141162442e-08 5297748.57231417
-GRD_x, abs: 40592444288400.016
-i, j, l: 1 0 3 xyz values:
-4542432.286432622 3160688.1983647277 3157341.179583297
-GRD_x, abs: 40592444288400.01
-i, j, l: 1 0 4 xyz values:
-1894456.7323481007 5449545.171807425 2702949.38874026
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 1 0 xyz values:
-5698592.407842459 -2.1479210570943267e-08 2849296.203921292
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 1 1 xyz values:
-6059390.297749978 1968815.254901647 -1.7841162254561514e-08
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 1 2 xyz values:
-3349548.5761556523 4.1655977478928356e-07 5419683.443188692
-GRD_x, abs: 40592444288399.99
-i, j, l: 1 1 3 xyz values:
-4384616.009672301 3185609.99999999 3349548.5761555093
-GRD_x, abs: 40592444288399.99
-i, j, l: 1 1 4 xyz values:
-1760961.8980398304 5419683.443188419 2849296.2039214666
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 2 0 xyz values:
-5606198.716918501 1.4700790077054309e-08 3027041.498694948
-GRD_x, abs: 40592444288400.016
-i, j, l: 1 2 1 xyz values:
-6014474.4471982615 2091186.9655516148 213256.85805199985
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 2 2 xyz values:
-3155648.7850175053 7.575904991074401e-09 5534828.365362159
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 2 3 xyz values:
-4220051.918514712 3205629.2275049044 3536601.1012279303
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 2 4 xyz values:
-1732410.6773707976 5331811.821370784 3027041.498695123
-GRD_x, abs: 40592444288399.984
-i, j, l: 1 3 0 xyz values:
-5500263.619902975 1.614704191478631e-07 3215516.1949478365
-GRD_x, abs: 40592444288399.984
-i, j, l: 1 3 1 xyz values:
-5960563.491337616 2209502.4793088078 426879.31322723365
-GRD_x, abs: 40592444288399.99
-i, j, l: 1 3 2 xyz values:
-2957879.2077592253 -1.808628624297345e-08 5642995.20473885
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 3 3 xyz values:
-4048530.2095815274 3221678.409078045 3717880.5331782927
-GRD_x, abs: 40592444288400.0
-i, j, l: 1 3 4 xyz values:
-1699674.9320922971 5231061.557050008 3215516.194947645
-GRD_x, abs: 40592444288399.984
-i, j, l: 2 0 0 xyz values:
-5848513.963649618 -9.74656828947547e-08 2527316.5028138864
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 0 1 xyz values:
-6050689.886764339 1953822.2998319631 -405184.6533212756
-GRD_x, abs: 40592444288399.99
-i, j, l: 2 0 2 xyz values:
-3630782.469498501 222860.69547964967 5230697.4733770145
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 0 3 xyz values:
-4563249.708044084 3315394.9788020155 2962659.7045509582
-GRD_x, abs: 40592444288400.01
-i, j, l: 2 0 4 xyz values:
-1807290.206606734 5562267.315772212 2527316.502813921
-GRD_x, abs: 40592444288399.99
-i, j, l: 2 1 0 xyz values:
-5768244.771895698 117733.35043610718 2702949.388740571
-GRD_x, abs: 40592444288399.99
-i, j, l: 2 1 1 xyz values:
-6018963.758497834 2080320.0993082088 -191801.5815990531
-GRD_x, abs: 40592444288399.99
-i, j, l: 2 1 2 xyz values:
-3443030.2373841885 222923.38872817328 5356145.27768022
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 1 3 xyz values:
-4409681.879337093 3343403.458626181 3157341.1795833176
-GRD_x, abs: 40592444288400.01
-i, j, l: 2 1 4 xyz values:
-1670514.5921124243 5522308.383986449 2702949.388740463
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 2 0 xyz values:
-5668094.802176997 190496.56261563423 2903249.328177953
-GRD_x, abs: 40592444288400.01
-i, j, l: 2 2 1 xyz values:
-5977783.137081165 2204111.206656399 21138.664095616372
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 2 2 xyz values:
-3250912.043427417 222923.38872813137 5474880.851402754
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 2 3 xyz values:
-4249337.784390517 3366028.6281600497 3347450.3666160707
-GRD_x, abs: 40592444288399.99
-i, j, l: 2 2 4 xyz values:
-1570364.6223935878 5449545.171807328 2903249.328178012
-GRD_x, abs: 40592444288400.01
-i, j, l: 2 3 0 xyz values:
-5561285.134735172 208683.9594754051 3101774.1606427887
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 3 1 xyz values:
-5927554.300051395 2324169.6715555894 234050.52053650675
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 3 2 xyz values:
-3054742.765420381 222860.69547964988 5586709.589366729
-GRD_x, abs: 40592444288399.984
-i, j, l: 2 3 3 xyz values:
-4081927.935994267 3384211.5845851954 3532339.24821908
-GRD_x, abs: 40592444288400.0
-i, j, l: 2 3 4 xyz values:
-1520061.3776927604 5353583.3562965365 3101774.1606428246
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 0 0 xyz values:
-5917157.566099923 125821.1390353295 2358783.514296784
-GRD_x, abs: 40592444288400.01
-i, j, l: 3 0 1 xyz values:
-5998880.674719699 2061536.8636941824 -596607.6587712303
-GRD_x, abs: 40592444288399.99
-i, j, l: 3 0 2 xyz values:
-3718297.4577981695 444916.4298581207 5154489.079838463
-GRD_x, abs: 40592444288399.99
-i, j, l: 3 0 3 xyz values:
-4576146.254956294 3465776.904849884 2764004.375441298
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 0 4 xyz values:
-1708839.232151999 5666432.131397976 2358783.514296884
-GRD_x, abs: 40592444288400.016
-i, j, l: 3 1 0 xyz values:
-5837018.92445295 244667.05028670243 2542005.5858479426
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 1 1 xyz values:
-5971018.14674982 2189173.5819657026 -383282.6732423502
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 1 2 xyz values:
-3532102.0359929884 445121.9543793935 5283802.223916377
-GRD_x, abs: 40592444288400.01
-i, j, l: 3 1 3 xyz values:
-4427173.55988964 3496778.9060228863 2960593.832562563
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 1 4 xyz values:
-1571045.8516461113 5626941.160341429 2542005.5858477172
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 2 0 xyz values:
-5738802.313553164 337657.7393383712 2746739.8030067855
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 2 1 xyz values:
-5933525.085482171 2314418.4798745075 -170855.05075697493
-GRD_x, abs: 40592444288399.99
-i, j, l: 3 2 2 xyz values:
-3341361.4018634977 445190.54539678246 5406436.316912103
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 2 3 xyz values:
-4271504.566753754 3521947.069148201 3153185.986699836
-GRD_x, abs: 40592444288399.99
-i, j, l: 3 2 4 xyz values:
-1452255.8489709725 5562267.315772137 2746739.8030069442
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 3 0 xyz values:
-5628892.70034928 395879.6032914109 2958258.0340552498
-GRD_x, abs: 40592444288400.01
-i, j, l: 3 3 1 xyz values:
-5886895.67268002 2436228.712010943 41149.60698179808
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 3 2 xyz values:
-3146372.329747588 445121.9543789724 5522196.292846587
-GRD_x, abs: 40592444288400.0
-i, j, l: 3 3 3 xyz values:
-4108795.8696277076 3542157.262893843 3341161.8810016806
-GRD_x, abs: 40592444288399.99
-i, j, l: 3 3 4 xyz values:
-1362919.6275424554 5475728.607336871 2958258.0340552004
-GRD_x, abs: 40592444288400.01
-i, j, l: 14 14 0 xyz values:
-4756653.929541515 2621662.522359408 3330701.6230568257
-GRD_x, abs: 40592444288399.99
-i, j, l: 14 14 1 xyz values:
-4322728.203697266 4680061.139182674 59100.75187657254
-GRD_x, abs: 40592444288400.01
-i, j, l: 14 14 2 xyz values:
-1571289.279252762 2681023.747364515 5561978.600765457
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 14 3 xyz values:
-2296783.7447038693 5124240.7576175155 3009881.289425804
-GRD_x, abs: 40592444288399.99
-i, j, l: 14 14 4 xyz values:
--1023462.3248281578 5333984.988376378 3330701.6230567377
-GRD_x, abs: 40592444288400.01
-i, j, l: 14 15 0 xyz values:
-4601327.296360409 2646293.421387567 3523827.8232753514
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 15 1 xyz values:
-4230728.7255298775 4757025.016095586 253163.45632244277
-GRD_x, abs: 40592444288399.99
-i, j, l: 14 15 2 xyz values:
-1333950.34192334 2665697.19541885 5630903.944840355
-GRD_x, abs: 40592444288400.016
-i, j, l: 14 15 3 xyz values:
-2101311.4349721717 5117334.930973985 3160667.2943998203
-GRD_x, abs: 40592444288399.99
-i, j, l: 14 15 4 xyz values:
--1094886.2711833003 5193871.948121461 3523827.8232756066
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 16 0 xyz values:
-4439872.869543977 2665697.1954187895 3711338.256346857
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 16 1 xyz values:
-4133685.516897082 4827531.03422142 447249.8735878819
-GRD_x, abs: 40592444288400.01
-i, j, l: 14 16 2 xyz values:
-1094031.2972620113 2646293.4213876883 5691455.9593245955
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 16 3 xyz values:
-1887251.7277164056 5117334.930974014 3292963.4691056972
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 16 4 xyz values:
--1163232.5186195048 5046315.759343929 3711338.25634679
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 17 0 xyz values:
-4272082.968139306 2681023.747364212 3892796.304432486
-GRD_x, abs: 40592444288400.016
-i, j, l: 14 17 1 xyz values:
-4031743.0267409226 4891474.245260592 641071.105789584
-GRD_x, abs: 40592444288400.016
-i, j, l: 14 17 2 xyz values:
-851829.7903903145 2621662.522359425 5744015.66114331
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 17 3 xyz values:
-1664966.7503893208 5124240.757617672 3400365.666581741
-GRD_x, abs: 40592444288400.0
-i, j, l: 14 17 4 xyz values:
--1229658.866738505 4891474.245260633 3892796.304432496
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 14 0 xyz values:
-4790797.816513678 2783951.812082658 3144886.782968419
-GRD_x, abs: 40592444288399.984
-i, j, l: 15 14 1 xyz values:
-4225162.970688481 4766286.127722892 -151521.31268966084
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 14 2 xyz values:
-1632769.4648066193 2869497.1271547633 5449081.977768885
-GRD_x, abs: 40592444288400.01
-i, j, l: 15 14 3 xyz values:
-2282959.0631844327 5249309.657981741 2797372.03797487
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 14 4 xyz values:
--1167257.570015438 5416607.903102383 3144886.7829685793
-GRD_x, abs: 40592444288400.01
-i, j, l: 15 15 0 xyz values:
-4638479.496749854 2813110.2949533397 3341161.881001692
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 15 1 xyz values:
-4136141.998713849 4845934.416056481 41149.60698156687
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 15 2 xyz values:
-1395618.6557816064 2854827.658424667 5522196.292846522
-GRD_x, abs: 40592444288400.01
-i, j, l: 15 15 3 xyz values:
-2115927.3802999286 5231061.557050009 2958258.0340549443
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 15 4 xyz values:
--1242057.8845168273 5280755.039277113 3341161.88100172
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 16 0 xyz values:
-4479961.582077676 2836365.2703766124 3532339.248219158
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 16 1 xyz values:
-4042131.7249047705 4919231.216435652 234050.52053648676
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 16 2 xyz values:
-1155920.5446206685 2836365.270377148 5586709.589366734
-GRD_x, abs: 40592444288400.01
-i, j, l: 15 16 3 xyz values:
-1917001.8567035487 5224609.576433734 3101774.1606429173
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 16 4 xyz values:
--1313159.4099765422 5137181.726188137 3532339.248219051
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 17 0 xyz values:
-4315062.881362207 2854827.6584246824 3717880.533177946
-GRD_x, abs: 40592444288400.01
-i, j, l: 15 17 1 xyz values:
-3943277.145591137 4986058.934007655 426879.3132268978
-GRD_x, abs: 40592444288400.01
-i, j, l: 15 17 2 xyz values:
-914034.9425060359 2813110.294953314 5642995.204738852
-GRD_x, abs: 40592444288400.0
-i, j, l: 15 17 3 xyz values:
-1699674.9320922971 5231061.557050008 3215516.194947645
-GRD_x, abs: 40592444288399.99
-i, j, l: 15 17 4 xyz values:
--1381674.6853067935 4986058.934007613 3717880.533178176
-GRD_x, abs: 40592444288400.016
-i, j, l: 16 14 0 xyz values:
-4818341.390252005 2940670.67122459 2954401.2149306843
-GRD_x, abs: 40592444288399.99
-i, j, l: 16 14 1 xyz values:
-4120963.884989336 4845488.675776489 -362409.2161292219
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 14 2 xyz values:
-1692745.4661186785 3054084.2790196384 5329129.975144138
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 14 3 xyz values:
-2242077.2969097923 5375130.797016589 2583312.3307191264
-GRD_x, abs: 40592444288399.99
-i, j, l: 16 14 4 xyz values:
--1307794.6298582733 5491232.189202128 2954401.214930745
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 15 0 xyz values:
-4669538.212837045 2974100.7549398527 3153185.9866999295
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 15 1 xyz values:
-4034702.864682645 4927923.054771907 -170855.05075700273
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 15 2 xyz values:
-1455938.8267168303 3040252.090276803 5406436.316912089
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 15 3 xyz values:
-2094519.0355216884 5353583.356296497 2746739.803006907
-GRD_x, abs: 40592444288400.01
-i, j, l: 16 15 4 xyz values:
--1385571.239453939 5360042.421667786 3153185.986699772
-GRD_x, abs: 40592444288399.99
-i, j, l: 16 16 0 xyz values:
-4514401.051063925 3001200.340129743 3347450.3666160665
-GRD_x, abs: 40592444288400.01
-i, j, l: 16 16 1 xyz values:
-3943470.90377577 5004101.785171258 21138.664095433505
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 16 2 xyz values:
-1216599.8101221425 3022913.9672432938 5474880.85140272
-GRD_x, abs: 40592444288400.01
-i, j, l: 16 16 3 xyz values:
-1932710.61680847 5331811.821370886 2903249.328177914
-GRD_x, abs: 40592444288400.02
-i, j, l: 16 16 4 xyz values:
--1459284.4959847874 5220872.44540806 3347450.366615957
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 17 0 xyz values:
-4352802.325609887 3022913.967243448 3536601.101228358
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 17 1 xyz values:
-3847411.806797324 5073892.804327892 213256.85805193702
-GRD_x, abs: 40592444288399.99
-i, j, l: 16 17 2 xyz values:
-975149.1028487559 3001200.340129798 5534828.365362204
-GRD_x, abs: 40592444288400.0
-i, j, l: 16 17 3 xyz values:
-1732410.6773707976 5331811.821370784 3027041.498695123
-GRD_x, abs: 40592444288400.01
-i, j, l: 16 17 4 xyz values:
--1529872.1349781197 5073892.804327759 3536601.1012281952
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 14 0 xyz values:
-4838533.899973826 3092574.4393708776 2759894.4407629045
-GRD_x, abs: 40592444288399.99
-i, j, l: 17 14 1 xyz values:
-4010898.8790092496 4916860.564148212 -574122.5160943138
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 14 2 xyz values:
-1751128.008834411 3234510.4447436957 5202301.141602586
-GRD_x, abs: 40592444288400.01
-i, j, l: 17 14 3 xyz values:
-2176117.4361247583 5495613.469023372 2378064.2951111966
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 14 4 xyz values:
--1446023.8697400817 5557377.253020379 2759894.4407628328
-GRD_x, abs: 40592444288399.99
-i, j, l: 17 15 0 xyz values:
-4693706.231670134 3129928.155369728 2960593.8325621085
-GRD_x, abs: 40592444288400.01
-i, j, l: 17 15 1 xyz values:
-3927173.881496469 5002283.876919007 -383282.6732427589
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 15 2 xyz values:
-1514815.6902466617 3221678.40907794 5283802.223916369
-GRD_x, abs: 40592444288399.99
-i, j, l: 17 15 3 xyz values:
-2036430.2366422375 5475728.607336875 2542005.5858478756
-GRD_x, abs: 40592444288399.99
-i, j, l: 17 15 4 xyz values:
--1526303.5755106679 5431180.888386658 2960593.8325624564
-GRD_x, abs: 40592444288400.016
-i, j, l: 17 16 0 xyz values:
-4542432.286432622 3160688.1983647277 3157341.179583297
-GRD_x, abs: 40592444288400.01
-i, j, l: 17 16 1 xyz values:
-3838464.076329509 5081520.439437802 -191801.58159855913
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 16 2 xyz values:
-1275967.5969831191 3205629.2275047284 5356145.277680261
-GRD_x, abs: 40592444288400.01
-i, j, l: 17 16 3 xyz values:
-1894456.7323481007 5449545.171807425 2702949.38874026
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 16 4 xyz values:
--1602304.334726898 5296816.1930562705 3157341.179583269
-GRD_x, abs: 40592444288399.99
-i, j, l: 17 17 0 xyz values:
-4384616.009672301 3185609.99999999 3349548.5761555093
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 17 1 xyz values:
-3744909.15511091 5154425.25490151 -1.4272929803665654e-07
-GRD_x, abs: 40592444288400.0
-i, j, l: 17 17 2 xyz values:
-1035067.4335165259 3185609.999999975 5419683.443188695
-GRD_x, abs: 40592444288399.99
-i, j, l: 17 17 3 xyz values:
-1760961.8980398304 5419683.443188419 2849296.2039214666
-GRD_x, abs: 40592444288400.01
-i, j, l: 17 17 4 xyz values:
--1674774.2880778282 5154425.254901509 3349548.576155737
 +++ Module[gmtr]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}
@@ -1109,6 +1491,102 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (400,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (272,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (272,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (408,)
+sending from pole:   0 0 0
+towards 1 1 1 17
+31332722622.518204
+sending from pole:   0 0 1
+towards 1 1 1 17
+3.191551567501893e-11
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+1.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+-1.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 7
+towards 1 1 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 0
+towards 2 0 1 17
+31332722622.518204
+sending from pole:   0 0 0
+towards 2 4 1 17
+31332722622.518204
+sending from pole:   0 0 1
+towards 2 0 1 17
+3.191551567501893e-11
+sending from pole:   0 0 1
+towards 2 4 1 17
+3.191551567501893e-11
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+1.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+1.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+-1.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+-1.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 7
+towards 2 0 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 7
+towards 2 4 1 17
+-2.809405756262126e-15
+sending from pole:   0 0 0
+towards 3 3 1 17
+31332722622.518204
+sending from pole:   0 0 1
+towards 3 3 1 17
+3.191551567501893e-11
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+1.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+-1.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 7
+towards 3 3 1 17
+-2.809405756262126e-15
 *** setup metrics for triangle mesh
 *** setup metrics for cell arcs
 *** Diagnose grid property
@@ -1146,6 +1624,3030 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (12600,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (8568,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (8568,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (12852,)
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 1
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 1
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 3
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 1
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
 +++ Module[Time]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}
@@ -1197,7 +4699,41 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 
 *** read restart/initial data
 *** reading json file
+DIAGGER1!
+i=0to4, j=17, k=0, l=0, cnt=1 [250.04918545 251.81438227 253.83801351 256.12499523]
+i=0to4, j=17, k=1, l=0, cnt=1 [249.82818287 251.59743575 253.62565708 255.91774779]
+i=0to4, j=17, k=0, l=2, cnt=1 [226.52768116 226.52768116 226.53402566 226.58461353]
+i=0to4, j=17, k=1, l=2, cnt=1 [226.24952875 226.24952875 226.25588695 226.30658663]
+COPIED this? 226.52768116244243
+COPIED this? 226.24952875331866
 kmax, vmax 42 7
+Copy NPLorSPL: var_pl[0,0,0,0] = 99999.99999999999
+Copy NPLorSPL: var_pl[0,0,0,1] = 226.52768116244243
+Copy NPLorSPL: var_pl[0,0,0,2] = -0.0
+Copy NPLorSPL: var_pl[0,0,0,3] = 1.2652506812701683e-31
+Copy NPLorSPL: var_pl[0,0,0,4] = 0.0
+Copy NPLorSPL: var_pl[0,0,0,5] = 0.0
+Copy NPLorSPL: var_pl[0,0,0,6] = 0.0
+Copy NPLorSPL: var_pl[0,1,0,0] = 99552.82770433184
+Copy NPLorSPL: var_pl[0,1,0,1] = 226.24952875331866
+Copy NPLorSPL: var_pl[0,1,0,2] = -0.0
+Copy NPLorSPL: var_pl[0,1,0,3] = 1.297023592595726e-31
+Copy NPLorSPL: var_pl[0,1,0,4] = 0.0
+Copy NPLorSPL: var_pl[0,1,0,5] = 0.0
+Copy NPLorSPL: var_pl[0,1,0,6] = 0.0
+Copy NPLorSPL: var_pl[0,2,0,0] = 98001.8053086174
+Copy NPLorSPL: var_pl[0,2,0,1] = 225.3923240217425
+Copy NPLorSPL: var_pl[0,2,0,2] = -0.0
+Copy NPLorSPL: var_pl[0,2,0,3] = 1.4080859663645897e-31
+Copy NPLorSPL: var_pl[0,2,0,4] = 0.0
+Copy NPLorSPL: var_pl[0,2,0,5] = 0.0
+Copy NPLorSPL: var_pl[0,2,0,6] = 0.0
+DIAGGER1.3!
+i=0to4, j=17, k=0, l=0, cnt=1 [250.04918545 251.81438227 253.83801351 256.12499523]
+i=0to4, j=17, k=0, l=0, cnt=1 [229.37111627 229.46759792 229.57999956 229.70940723]
+i=0to4, j=17, k=0, l=0, cnt=1 [224.23846701 224.32115025 224.41701171 224.52675931]
+i=0to4, j=17, k=0, l=0, cnt=1 [218.88869571 218.95131319 219.02439214 219.10864059]
+i=0to4, j=17, k=0, l=0, cnt=1 [262.51845745 262.55842173 262.60408676 262.65549763]
 myrank 0 source rank 4 tag 4 imax 34 recv_slices (9996,)
 myrank 0 source rank 3 tag 3 imax 34 recv_slices (9996,)
 myrank 0 source rank 7 tag 7 imax 51 recv_slices (14994,)
@@ -1206,32 +4742,3586 @@ myrank 0 dest rank 1 tag 0 imax 50 sendbuf (14700,)
 myrank 0 dest rank 3 tag 0 imax 34 sendbuf (9996,)
 myrank 0 dest rank 4 tag 0 imax 34 sendbuf (9996,)
 myrank 0 dest rank 7 tag 0 imax 51 sendbuf (14994,)
+sending from pole:   0 0 0
+towards 1 1 1 17
+99999.99999999999
+sending from pole:   0 0 0
+towards 1 1 1 17
+99552.82770433184
+sending from pole:   0 0 0
+towards 1 1 1 17
+98001.8053086174
+sending from pole:   0 0 0
+towards 1 1 1 17
+95278.16582665304
+sending from pole:   0 0 0
+towards 1 1 1 17
+91609.74815082278
+sending from pole:   0 0 0
+towards 1 1 1 17
+87178.19066442507
+sending from pole:   0 0 0
+towards 1 1 1 17
+82167.49207330868
+sending from pole:   0 0 0
+towards 1 1 1 17
+76760.07709653287
+sending from pole:   0 0 0
+towards 1 1 1 17
+71125.77285998434
+sending from pole:   0 0 0
+towards 1 1 1 17
+65411.139207365144
+sending from pole:   0 0 0
+towards 1 1 1 17
+59733.93438892127
+sending from pole:   0 0 0
+towards 1 1 1 17
+54183.28976882569
+sending from pole:   0 0 0
+towards 1 1 1 17
+48823.65535020637
+sending from pole:   0 0 0
+towards 1 1 1 17
+43700.17898499516
+sending from pole:   0 0 0
+towards 1 1 1 17
+38843.896412384645
+sending from pole:   0 0 0
+towards 1 1 1 17
+34275.94981899771
+sending from pole:   0 0 0
+towards 1 1 1 17
+30010.63206283975
+sending from pole:   0 0 0
+towards 1 1 1 17
+26057.358111696823
+sending from pole:   0 0 0
+towards 1 1 1 17
+22421.785373171395
+sending from pole:   0 0 0
+towards 1 1 1 17
+19106.325941540614
+sending from pole:   0 0 0
+towards 1 1 1 17
+16110.42402142643
+sending from pole:   0 0 0
+towards 1 1 1 17
+13432.279528972193
+sending from pole:   0 0 0
+towards 1 1 1 17
+11073.690776336383
+sending from pole:   0 0 0
+towards 1 1 1 17
+9039.27395355178
+sending from pole:   0 0 0
+towards 1 1 1 17
+7325.673391365457
+sending from pole:   0 0 0
+towards 1 1 1 17
+5912.599977652652
+sending from pole:   0 0 0
+towards 1 1 1 17
+4764.209957885661
+sending from pole:   0 0 0
+towards 1 1 1 17
+3837.949230769837
+sending from pole:   0 0 0
+towards 1 1 1 17
+3092.6489452662217
+sending from pole:   0 0 0
+towards 1 1 1 17
+2492.5308709727587
+sending from pole:   0 0 0
+towards 1 1 1 17
+2008.227121129466
+sending from pole:   0 0 0
+towards 1 1 1 17
+1616.3581888922379
+sending from pole:   0 0 0
+towards 1 1 1 17
+1298.5704183738162
+sending from pole:   0 0 0
+towards 1 1 1 17
+1040.4951789527277
+sending from pole:   0 0 0
+towards 1 1 1 17
+830.8344257041405
+sending from pole:   0 0 0
+towards 1 1 1 17
+660.6305683460492
+sending from pole:   0 0 0
+towards 1 1 1 17
+522.7106106199385
+sending from pole:   0 0 0
+towards 1 1 1 17
+411.2723183785971
+sending from pole:   0 0 0
+towards 1 1 1 17
+321.57858222715663
+sending from pole:   0 0 0
+towards 1 1 1 17
+249.73153780261737
+sending from pole:   0 0 0
+towards 1 1 1 17
+192.50455320068642
+sending from pole:   0 0 0
+towards 1 1 1 17
+147.6971597129731
+sending from pole:   0 0 1
+towards 1 1 1 17
+226.52768116244243
+sending from pole:   0 0 1
+towards 1 1 1 17
+226.24952875331866
+sending from pole:   0 0 1
+towards 1 1 1 17
+225.3923240217425
+sending from pole:   0 0 1
+towards 1 1 1 17
+224.2553572992258
+sending from pole:   0 0 1
+towards 1 1 1 17
+223.39765104730793
+sending from pole:   0 0 1
+towards 1 1 1 17
+223.26491785947562
+sending from pole:   0 0 1
+towards 1 1 1 17
+224.10996172510968
+sending from pole:   0 0 1
+towards 1 1 1 17
+225.9509671663306
+sending from pole:   0 0 1
+towards 1 1 1 17
+228.5905701127893
+sending from pole:   0 0 1
+towards 1 1 1 17
+231.68449305683197
+sending from pole:   0 0 1
+towards 1 1 1 17
+234.82989417552275
+sending from pole:   0 0 1
+towards 1 1 1 17
+237.64316718466748
+sending from pole:   0 0 1
+towards 1 1 1 17
+239.81066340849486
+sending from pole:   0 0 1
+towards 1 1 1 17
+241.110922573872
+sending from pole:   0 0 1
+towards 1 1 1 17
+241.4154784220438
+sending from pole:   0 0 1
+towards 1 1 1 17
+240.67704343759962
+sending from pole:   0 0 1
+towards 1 1 1 17
+238.91213038056696
+sending from pole:   0 0 1
+towards 1 1 1 17
+236.18265912402438
+sending from pole:   0 0 1
+towards 1 1 1 17
+232.57905758592952
+sending from pole:   0 0 1
+towards 1 1 1 17
+228.206053800265
+sending from pole:   0 0 1
+towards 1 1 1 17
+223.21223252695043
+sending from pole:   0 0 1
+towards 1 1 1 17
+218.15439479601966
+sending from pole:   0 0 1
+towards 1 1 1 17
+214.23337950161013
+sending from pole:   0 0 1
+towards 1 1 1 17
+212.7499610926522
+sending from pole:   0 0 1
+towards 1 1 1 17
+214.37961849902285
+sending from pole:   0 0 1
+towards 1 1 1 17
+218.88640069356015
+sending from pole:   0 0 1
+towards 1 1 1 17
+225.39547574223283
+sending from pole:   0 0 1
+towards 1 1 1 17
+232.86800168797396
+sending from pole:   0 0 1
+towards 1 1 1 17
+240.42676798787005
+sending from pole:   0 0 1
+towards 1 1 1 17
+247.46307821250718
+sending from pole:   0 0 1
+towards 1 1 1 17
+253.61461766308867
+sending from pole:   0 0 1
+towards 1 1 1 17
+258.702445338115
+sending from pole:   0 0 1
+towards 1 1 1 17
+262.6701773264712
+sending from pole:   0 0 1
+towards 1 1 1 17
+265.53782868129014
+sending from pole:   0 0 1
+towards 1 1 1 17
+267.37014069153975
+sending from pole:   0 0 1
+towards 1 1 1 17
+268.25589307448115
+sending from pole:   0 0 1
+towards 1 1 1 17
+268.2947491912495
+sending from pole:   0 0 1
+towards 1 1 1 17
+267.5890445246725
+sending from pole:   0 0 1
+towards 1 1 1 17
+266.23876116932325
+sending from pole:   0 0 1
+towards 1 1 1 17
+264.3385469902313
+sending from pole:   0 0 1
+towards 1 1 1 17
+261.9760512711238
+sending from pole:   0 0 1
+towards 1 1 1 17
+259.25992991039953
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 2
+towards 1 1 1 17
+-0.0
+sending from pole:   0 0 3
+towards 1 1 1 17
+1.2652506812701683e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+1.297023592595726e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+1.4080859663645897e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+1.607294468461756e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+1.8822487188783262e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+2.2201644878951732e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+2.603746462578173e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+3.011700180887295e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+3.4213594142772443e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+3.811869942383396e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.166624871482489e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.474375337302809e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.729156216197821e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.929497396974354e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.077369938382503e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.177150886168935e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.234733740841454e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.256814564482273e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.250339815198294e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.222089760635311e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.178375184403088e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.124875251840855e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.066676564276779e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+5.008276742292964e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.953284908719625e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.9040224032821186e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.861448017140844e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.825490804800964e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.795519492153649e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.7707065740868895e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.750230468370593e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.733359891021572e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.719475174116713e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.7080623053790525e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.698697950420061e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.6910334069841895e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.684780398663641e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.679699421400509e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.675590508042775e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.6722860129092355e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.669644988847924e-31
+sending from pole:   0 0 3
+towards 1 1 1 17
+4.667567206829448e-31
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 4
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 5
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 6
+towards 1 1 1 17
+0.0
+sending from pole:   0 0 0
+towards 2 0 1 17
+99999.99999999999
+sending from pole:   0 0 0
+towards 2 4 1 17
+99999.99999999999
+sending from pole:   0 0 0
+towards 2 0 1 17
+99552.82770433184
+sending from pole:   0 0 0
+towards 2 4 1 17
+99552.82770433184
+sending from pole:   0 0 0
+towards 2 0 1 17
+98001.8053086174
+sending from pole:   0 0 0
+towards 2 4 1 17
+98001.8053086174
+sending from pole:   0 0 0
+towards 2 0 1 17
+95278.16582665304
+sending from pole:   0 0 0
+towards 2 4 1 17
+95278.16582665304
+sending from pole:   0 0 0
+towards 2 0 1 17
+91609.74815082278
+sending from pole:   0 0 0
+towards 2 4 1 17
+91609.74815082278
+sending from pole:   0 0 0
+towards 2 0 1 17
+87178.19066442507
+sending from pole:   0 0 0
+towards 2 4 1 17
+87178.19066442507
+sending from pole:   0 0 0
+towards 2 0 1 17
+82167.49207330868
+sending from pole:   0 0 0
+towards 2 4 1 17
+82167.49207330868
+sending from pole:   0 0 0
+towards 2 0 1 17
+76760.07709653287
+sending from pole:   0 0 0
+towards 2 4 1 17
+76760.07709653287
+sending from pole:   0 0 0
+towards 2 0 1 17
+71125.77285998434
+sending from pole:   0 0 0
+towards 2 4 1 17
+71125.77285998434
+sending from pole:   0 0 0
+towards 2 0 1 17
+65411.139207365144
+sending from pole:   0 0 0
+towards 2 4 1 17
+65411.139207365144
+sending from pole:   0 0 0
+towards 2 0 1 17
+59733.93438892127
+sending from pole:   0 0 0
+towards 2 4 1 17
+59733.93438892127
+sending from pole:   0 0 0
+towards 2 0 1 17
+54183.28976882569
+sending from pole:   0 0 0
+towards 2 4 1 17
+54183.28976882569
+sending from pole:   0 0 0
+towards 2 0 1 17
+48823.65535020637
+sending from pole:   0 0 0
+towards 2 4 1 17
+48823.65535020637
+sending from pole:   0 0 0
+towards 2 0 1 17
+43700.17898499516
+sending from pole:   0 0 0
+towards 2 4 1 17
+43700.17898499516
+sending from pole:   0 0 0
+towards 2 0 1 17
+38843.896412384645
+sending from pole:   0 0 0
+towards 2 4 1 17
+38843.896412384645
+sending from pole:   0 0 0
+towards 2 0 1 17
+34275.94981899771
+sending from pole:   0 0 0
+towards 2 4 1 17
+34275.94981899771
+sending from pole:   0 0 0
+towards 2 0 1 17
+30010.63206283975
+sending from pole:   0 0 0
+towards 2 4 1 17
+30010.63206283975
+sending from pole:   0 0 0
+towards 2 0 1 17
+26057.358111696823
+sending from pole:   0 0 0
+towards 2 4 1 17
+26057.358111696823
+sending from pole:   0 0 0
+towards 2 0 1 17
+22421.785373171395
+sending from pole:   0 0 0
+towards 2 4 1 17
+22421.785373171395
+sending from pole:   0 0 0
+towards 2 0 1 17
+19106.325941540614
+sending from pole:   0 0 0
+towards 2 4 1 17
+19106.325941540614
+sending from pole:   0 0 0
+towards 2 0 1 17
+16110.42402142643
+sending from pole:   0 0 0
+towards 2 4 1 17
+16110.42402142643
+sending from pole:   0 0 0
+towards 2 0 1 17
+13432.279528972193
+sending from pole:   0 0 0
+towards 2 4 1 17
+13432.279528972193
+sending from pole:   0 0 0
+towards 2 0 1 17
+11073.690776336383
+sending from pole:   0 0 0
+towards 2 4 1 17
+11073.690776336383
+sending from pole:   0 0 0
+towards 2 0 1 17
+9039.27395355178
+sending from pole:   0 0 0
+towards 2 4 1 17
+9039.27395355178
+sending from pole:   0 0 0
+towards 2 0 1 17
+7325.673391365457
+sending from pole:   0 0 0
+towards 2 4 1 17
+7325.673391365457
+sending from pole:   0 0 0
+towards 2 0 1 17
+5912.599977652652
+sending from pole:   0 0 0
+towards 2 4 1 17
+5912.599977652652
+sending from pole:   0 0 0
+towards 2 0 1 17
+4764.209957885661
+sending from pole:   0 0 0
+towards 2 4 1 17
+4764.209957885661
+sending from pole:   0 0 0
+towards 2 0 1 17
+3837.949230769837
+sending from pole:   0 0 0
+towards 2 4 1 17
+3837.949230769837
+sending from pole:   0 0 0
+towards 2 0 1 17
+3092.6489452662217
+sending from pole:   0 0 0
+towards 2 4 1 17
+3092.6489452662217
+sending from pole:   0 0 0
+towards 2 0 1 17
+2492.5308709727587
+sending from pole:   0 0 0
+towards 2 4 1 17
+2492.5308709727587
+sending from pole:   0 0 0
+towards 2 0 1 17
+2008.227121129466
+sending from pole:   0 0 0
+towards 2 4 1 17
+2008.227121129466
+sending from pole:   0 0 0
+towards 2 0 1 17
+1616.3581888922379
+sending from pole:   0 0 0
+towards 2 4 1 17
+1616.3581888922379
+sending from pole:   0 0 0
+towards 2 0 1 17
+1298.5704183738162
+sending from pole:   0 0 0
+towards 2 4 1 17
+1298.5704183738162
+sending from pole:   0 0 0
+towards 2 0 1 17
+1040.4951789527277
+sending from pole:   0 0 0
+towards 2 4 1 17
+1040.4951789527277
+sending from pole:   0 0 0
+towards 2 0 1 17
+830.8344257041405
+sending from pole:   0 0 0
+towards 2 4 1 17
+830.8344257041405
+sending from pole:   0 0 0
+towards 2 0 1 17
+660.6305683460492
+sending from pole:   0 0 0
+towards 2 4 1 17
+660.6305683460492
+sending from pole:   0 0 0
+towards 2 0 1 17
+522.7106106199385
+sending from pole:   0 0 0
+towards 2 4 1 17
+522.7106106199385
+sending from pole:   0 0 0
+towards 2 0 1 17
+411.2723183785971
+sending from pole:   0 0 0
+towards 2 4 1 17
+411.2723183785971
+sending from pole:   0 0 0
+towards 2 0 1 17
+321.57858222715663
+sending from pole:   0 0 0
+towards 2 4 1 17
+321.57858222715663
+sending from pole:   0 0 0
+towards 2 0 1 17
+249.73153780261737
+sending from pole:   0 0 0
+towards 2 4 1 17
+249.73153780261737
+sending from pole:   0 0 0
+towards 2 0 1 17
+192.50455320068642
+sending from pole:   0 0 0
+towards 2 4 1 17
+192.50455320068642
+sending from pole:   0 0 0
+towards 2 0 1 17
+147.6971597129731
+sending from pole:   0 0 0
+towards 2 4 1 17
+147.6971597129731
+sending from pole:   0 0 1
+towards 2 0 1 17
+226.52768116244243
+sending from pole:   0 0 1
+towards 2 4 1 17
+226.52768116244243
+sending from pole:   0 0 1
+towards 2 0 1 17
+226.24952875331866
+sending from pole:   0 0 1
+towards 2 4 1 17
+226.24952875331866
+sending from pole:   0 0 1
+towards 2 0 1 17
+225.3923240217425
+sending from pole:   0 0 1
+towards 2 4 1 17
+225.3923240217425
+sending from pole:   0 0 1
+towards 2 0 1 17
+224.2553572992258
+sending from pole:   0 0 1
+towards 2 4 1 17
+224.2553572992258
+sending from pole:   0 0 1
+towards 2 0 1 17
+223.39765104730793
+sending from pole:   0 0 1
+towards 2 4 1 17
+223.39765104730793
+sending from pole:   0 0 1
+towards 2 0 1 17
+223.26491785947562
+sending from pole:   0 0 1
+towards 2 4 1 17
+223.26491785947562
+sending from pole:   0 0 1
+towards 2 0 1 17
+224.10996172510968
+sending from pole:   0 0 1
+towards 2 4 1 17
+224.10996172510968
+sending from pole:   0 0 1
+towards 2 0 1 17
+225.9509671663306
+sending from pole:   0 0 1
+towards 2 4 1 17
+225.9509671663306
+sending from pole:   0 0 1
+towards 2 0 1 17
+228.5905701127893
+sending from pole:   0 0 1
+towards 2 4 1 17
+228.5905701127893
+sending from pole:   0 0 1
+towards 2 0 1 17
+231.68449305683197
+sending from pole:   0 0 1
+towards 2 4 1 17
+231.68449305683197
+sending from pole:   0 0 1
+towards 2 0 1 17
+234.82989417552275
+sending from pole:   0 0 1
+towards 2 4 1 17
+234.82989417552275
+sending from pole:   0 0 1
+towards 2 0 1 17
+237.64316718466748
+sending from pole:   0 0 1
+towards 2 4 1 17
+237.64316718466748
+sending from pole:   0 0 1
+towards 2 0 1 17
+239.81066340849486
+sending from pole:   0 0 1
+towards 2 4 1 17
+239.81066340849486
+sending from pole:   0 0 1
+towards 2 0 1 17
+241.110922573872
+sending from pole:   0 0 1
+towards 2 4 1 17
+241.110922573872
+sending from pole:   0 0 1
+towards 2 0 1 17
+241.4154784220438
+sending from pole:   0 0 1
+towards 2 4 1 17
+241.4154784220438
+sending from pole:   0 0 1
+towards 2 0 1 17
+240.67704343759962
+sending from pole:   0 0 1
+towards 2 4 1 17
+240.67704343759962
+sending from pole:   0 0 1
+towards 2 0 1 17
+238.91213038056696
+sending from pole:   0 0 1
+towards 2 4 1 17
+238.91213038056696
+sending from pole:   0 0 1
+towards 2 0 1 17
+236.18265912402438
+sending from pole:   0 0 1
+towards 2 4 1 17
+236.18265912402438
+sending from pole:   0 0 1
+towards 2 0 1 17
+232.57905758592952
+sending from pole:   0 0 1
+towards 2 4 1 17
+232.57905758592952
+sending from pole:   0 0 1
+towards 2 0 1 17
+228.206053800265
+sending from pole:   0 0 1
+towards 2 4 1 17
+228.206053800265
+sending from pole:   0 0 1
+towards 2 0 1 17
+223.21223252695043
+sending from pole:   0 0 1
+towards 2 4 1 17
+223.21223252695043
+sending from pole:   0 0 1
+towards 2 0 1 17
+218.15439479601966
+sending from pole:   0 0 1
+towards 2 4 1 17
+218.15439479601966
+sending from pole:   0 0 1
+towards 2 0 1 17
+214.23337950161013
+sending from pole:   0 0 1
+towards 2 4 1 17
+214.23337950161013
+sending from pole:   0 0 1
+towards 2 0 1 17
+212.7499610926522
+sending from pole:   0 0 1
+towards 2 4 1 17
+212.7499610926522
+sending from pole:   0 0 1
+towards 2 0 1 17
+214.37961849902285
+sending from pole:   0 0 1
+towards 2 4 1 17
+214.37961849902285
+sending from pole:   0 0 1
+towards 2 0 1 17
+218.88640069356015
+sending from pole:   0 0 1
+towards 2 4 1 17
+218.88640069356015
+sending from pole:   0 0 1
+towards 2 0 1 17
+225.39547574223283
+sending from pole:   0 0 1
+towards 2 4 1 17
+225.39547574223283
+sending from pole:   0 0 1
+towards 2 0 1 17
+232.86800168797396
+sending from pole:   0 0 1
+towards 2 4 1 17
+232.86800168797396
+sending from pole:   0 0 1
+towards 2 0 1 17
+240.42676798787005
+sending from pole:   0 0 1
+towards 2 4 1 17
+240.42676798787005
+sending from pole:   0 0 1
+towards 2 0 1 17
+247.46307821250718
+sending from pole:   0 0 1
+towards 2 4 1 17
+247.46307821250718
+sending from pole:   0 0 1
+towards 2 0 1 17
+253.61461766308867
+sending from pole:   0 0 1
+towards 2 4 1 17
+253.61461766308867
+sending from pole:   0 0 1
+towards 2 0 1 17
+258.702445338115
+sending from pole:   0 0 1
+towards 2 4 1 17
+258.702445338115
+sending from pole:   0 0 1
+towards 2 0 1 17
+262.6701773264712
+sending from pole:   0 0 1
+towards 2 4 1 17
+262.6701773264712
+sending from pole:   0 0 1
+towards 2 0 1 17
+265.53782868129014
+sending from pole:   0 0 1
+towards 2 4 1 17
+265.53782868129014
+sending from pole:   0 0 1
+towards 2 0 1 17
+267.37014069153975
+sending from pole:   0 0 1
+towards 2 4 1 17
+267.37014069153975
+sending from pole:   0 0 1
+towards 2 0 1 17
+268.25589307448115
+sending from pole:   0 0 1
+towards 2 4 1 17
+268.25589307448115
+sending from pole:   0 0 1
+towards 2 0 1 17
+268.2947491912495
+sending from pole:   0 0 1
+towards 2 4 1 17
+268.2947491912495
+sending from pole:   0 0 1
+towards 2 0 1 17
+267.5890445246725
+sending from pole:   0 0 1
+towards 2 4 1 17
+267.5890445246725
+sending from pole:   0 0 1
+towards 2 0 1 17
+266.23876116932325
+sending from pole:   0 0 1
+towards 2 4 1 17
+266.23876116932325
+sending from pole:   0 0 1
+towards 2 0 1 17
+264.3385469902313
+sending from pole:   0 0 1
+towards 2 4 1 17
+264.3385469902313
+sending from pole:   0 0 1
+towards 2 0 1 17
+261.9760512711238
+sending from pole:   0 0 1
+towards 2 4 1 17
+261.9760512711238
+sending from pole:   0 0 1
+towards 2 0 1 17
+259.25992991039953
+sending from pole:   0 0 1
+towards 2 4 1 17
+259.25992991039953
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 0 1 17
+-0.0
+sending from pole:   0 0 2
+towards 2 4 1 17
+-0.0
+sending from pole:   0 0 3
+towards 2 0 1 17
+1.2652506812701683e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+1.2652506812701683e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+1.297023592595726e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+1.297023592595726e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+1.4080859663645897e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+1.4080859663645897e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+1.607294468461756e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+1.607294468461756e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+1.8822487188783262e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+1.8822487188783262e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+2.2201644878951732e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+2.2201644878951732e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+2.603746462578173e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+2.603746462578173e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+3.011700180887295e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+3.011700180887295e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+3.4213594142772443e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+3.4213594142772443e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+3.811869942383396e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+3.811869942383396e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.166624871482489e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.166624871482489e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.474375337302809e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.474375337302809e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.729156216197821e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.729156216197821e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.929497396974354e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.929497396974354e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.077369938382503e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.077369938382503e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.177150886168935e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.177150886168935e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.234733740841454e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.234733740841454e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.256814564482273e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.256814564482273e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.250339815198294e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.250339815198294e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.222089760635311e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.222089760635311e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.178375184403088e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.178375184403088e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.124875251840855e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.124875251840855e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.066676564276779e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.066676564276779e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+5.008276742292964e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+5.008276742292964e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.953284908719625e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.953284908719625e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.9040224032821186e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.9040224032821186e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.861448017140844e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.861448017140844e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.825490804800964e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.825490804800964e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.795519492153649e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.795519492153649e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.7707065740868895e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.7707065740868895e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.750230468370593e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.750230468370593e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.733359891021572e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.733359891021572e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.719475174116713e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.719475174116713e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.7080623053790525e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.7080623053790525e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.698697950420061e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.698697950420061e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.6910334069841895e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.6910334069841895e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.684780398663641e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.684780398663641e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.679699421400509e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.679699421400509e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.675590508042775e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.675590508042775e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.6722860129092355e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.6722860129092355e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.669644988847924e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.669644988847924e-31
+sending from pole:   0 0 3
+towards 2 0 1 17
+4.667567206829448e-31
+sending from pole:   0 0 3
+towards 2 4 1 17
+4.667567206829448e-31
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 4
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 5
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 0 1 17
+0.0
+sending from pole:   0 0 6
+towards 2 4 1 17
+0.0
+sending from pole:   0 0 0
+towards 3 3 1 17
+99999.99999999999
+sending from pole:   0 0 0
+towards 3 3 1 17
+99552.82770433184
+sending from pole:   0 0 0
+towards 3 3 1 17
+98001.8053086174
+sending from pole:   0 0 0
+towards 3 3 1 17
+95278.16582665304
+sending from pole:   0 0 0
+towards 3 3 1 17
+91609.74815082278
+sending from pole:   0 0 0
+towards 3 3 1 17
+87178.19066442507
+sending from pole:   0 0 0
+towards 3 3 1 17
+82167.49207330868
+sending from pole:   0 0 0
+towards 3 3 1 17
+76760.07709653287
+sending from pole:   0 0 0
+towards 3 3 1 17
+71125.77285998434
+sending from pole:   0 0 0
+towards 3 3 1 17
+65411.139207365144
+sending from pole:   0 0 0
+towards 3 3 1 17
+59733.93438892127
+sending from pole:   0 0 0
+towards 3 3 1 17
+54183.28976882569
+sending from pole:   0 0 0
+towards 3 3 1 17
+48823.65535020637
+sending from pole:   0 0 0
+towards 3 3 1 17
+43700.17898499516
+sending from pole:   0 0 0
+towards 3 3 1 17
+38843.896412384645
+sending from pole:   0 0 0
+towards 3 3 1 17
+34275.94981899771
+sending from pole:   0 0 0
+towards 3 3 1 17
+30010.63206283975
+sending from pole:   0 0 0
+towards 3 3 1 17
+26057.358111696823
+sending from pole:   0 0 0
+towards 3 3 1 17
+22421.785373171395
+sending from pole:   0 0 0
+towards 3 3 1 17
+19106.325941540614
+sending from pole:   0 0 0
+towards 3 3 1 17
+16110.42402142643
+sending from pole:   0 0 0
+towards 3 3 1 17
+13432.279528972193
+sending from pole:   0 0 0
+towards 3 3 1 17
+11073.690776336383
+sending from pole:   0 0 0
+towards 3 3 1 17
+9039.27395355178
+sending from pole:   0 0 0
+towards 3 3 1 17
+7325.673391365457
+sending from pole:   0 0 0
+towards 3 3 1 17
+5912.599977652652
+sending from pole:   0 0 0
+towards 3 3 1 17
+4764.209957885661
+sending from pole:   0 0 0
+towards 3 3 1 17
+3837.949230769837
+sending from pole:   0 0 0
+towards 3 3 1 17
+3092.6489452662217
+sending from pole:   0 0 0
+towards 3 3 1 17
+2492.5308709727587
+sending from pole:   0 0 0
+towards 3 3 1 17
+2008.227121129466
+sending from pole:   0 0 0
+towards 3 3 1 17
+1616.3581888922379
+sending from pole:   0 0 0
+towards 3 3 1 17
+1298.5704183738162
+sending from pole:   0 0 0
+towards 3 3 1 17
+1040.4951789527277
+sending from pole:   0 0 0
+towards 3 3 1 17
+830.8344257041405
+sending from pole:   0 0 0
+towards 3 3 1 17
+660.6305683460492
+sending from pole:   0 0 0
+towards 3 3 1 17
+522.7106106199385
+sending from pole:   0 0 0
+towards 3 3 1 17
+411.2723183785971
+sending from pole:   0 0 0
+towards 3 3 1 17
+321.57858222715663
+sending from pole:   0 0 0
+towards 3 3 1 17
+249.73153780261737
+sending from pole:   0 0 0
+towards 3 3 1 17
+192.50455320068642
+sending from pole:   0 0 0
+towards 3 3 1 17
+147.6971597129731
+sending from pole:   0 0 1
+towards 3 3 1 17
+226.52768116244243
+sending from pole:   0 0 1
+towards 3 3 1 17
+226.24952875331866
+sending from pole:   0 0 1
+towards 3 3 1 17
+225.3923240217425
+sending from pole:   0 0 1
+towards 3 3 1 17
+224.2553572992258
+sending from pole:   0 0 1
+towards 3 3 1 17
+223.39765104730793
+sending from pole:   0 0 1
+towards 3 3 1 17
+223.26491785947562
+sending from pole:   0 0 1
+towards 3 3 1 17
+224.10996172510968
+sending from pole:   0 0 1
+towards 3 3 1 17
+225.9509671663306
+sending from pole:   0 0 1
+towards 3 3 1 17
+228.5905701127893
+sending from pole:   0 0 1
+towards 3 3 1 17
+231.68449305683197
+sending from pole:   0 0 1
+towards 3 3 1 17
+234.82989417552275
+sending from pole:   0 0 1
+towards 3 3 1 17
+237.64316718466748
+sending from pole:   0 0 1
+towards 3 3 1 17
+239.81066340849486
+sending from pole:   0 0 1
+towards 3 3 1 17
+241.110922573872
+sending from pole:   0 0 1
+towards 3 3 1 17
+241.4154784220438
+sending from pole:   0 0 1
+towards 3 3 1 17
+240.67704343759962
+sending from pole:   0 0 1
+towards 3 3 1 17
+238.91213038056696
+sending from pole:   0 0 1
+towards 3 3 1 17
+236.18265912402438
+sending from pole:   0 0 1
+towards 3 3 1 17
+232.57905758592952
+sending from pole:   0 0 1
+towards 3 3 1 17
+228.206053800265
+sending from pole:   0 0 1
+towards 3 3 1 17
+223.21223252695043
+sending from pole:   0 0 1
+towards 3 3 1 17
+218.15439479601966
+sending from pole:   0 0 1
+towards 3 3 1 17
+214.23337950161013
+sending from pole:   0 0 1
+towards 3 3 1 17
+212.7499610926522
+sending from pole:   0 0 1
+towards 3 3 1 17
+214.37961849902285
+sending from pole:   0 0 1
+towards 3 3 1 17
+218.88640069356015
+sending from pole:   0 0 1
+towards 3 3 1 17
+225.39547574223283
+sending from pole:   0 0 1
+towards 3 3 1 17
+232.86800168797396
+sending from pole:   0 0 1
+towards 3 3 1 17
+240.42676798787005
+sending from pole:   0 0 1
+towards 3 3 1 17
+247.46307821250718
+sending from pole:   0 0 1
+towards 3 3 1 17
+253.61461766308867
+sending from pole:   0 0 1
+towards 3 3 1 17
+258.702445338115
+sending from pole:   0 0 1
+towards 3 3 1 17
+262.6701773264712
+sending from pole:   0 0 1
+towards 3 3 1 17
+265.53782868129014
+sending from pole:   0 0 1
+towards 3 3 1 17
+267.37014069153975
+sending from pole:   0 0 1
+towards 3 3 1 17
+268.25589307448115
+sending from pole:   0 0 1
+towards 3 3 1 17
+268.2947491912495
+sending from pole:   0 0 1
+towards 3 3 1 17
+267.5890445246725
+sending from pole:   0 0 1
+towards 3 3 1 17
+266.23876116932325
+sending from pole:   0 0 1
+towards 3 3 1 17
+264.3385469902313
+sending from pole:   0 0 1
+towards 3 3 1 17
+261.9760512711238
+sending from pole:   0 0 1
+towards 3 3 1 17
+259.25992991039953
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 2
+towards 3 3 1 17
+-0.0
+sending from pole:   0 0 3
+towards 3 3 1 17
+1.2652506812701683e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+1.297023592595726e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+1.4080859663645897e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+1.607294468461756e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+1.8822487188783262e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+2.2201644878951732e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+2.603746462578173e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+3.011700180887295e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+3.4213594142772443e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+3.811869942383396e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.166624871482489e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.474375337302809e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.729156216197821e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.929497396974354e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.077369938382503e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.177150886168935e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.234733740841454e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.256814564482273e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.250339815198294e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.222089760635311e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.178375184403088e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.124875251840855e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.066676564276779e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+5.008276742292964e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.953284908719625e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.9040224032821186e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.861448017140844e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.825490804800964e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.795519492153649e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.7707065740868895e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.750230468370593e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.733359891021572e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.719475174116713e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.7080623053790525e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.698697950420061e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.6910334069841895e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.684780398663641e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.679699421400509e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.675590508042775e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.6722860129092355e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.669644988847924e-31
+sending from pole:   0 0 3
+towards 3 3 1 17
+4.667567206829448e-31
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 4
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 5
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+sending from pole:   0 0 6
+towards 3 3 1 17
+0.0
+DIAGGER1.6!
+i=0to4, j=17, k=0, l=0, cnt=1 [250.04918545 251.81438227 253.83801351 256.12499523]
+i=0to4, j=17, k=0, l=0, cnt=1 [229.37111627 229.46759792 229.57999956 229.70940723]
+i=0to4, j=17, k=0, l=0, cnt=1 [224.23846701 224.32115025 224.41701171 224.52675931]
+i=0to4, j=17, k=0, l=0, cnt=1 [218.88869571 218.95131319 219.02439214 219.10864059]
+i=0to4, j=17, k=0, l=0, cnt=1 [262.51845745 262.55842173 262.60408676 262.65549763]
+NPLDIAG, i=0, k=0, l=0, cnt=1 [ 1.00000000e+05  3.09950662e+02 -1.00221371e-04  3.55116081e-04
+  0.00000000e+00  0.00000000e+00  0.00000000e+00]
+SPLDIAG, i=0, k=0, l=1, cnt=1 [ 9.96774018e+04  3.09836909e+02 -1.02047831e-04  3.61587807e-04
+  0.00000000e+00  0.00000000e+00  0.00000000e+00]
+DIAGGER2!
+i=0to4, j=17, k=0, l=0, cnt=1 [250.04918545 251.81438227 253.83801351 256.12499523]
+i=0to4, j=17, k=1, l=0, cnt=1 [249.82818287 251.59743575 253.62565708 255.91774779]
+i=0to4, j=17, k=2, l=0, cnt=1 [249.11491109 250.89491212 252.9353564  255.24112338]
+i=0to4, j=17, k=0, l=2, cnt=1 [226.52768116 226.52768116 226.53402566 226.58461353]
+i=0to4, j=17, k=1, l=2, cnt=1 [226.24952875 226.24952875 226.25588695 226.30658663]
 
 ====== Data Range Check: Diagnostic Variables ======
---- pre             : max= 9.96774018155043450E+04, min= 1.92507699535309030E+02
+--- pre             : max= 9.96774018155043450E+04, min= 1.92504553200686416E+02
 --- tem             : max= 3.09836909508397696E+02, min= 2.09262620458390188E+02
 --- vx              : max= 3.49768709210887110E+01, min=-3.49768709210887039E+01
 --- vy              : max= 3.49711769652509190E+01, min=-3.49711769652509687E+01
 --- vz              : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
 --- w               : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
 --- qv              : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
+diag shape:  (18, 18, 42, 5, 7)
+tem, 0, 17, 5, 0: 246.01691019527598
+pre, 0, 17, 5, 0: 88365.72587740025
+[0.]
+tem, 1, 17, 5, 0: 247.74843281494623
+pre, 1, 17, 5, 0: 88446.66614344686
+[0.]
+tem, 2, 17, 5, 0: 249.73630441855764
+pre, 2, 17, 5, 0: 88538.16607920761
+[0.]
 
 ====== Data Range Check: Prognostic Variables ======
---- rhog            : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
---- rhogvx          : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
---- rhogvy          : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
---- rhogvz          : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
---- rhogw           : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
---- rhoge           : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
---- rhog * qv              : max=-1.79769313486231571e+308, min=1.79769313486231571e+308
+--- rhog            : max= 1.54781780964900983e+00, min= 2.55474365004324010e-03
+--- rhogvx          : max= 2.21184426270883812e+01, min=-2.20082135199557065e+01
+--- rhogvy          : max= 2.21187544295544392e+01, min=-2.21037162175911845e+01
+--- rhogvz          : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
+--- rhogw           : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
+--- rhoge           : max= 2.51305594836312084e+05, min= 4.80276514514504242e+02
+--- rhog * qv              : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     4.735 N=1
-*** ID=001 : INIT_COMM_var T=     0.317 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.774 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.578 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.250 N=2
+*** ID=000 : INIT_Initialize T=    10.108 N=1
+*** ID=001 : INIT_COMM_var T=     3.706 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     6.598 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.565 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.248 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------
