@@ -8317,11 +8317,11 @@ pre, 2, 17, 5, 0: 88538.16607920761
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=    10.108 N=1
-*** ID=001 : INIT_COMM_var T=     3.706 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     6.598 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.565 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.248 N=2
+*** ID=000 : INIT_Initialize T=    10.511 N=1
+*** ID=001 : INIT_COMM_var T=     3.744 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     6.631 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.567 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.247 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------
