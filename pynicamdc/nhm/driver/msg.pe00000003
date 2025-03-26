@@ -233,20 +233,7 @@ Zsfc:  -62.38405809834974
 PHI:  0.8066898251291628
 f1, f2, u0cos32ETAv -0.07132819445780347 -0.15584257821877634 8.3800486094126
 cnsts pi omega r g :  3.141592653589793 7.292e-05 6371220.0 9.80616
-(18, 18, 1, 5, 2) LAT, LON, zsZSFC
-0.8066898251291628
--1.5580288567361615
--62.38405809834974
-After COMM_var
-(18, 18, 1, 5, 2) zsZSFC
--62.38405809834974
 *** Read vertical grid file:  ../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json
-i=3, j=11, k=11, l=0, self.GRD_vz[i, j, k, l, self.GRD_Z]:  4003.518858350623
-i=3, j=11, k=11, l=0, self.GRD_vz[i, j, k, l, self.GRD_ZH]:  3655.625199383681
-self.GRD_gzh[k]:  3711.115999049
-self.GRD_zs[i, j, adm.ADM_KNONE, l, self.GRD_ZSFC]:  -62.38405809834974
-self.GRD_htop:  45000.0
-self.h_efold:  40000
 
      |========      Vertical Coordinate [m]      ========|
      |                                                   |
@@ -336,6 +323,7 @@ self.h_efold:  40000
      |   1       29.4      58.8                          | kmin
      |                                0.0      58.8    1 | ground
      |   0      -29.4      58.8                          | dummy
+     |                              -58.8      58.8    0 | dummy
      |===================================================|
 
 --- Vertical layer scheme = HYBRID
@@ -451,7 +439,11 @@ vmtr 1.001778538041876
 ====== Data Range Check: Prognostic Variables ======
 --- rhog            : max= 1.54803427934823601e+00, min= 2.55509945006261643e-03
 --- rhogvx          : max= 2.21215272992369627e+01, min=-2.20112773204016499e+01
+rhogvx
+MAXXX rhogvx:, 3, 11, 11, 0, 22.121527299236963
 --- rhogvy          : max= 2.21218391212317904e+01, min=-2.21067992544380871e+01
+rhogvy
+MAXXX rhogvy:, 7, 17, 11, 4, 22.12183912123179
 --- rhogvz          : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
 --- rhogw           : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
 --- rhoge           : max= 2.51305715934850014e+05, min= 4.80276465302014401e+02
@@ -459,11 +451,11 @@ vmtr 1.001778538041876
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     3.722 N=1
-*** ID=001 : INIT_COMM_var T=     0.102 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.233 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.565 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.247 N=2
+*** ID=000 : INIT_Initialize T=     3.704 N=1
+*** ID=001 : INIT_COMM_var T=     0.111 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.259 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.539 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.235 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------
