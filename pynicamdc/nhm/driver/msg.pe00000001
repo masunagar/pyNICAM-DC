@@ -29,24 +29,24 @@
 *** undefined number (REAL8) : UNDEF8 = -9.9999e+30
 *** radius of the planet [m] : RADIUS = 6371220.0
 *** angular velocity of the planet [1/s] : OHM = 7.292e-05
-*** standard acceleration of gravity [m/s2] : GRAV = 9.80665
+*** standard acceleration of gravity [m/s2] : GRAV = 9.80616
 *** Stefan-Boltzman constant [W/m2/K4] : STB = 5.670373e-08
 *** von Karman constant : KARMAN = 0.4
 *** universal gas constant [J/mol/K] : R = 8.3144621
 *** mass weight (dry air) [g/mol] : Mdry = 28.97
-*** specific gas constant (dry air) [J/kg/K] : Rdry = 287.04
-*** specific heat (dry air, const. pressure) [J/kg/K] : CPdry = 1004.64
-*** specific heat (dry air, const. volume) [J/kg/K] : Cvdry = 717.5999999999999
+*** specific gas constant (dry air) [J/kg/K] : Rdry = 287.0
+*** specific heat (dry air, const. pressure) [J/kg/K] : CPdry = 1004.5
+*** specific heat (dry air, const. volume) [J/kg/K] : Cvdry = 717.5
 *** lapse rate of ISA [K/m] : LAPS = 0.0065
-*** dry adiabatic lapse rate [K/m] : LAPSdry = 0.00976135730211817
+*** dry adiabatic lapse rate [K/m] : LAPSdry = 0.009762229965156794
 *** mass weight (water vapor) [g/mol] : Rvap = 461.46
 *** specific gas constant (water vapor) [J/kg/K] : Rvap = 461.46
 *** specific heat (vapor, const. pressure) [J/kg/K] : CPvap = 1845.6
 *** specific heat (vapor, const. volume) [J/kg/K] : CVvap = 1384.1399999999999
 *** specific heat (liquid water) [J/kg/K] : CL = 4218.0
 *** specific heat (ice) [J/kg/K] : CI = 2006.0
-*** Rdry / Rvap : EPSvap = 0.6220257443765441
-*** 1 / EPSvap - 1 : EPSTvap = 0.6076505016722404
+*** Rdry / Rvap : EPSvap = 0.6219390629740389
+*** 1 / EPSvap - 1 : EPSTvap = 0.6078745644599304
 *** latent heat of vaporization at 0C [J/kg] : LHV0 = 2500800.0
 *** latent heat of sublimation at 0C [J/kg] : LHS0 = 2834200.0
 *** latent heat of fusion at 0C [J/kg] : LHF0 = 333400.0
@@ -60,7 +60,7 @@
 *** saturate pressure of water vapor at 0C [Pa] : PSAT0 = 610.7
 *** density of water [kg/m3] : DWATR = 1000.0
 *** density of ice [kg/m3] : DICE = 916.8
-*** speed of sound (dry air at 0C) [m/s] : SOUND = 331.3109814056878
+*** speed of sound (dry air at 0C) [m/s] : SOUND = 331.2878959455054
 *** standard pressure [Pa] : Pstd = 101325.0
 *** pressure reference [Pa] : PRE00 = 100000.0
 *** standard temperature (15C) [K] : Tstd = 288.15
@@ -68,7 +68,7 @@
 +++ Module[calender]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** cldrparam not found in toml file! use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'vmtrparam': {'VMTR_deep_atmos': False}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'small_planet_factor': 1.0, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 +++ Module[adm]
 *** input toml file is  ../../case/config/nhm_driver.toml
 +++ Module[rgnmng]
@@ -227,54 +227,29 @@ number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
 +++ Module[grd]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}
-kmax, vmax 1 3
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (102,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (150,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (156,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (156,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (48,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (153,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (153,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (48,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (156,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (102,)
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (102,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (150,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (156,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (156,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (48,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (153,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (153,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (48,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (156,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (102,)
 *** Topography data input
 *** Make ideal topography
 +++ Module[ideal topo]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'topo_type': 'JW'}
-kmax, vmax 1 2
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (68,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (100,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (104,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (104,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (32,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (102,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (102,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (32,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (104,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (68,)
+Zsfc:  108.50952446631185
+PHI:  0.2763540359871857
+f1, f2, u0cos32ETAv 0.15769129453355243 0.2704628138410481 8.3800486094126
+cnsts pi omega r g :  3.141592653589793 7.292e-05 6371220.0 9.80616
+(18, 18, 1, 5, 2) LAT, LON, zsZSFC
+0.2763540359871857
+1.807339599651737
+108.50952446631185
+After COMM_var
+(18, 18, 1, 5, 2) zsZSFC
+108.50952446631185
 *** Read vertical grid file:  ../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (2856,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (4200,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (4368,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (4368,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (1344,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (4284,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (4284,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (1344,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (4368,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (2856,)
+i=3, j=11, k=11, l=0, self.GRD_vz[i, j, k, l, self.GRD_Z]:  4153.831578285312
+i=3, j=11, k=11, l=0, self.GRD_vz[i, j, k, l, self.GRD_ZH]:  3807.6355341271205
+self.GRD_gzh[k]:  3711.115999049
+self.GRD_zs[i, j, adm.ADM_KNONE, l, self.GRD_ZSFC]:  108.50952446631185
+self.GRD_htop:  45000.0
+self.h_efold:  40000
 
      |========      Vertical Coordinate [m]      ========|
      |                                                   |
@@ -372,16 +347,6 @@ myrank 1 dest rank 7 tag 1 imax 34 sendbuf (2856,)
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}
 *** setup metrics for hexagonal/pentagonal mesh
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (272,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (400,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (416,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (416,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (128,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (408,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (408,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (128,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (416,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (272,)
 *** setup metrics for triangle mesh
 *** setup metrics for cell arcs
 *** Diagnose grid property
@@ -409,18 +374,18 @@ myrank 1 dest rank 7 tag 1 imax 34 sendbuf (272,)
 *** setup coefficient of divergence operator
 +++ Module[vmtr]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
-{'VMTR_deep_atmos': False}
+*** vmtrparam not found in toml file! Use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'small_planet_factor': 1.0, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 *** setup metrics for 3-D control volume
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (8568,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (12600,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (13104,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (13104,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (4032,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (12852,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (12852,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (4032,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (13104,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (8568,)
+i:  3 j:  11 k:  11 l:  0 grd index:  1
+GSQRT:  0.9969064481687776
+vz:  4500.034816353519
+vz:  3807.6355341271205
+dgz:  694.5479021610004
+i:  3 j:  11 k:  11 l:  0
+VMTR_GSGAM2:  0.9969064481687776
+GAM:  1.0
+GSQRT:  0.9969064481687776
 +++ Module[Time]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}
@@ -448,7 +413,7 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 +++ Module[chemvar]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** chemvarparam not found in toml file! use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'vmtrparam': {'VMTR_deep_atmos': False}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'small_planet_factor': 1.0, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 
 *** Prognostic Tracers
 |=========================================================|
@@ -461,7 +426,7 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 +++ Module[saturation]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** grdparam not found in toml file! Use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'vmtrparam': {'VMTR_deep_atmos': False}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'small_planet_factor': 1.0, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 *** Temperature range for ice :  233.15 -  273.15
 +++ Module[prgvar]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
@@ -472,46 +437,6 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 
 *** read restart/initial data
 *** reading json file
-DIAGGER1!
-i=0to4, j=17, k=0, l=0, cnt=1 [296.8526533  299.28136628 301.42998411 303.29246583]
-i=0to4, j=17, k=1, l=0, cnt=1 [296.72145001 299.15373289 301.30540115 303.17043923]
-i=0to4, j=17, k=0, l=2, cnt=1 [248.1291231  251.81438227 255.68582803 259.69423067]
-i=0to4, j=17, k=1, l=2, cnt=1 [247.90365473 251.59743575 255.47760605 259.49478706]
-COPIED this? 251.81438226505065
-COPIED this? 251.59743574836952
-kmax, vmax 42 7
-DIAGGER1.3!
-i=0to4, j=17, k=0, l=0, cnt=1 [296.8526533  299.28136628 301.42998411 303.29246583]
-i=0to4, j=17, k=0, l=0, cnt=1 [232.53134231 232.7360247  232.92092057 233.0841    ]
-i=0to4, j=17, k=0, l=0, cnt=1 [226.78409982 226.94048359 227.08121782 227.20504569]
-i=0to4, j=17, k=0, l=0, cnt=1 [220.90062576 221.02505633 221.13682766 221.23500413]
-i=0to4, j=17, k=0, l=0, cnt=1 [263.5320176  263.58170818 263.62539618 263.66305332]
-myrank 1 source rank 7 tag 7 imax 34 recv_slices (9996,)
-myrank 1 source rank 0 tag 0 imax 50 recv_slices (14700,)
-myrank 1 source rank 6 tag 6 imax 52 recv_slices (15288,)
-myrank 1 source rank 2 tag 2 imax 52 recv_slices (15288,)
-myrank 1 source rank 5 tag 5 imax 16 recv_slices (4704,)
-myrank 1 dest rank 0 tag 1 imax 51 sendbuf (14994,)
-myrank 1 dest rank 2 tag 1 imax 51 sendbuf (14994,)
-myrank 1 dest rank 5 tag 1 imax 16 sendbuf (4704,)
-myrank 1 dest rank 6 tag 1 imax 52 sendbuf (15288,)
-myrank 1 dest rank 7 tag 1 imax 34 sendbuf (9996,)
-DIAGGER1.6!
-i=0to4, j=17, k=0, l=0, cnt=1 [296.8526533  299.28136628 301.42998411 303.29246583]
-i=0to4, j=17, k=0, l=0, cnt=1 [232.53134231 232.7360247  232.92092057 233.0841    ]
-i=0to4, j=17, k=0, l=0, cnt=1 [226.78409982 226.94048359 227.08121782 227.20504569]
-i=0to4, j=17, k=0, l=0, cnt=1 [220.90062576 221.02505633 221.13682766 221.23500413]
-i=0to4, j=17, k=0, l=0, cnt=1 [263.5320176  263.58170818 263.62539618 263.66305332]
-NPLDIAG, i=0, k=0, l=0, cnt=1 [ 1.00000000e+05  2.53838014e+02 -6.45480818e+00  2.56926971e+00
-  0.00000000e+00  0.00000000e+00  0.00000000e+00]
-SPLDIAG, i=0, k=0, l=1, cnt=1 [ 9.96026507e+04  2.53625657e+02 -6.59977351e+00  2.62697166e+00
-  0.00000000e+00  0.00000000e+00  0.00000000e+00]
-DIAGGER2!
-i=0to4, j=17, k=0, l=0, cnt=1 [296.8526533  299.28136628 301.42998411 303.29246583]
-i=0to4, j=17, k=1, l=0, cnt=1 [296.72145001 299.15373289 301.30540115 303.17043923]
-i=0to4, j=17, k=2, l=0, cnt=1 [296.25533424 298.69769785 300.85797359 302.73021441]
-i=0to4, j=17, k=0, l=2, cnt=1 [248.1291231  251.81438227 255.68582803 259.69423067]
-i=0to4, j=17, k=1, l=2, cnt=1 [247.90365473 251.59743575 255.47760605 259.49478706]
 
 ====== Data Range Check: Diagnostic Variables ======
 --- pre             : max= 9.96774018155043450E+04, min= 1.92504553200686416E+02
@@ -521,33 +446,23 @@ i=0to4, j=17, k=1, l=2, cnt=1 [247.90365473 251.59743575 255.47760605 259.494787
 --- vz              : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
 --- w               : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
 --- qv              : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
-diag shape:  (18, 18, 42, 5, 7)
-tem, 0, 17, 5, 0: 292.43564277664535
-pre, 0, 17, 5, 0: 90201.95259341202
-[0.]
-tem, 1, 17, 5, 0: 294.8584798869963
-pre, 1, 17, 5, 0: 90282.109000115
-[0.]
-tem, 2, 17, 5, 0: 297.00163164194055
-pre, 2, 17, 5, 0: 90351.95343903717
-[0.]
 
 ====== Data Range Check: Prognostic Variables ======
---- rhog            : max= 1.54781780964900983e+00, min= 2.55474365004324010e-03
---- rhogvx          : max= 2.21184426270883812e+01, min=-2.20082135199557065e+01
---- rhogvy          : max= 2.21187544295544392e+01, min=-2.21037162175911845e+01
+--- rhog            : max= 1.54803427934823601e+00, min= 2.55509945006261643e-03
+--- rhogvx          : max= 2.21215272992369627e+01, min=-2.20112773204016499e+01
+--- rhogvy          : max= 2.21218391212317904e+01, min=-2.21067992544380871e+01
 --- rhogvz          : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
 --- rhogw           : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
---- rhoge           : max= 2.51305594836312084e+05, min= 4.80276514514504242e+02
+--- rhoge           : max= 2.51305715934850014e+05, min= 4.80276465302014401e+02
 --- rhog * qv              : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=    10.500 N=1
-*** ID=001 : INIT_COMM_var T=     3.735 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     6.674 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.565 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.245 N=2
+*** ID=000 : INIT_Initialize T=     3.699 N=1
+*** ID=001 : INIT_COMM_var T=     0.107 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.241 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.571 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.247 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------
