@@ -458,11 +458,11 @@ MAXXX rhogvy:, 1, 11, 11, 0, 22.12183912123179
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     3.697 N=1
-*** ID=001 : INIT_COMM_var T=     0.115 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.261 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.542 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.237 N=2
+*** ID=000 : INIT_Initialize T=     4.382 N=1
+*** ID=001 : INIT_COMM_var T=     0.261 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.555 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.581 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.286 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------

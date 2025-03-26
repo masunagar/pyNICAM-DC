@@ -445,11 +445,11 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     3.719 N=1
-*** ID=001 : INIT_COMM_var T=     0.121 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.276 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.546 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.236 N=2
+*** ID=000 : INIT_Initialize T=     4.379 N=1
+*** ID=001 : INIT_COMM_var T=     0.272 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.612 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.555 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.278 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------
