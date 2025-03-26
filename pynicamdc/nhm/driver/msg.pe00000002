@@ -339,6 +339,7 @@ self.h_efold:  40000
      |   1       29.4      58.8                          | kmin
      |                                0.0      58.8    1 | ground
      |   0      -29.4      58.8                          | dummy
+     |                              -58.8      58.8    0 | dummy
      |===================================================|
 
 --- Vertical layer scheme = HYBRID
@@ -458,11 +459,11 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     3.721 N=1
-*** ID=001 : INIT_COMM_var T=     0.100 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.234 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.565 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.248 N=2
+*** ID=000 : INIT_Initialize T=     3.760 N=1
+*** ID=001 : INIT_COMM_var T=     0.126 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.273 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.582 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.258 N=2
 *** ID=005 : MAIN_Main_Loop T=     0.000 N=1
 *** ID=006 : MAIN__Atmos T=     0.000 N=3
 ------------
