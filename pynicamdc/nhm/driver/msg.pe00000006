@@ -475,14 +475,15 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     3.775 N=1
-*** ID=001 : INIT_COMM_var T=     0.109 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.251 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.551 N=2
-*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.236 N=2
-*** ID=005 : MAIN_Main_Loop T=     0.087 N=1
-*** ID=006 : MAIN__Atmos T=     0.077 N=6
-*** ID=007 : MAIN___Dynamics T=     0.075 N=6
-*** ID=008 : MAIN____Pre_Post T=     0.070 N=24
+*** ID=000 : INIT_Initialize T=     3.828 N=1
+*** ID=001 : INIT_COMM_var T=     0.122 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.274 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.559 N=2
+*** ID=004 : INIT_OPRT_horizontalize_vec T=     0.240 N=2
+*** ID=005 : MAIN_Main_Loop T=     0.100 N=1
+*** ID=006 : MAIN__Atmos T=     0.085 N=6
+*** ID=007 : MAIN___Dynamics T=     0.084 N=6
+*** ID=008 : MAIN____Pre_Post T=     0.076 N=24
+*** ID=009 : MAIN___Large_step T=     0.000 N=18
 ------------
 +++ finalize MPI
