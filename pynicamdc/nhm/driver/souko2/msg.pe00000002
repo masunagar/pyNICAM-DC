@@ -1,0 +1,3417 @@
+
+########################################################################
+
+ NICAM-DC (dynamical core package of NICAM)
+*** Basename of log file = msg
+*** Detailed log output = True
++++ Module[prof]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'prof_mpi_barrier': True, 'prof_rap_level': 10}
+
+*** Rap output level              =  10
+*** Add MPI_barrier in every rap? =  True
++++ Module[cnst]
+*** input toml file is  ../../case/config/nhm_driver.toml
+
+*** Precision ***
+*** kind (floating point value) = float64
+*** precision(floating point value) = 15
+*** range (floating point value) = (np.float64(-1.7976931348623157e+308), np.float64(1.7976931348623157e+308))
+
+*** List of constants ***
+*** PI : PI = 3.141592653589793
+*** Small number : EPS = 2.220446049250313e-16
+*** Small number (1-EPS) : EPS1 = 0.9999999999999998
+*** Huge number : HUGE = 1.7976931348623157e+308
+*** undefined number (INT2) : UNDEF2 = -32768
+*** undefined number (REAL, general use) : UNDEF = nan
+*** undefined number (REAL4) : UNDEF4 = -9.999900111863089e+30
+*** undefined number (REAL8) : UNDEF8 = -9.9999e+30
+*** radius of the planet [m] : RADIUS = 6371220.0
+*** angular velocity of the planet [1/s] : OHM = 7.292e-05
+*** standard acceleration of gravity [m/s2] : GRAV = 9.80616
+*** Stefan-Boltzman constant [W/m2/K4] : STB = 5.670373e-08
+*** von Karman constant : KARMAN = 0.4
+*** universal gas constant [J/mol/K] : R = 8.3144621
+*** mass weight (dry air) [g/mol] : Mdry = 28.97
+*** specific gas constant (dry air) [J/kg/K] : Rdry = 287.0
+*** specific heat (dry air, const. pressure) [J/kg/K] : CPdry = 1004.5
+*** specific heat (dry air, const. volume) [J/kg/K] : Cvdry = 717.5
+*** lapse rate of ISA [K/m] : LAPS = 0.0065
+*** dry adiabatic lapse rate [K/m] : LAPSdry = 0.009762229965156794
+*** mass weight (water vapor) [g/mol] : Rvap = 461.46
+*** specific gas constant (water vapor) [J/kg/K] : Rvap = 461.46
+*** specific heat (vapor, const. pressure) [J/kg/K] : CPvap = 1845.6
+*** specific heat (vapor, const. volume) [J/kg/K] : CVvap = 1384.1399999999999
+*** specific heat (liquid water) [J/kg/K] : CL = 4218.0
+*** specific heat (ice) [J/kg/K] : CI = 2006.0
+*** Rdry / Rvap : EPSvap = 0.6219390629740389
+*** 1 / EPSvap - 1 : EPSTvap = 0.6078745644599304
+*** latent heat of vaporization at 0C [J/kg] : LHV0 = 2500800.0
+*** latent heat of sublimation at 0C [J/kg] : LHS0 = 2834200.0
+*** latent heat of fusion at 0C [J/kg] : LHF0 = 333400.0
+*** latent heat of vaporization at 0K [J/kg] : LHV00 = 3148821.06
+*** latent heat of sublimation at 0K [J/kg] : LHS00 = 2878013.2600000002
+*** latent heat of fusion at 0K [J/kg] : LHF00 = -270807.79999999993
+*** Thermodynamics calculation type : SIMPLE
+*** latent heat of vaporization (used) [J/kg] : LHV = 2500800.0
+*** latent heat of sublimation (used) [J/kg] : LHS = 2834200.0
+*** latent heat of fusion (used) [J/kg] : LHF = 333400.0
+*** saturate pressure of water vapor at 0C [Pa] : PSAT0 = 610.7
+*** density of water [kg/m3] : DWATR = 1000.0
+*** density of ice [kg/m3] : DICE = 916.8
+*** speed of sound (dry air at 0C) [m/s] : SOUND = 331.2878959455054
+*** standard pressure [Pa] : Pstd = 101325.0
+*** pressure reference [Pa] : PRE00 = 100000.0
+*** standard temperature (15C) [K] : Tstd = 288.15
+*** temperature reference (0C) [K] : TEM00 = 273.15
++++ Module[calender]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** cldrparam not found in toml file! use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
++++ Module[adm]
+*** input toml file is  ../../case/config/nhm_driver.toml
++++ Module[rgnmng]
+*** input toml file is  ../../case/config/nhm_driver.toml
+
+====== Process management info. ======
+--- Total number of process           : 8
+--- My Process number = (my rank) : 2
+====== Region/Grid topology info. ======
+--- Grid system                      : ICO
+--- #  of diamond                     : 10
+====== Region management info. ======
+--- Region level (RL)                 : 1
+--- Total number of region            : 40 (2 x 2 x 10)
+--- #  of region per process          : 5
+--- ID of region in my process        : [10 11 12 13 14]
+--- Region ID, contains north pole    : 2
+--- Region ID, contains south pole    : 21
+--- Process rank, managing north pole : 0
+--- Process rank, managing south pole : 0
+====== Grid management info. ======
+--- Grid level (GL)                   : 5
+--- Total number of grid (horizontal) : 10240 (16 x 16 x 40)
+--- Number of vertical layer          : 40
+
+====== Region Management Information ======
+
+--- # of region in this node : 5
+--- (l,prc_me) => (rgn)
+--- (0,2) => (10)
+--- (1,2) => (11)
+--- (2,2) => (12)
+--- (3,2) => (13)
+--- (4,2) => (14)
+
+--- Link information
+
+--- edge link: (rgn,direction)
+     (10,SW) -> (8,NE)
+     (10,NW) -> (6,NE)
+     (10,NE) -> (14,NW)
+     (10,SE) -> (11,NW)
+--- vertex link: (rgn)
+     (10,W ) -> (8,N ) -> (7,N ) -> (6,E )
+     (10,N ) -> (6,N ) -> (2,N ) -> (18,N ) -> (14,N )
+     (10,E ) -> (14,W ) -> (12,N ) -> (11,N )
+     (10,S ) -> (11,W ) -> (9,N ) -> (8,E )
+
+--- edge link: (rgn,direction)
+     (11,SW) -> (9,NE)
+     (11,NW) -> (10,SE)
+     (11,NE) -> (12,NW)
+     (11,SE) -> (30,NW)
+--- vertex link: (rgn)
+     (11,W ) -> (9,N ) -> (8,E ) -> (10,S )
+     (11,N ) -> (10,E ) -> (14,W ) -> (12,N )
+     (11,E ) -> (12,W ) -> (30,N )
+     (11,S ) -> (30,W ) -> (28,N ) -> (9,E )
+
+--- edge link: (rgn,direction)
+     (12,SW) -> (30,NE)
+     (12,NW) -> (11,NE)
+     (12,NE) -> (14,SW)
+     (12,SE) -> (13,NW)
+--- vertex link: (rgn)
+     (12,W ) -> (30,N ) -> (11,E )
+     (12,N ) -> (11,N ) -> (10,E ) -> (14,W )
+     (12,E ) -> (14,S ) -> (15,W ) -> (13,N )
+     (12,S ) -> (13,W ) -> (31,N ) -> (30,E )
+
+--- edge link: (rgn,direction)
+     (13,SW) -> (31,NE)
+     (13,NW) -> (12,SE)
+     (13,NE) -> (15,SW)
+     (13,SE) -> (24,NW)
+--- vertex link: (rgn)
+     (13,W ) -> (31,N ) -> (30,E ) -> (12,S )
+     (13,N ) -> (12,E ) -> (14,S ) -> (15,W )
+     (13,E ) -> (15,S ) -> (26,W ) -> (24,N )
+     (13,S ) -> (24,W ) -> (31,E )
+
+--- edge link: (rgn,direction)
+     (14,SW) -> (12,NE)
+     (14,NW) -> (10,NE)
+     (14,NE) -> (18,NW)
+     (14,SE) -> (15,NW)
+--- vertex link: (rgn)
+     (14,W ) -> (12,N ) -> (11,N ) -> (10,E )
+     (14,N ) -> (10,N ) -> (6,N ) -> (2,N ) -> (18,N )
+     (14,E ) -> (18,W ) -> (16,N ) -> (15,N )
+     (14,S ) -> (15,W ) -> (13,N ) -> (12,E )
+--- Pole information (in the global scope)
+--- region, having north pole data : 2
+--- vertex link: (north pole)
+ -> (18,N ) -> (14,N ) -> (10,N ) -> (6,N )
+--- process, managing north pole : 0
+--- region, having south pole data : 21
+--- vertex link: (south pole)
+ -> (37,S ) -> (33,S ) -> (29,S ) -> (25,S )
+--- process, managing south pole : 0
++++ Module[comm]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}
+
+====== communication information ======
+*** rellist_nmax: 334
+
+*** Recv_nmax_r2r(global) = 6
+*** Recv_nmax_r2r(local)  = 5
+*** Send_nmax_r2r(local)  = 5
+*** Send_size_r2r(global) = 68
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_r2r        166         2         2
+| Recv_r2r         51         1         2
+| Recv_r2r         50         6         2
+| Recv_r2r          2         5         2
+| Recv_r2r         49         3         2
+| Recv_r2r         16         4         2
+| Send_r2r         52         2         1
+| Send_r2r         50         2         3
+| Send_r2r         16         2         4
+| Send_r2r          2         2         5
+| Send_r2r         50         2         6
+
+*** Recv_nmax_p2r(local) = 1
+*** Send_nmax_p2r(local) = 0
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_p2r [ 0 -1 -1]
+| Recv_p2r [2 0 2]
+
+*** Recv_nmax_r2p(local)  = 0
+*** Send_nmax_r2p(local)  = 1
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Copy_r2p 0 -1 -1
+| Send_r2p 2 2 0
+
+*** Send_size_p2r,r2p     =   10
+
+
+|---------------------------------------
+|               size  prc_from    prc_to
+| Singular 4 2 2
+
+--- Singular_list
+
+number |ifrom |jfrom |rfrom |lfrom |pfrom   |ito   |jto   |rto   |lto   |pto
+     0      1     17     10      0      2      0     17     10      0      2
+     1      1      0     12      2      2      0      0     12      2      2
+     2     17      1     13      3      2     17      0     13      3      2
+     3      1     17     14      4      2      0     17     14      4      2
++++ Module[grd]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}
+*** Topography data input
+*** Make ideal topography
++++ Module[ideal topo]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'topo_type': 'JW'}
+Zsfc:  -185.66405479083963
+PHI:  1.0172219678978598
+f1, f2, u0cos32ETAv -0.3033028525031636 -0.4621684682115265 8.3800486094126
+cnsts pi omega r g :  3.141592653589793 7.292e-05 6371220.0 9.80616
+*** Read vertical grid file:  ../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json
+
+     |========      Vertical Coordinate [m]      ========|
+     |                                                   |
+     |            -GRID CENTER-         -GRID INTERFACE- |
+     |   k        gz      d(gz)      gzh     d(gzh)    k |
+     |                                                   |
+     |  41    46002.4    2004.7                          | dummy
+     |                            45000.0    2004.7   41 | TOA
+     |  40    43997.6    2004.7                          | kmax
+     |                            42995.3    1984.4   40 |
+     |  39    42013.3    1964.0                          |
+     |                            41031.3    1943.6   39 |
+     |  38    40069.7    1923.1                          |
+     |                            39108.2    1902.5   38 |
+     |  37    38167.2    1882.0                          |
+     |                            37226.2    1861.3   37 |
+     |  36    36305.9    1840.6                          |
+     |                            35385.6    1819.8   36 |
+     |  35    34486.1    1799.0                          |
+     |                            33586.6    1778.1   35 |
+     |  34    32708.1    1757.2                          |
+     |                            31829.5    1736.1   34 |
+     |  33    30972.0    1715.1                          |
+     |                            30114.4    1693.9   33 |
+     |  32    29278.1    1672.7                          |
+     |                            28441.7    1651.4   32 |
+     |  31    27626.7    1630.1                          |
+     |                            26811.6    1608.6   31 |
+     |  30    26018.0    1587.2                          |
+     |                            25224.4    1565.6   30 |
+     |  29    24452.4    1544.0                          |
+     |                            23680.4    1522.3   29 |
+     |  28    22930.1    1500.5                          |
+     |                            22179.9    1478.6   28 |
+     |  27    21451.5    1456.7                          |
+     |                            20723.2    1434.6   27 |
+     |  26    20016.9    1412.6                          |
+     |                            19310.6    1390.3   26 |
+     |  25    18626.6    1368.1                          |
+     |                            17942.6    1345.6   25 |
+     |  24    17281.0    1323.2                          |
+     |                            16619.4    1300.6   24 |
+     |  23    15980.4    1278.0                          |
+     |                            15341.4    1255.1   23 |
+     |  22    14725.3    1232.3                          |
+     |                            14109.1    1209.3   22 |
+     |  21    13516.0    1186.2                          |
+     |                            12922.9    1163.0   21 |
+     |  20    12353.0    1139.7                          |
+     |                            11783.1    1116.2   20 |
+     |  19    11236.8    1092.7                          |
+     |                            10690.4    1069.0   19 |
+     |  18    10167.8    1045.2                          |
+     |                             9645.2    1021.2   18 |
+     |  17     9146.7     997.1                          |
+     |                             8648.1     972.8   17 |
+     |  16     8173.9     948.5                          |
+     |                             7699.6     923.8   16 |
+     |  15     7250.0     899.2                          |
+     |                             6800.4     874.2   15 |
+     |  14     6375.8     849.2                          |
+     |                             5951.2     823.9   14 |
+     |  13     5551.9     798.5                          |
+     |                             5152.7     772.8   13 |
+     |  12     4779.2     747.0                          |
+     |                             4405.7     720.8   12 |
+     |  11     4058.4     694.5                          |
+     |                             3711.1     667.8   11 |
+     |  10     3390.6     641.1                          |
+     |                             3070.0     613.8   10 |
+     |   9     2776.8     586.5                          |
+     |                             2483.5     558.6    9 |
+     |   8     2218.2     530.6                          |
+     |                             1952.9     501.9    8 |
+     |   7     1716.3     473.2                          |
+     |                             1479.7     443.6    7 |
+     |   6     1272.7     414.0                          |
+     |                             1065.7     383.3    6 |
+     |   5      889.5     352.5                          |
+     |                              713.2     320.4    5 |
+     |   4      569.1     288.3                          |
+     |                              424.9     254.2    4 |
+     |   3      314.9     220.1                          |
+     |                              204.8     183.1    3 |
+     |   2      131.8     146.0                          |
+     |                               58.8     102.4    2 |
+     |   1       29.4      58.8                          | kmin
+     |                                0.0      58.8    1 | ground
+     |   0      -29.4      58.8                          | dummy
+     |                              -58.8      58.8    0 | dummy
+     |===================================================|
+
+--- Vertical layer scheme = HYBRID
+--- e-folding height = 40000
++++ Module[gmtr]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}
+*** setup metrics for hexagonal/pentagonal mesh
+*** setup metrics for triangle mesh
+*** setup metrics for cell arcs
+HALOHALO
+i,j,l 16 15 4
+Nvec [127905.02748619 -27764.12506314 -34541.74587951]
+Tvec [ -41508.99068308 -112012.37918663  -63670.28747062]
+wk[:, 0, i, j] [  751362.39689568 -3273959.51012655  5413786.84129539]
+wk[:, 1, i, j] [  709854.18693359 -3385969.78253067  5350117.75136605]
+*** Diagnose grid property
+
+------ Diagnosis result ---
+--- ideal  global surface area  = 510099699.07076156 [km²]
+--- actual global surface area  = 510099699.0707617 [km²]
+--- global total number of grid = 10242
+
+--- average grid interval       = 223.1696580130042 [km]
+--- max grid interval           = 226.0604592160497 [km]
+--- min grid interval           = 177.0105155700054 [km]
+--- ratio max/min grid interval = 1.277101863062173
+--- average length of arc(side) = 138.9075164278732 [km]
+
+--- max length distortion       = 6.596792351931572e-05 [km]
+--- max angle distortion        = 8.089721219583177 [deg]
++++ Module[oprt]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}
+*** setup coefficient of divergence operator
+*** setup coefficient of rotation operator
+*** setup coefficient of gradient operator
+*** setup coefficient of laplacian operator
+*** setup coefficient of divergence operator
+OPRT_coef_diff[16, 15, :, 0, 4] =  [ 1.26894234e-06  8.81707596e-07 -3.85056193e-07 -1.27675316e-06
+ -8.91397411e-07  3.87552188e-07]
+gmtr.GMTR_a[16, 15, k0, 4 AIJ, hn] 127905.02748618566
+gmtr.GMTR_p[16, 15, k0, 4 AIJ, hn] 1.9841946233805267e-11
+OPRT_coef_diff[16, 15, :, 1, 4] =  [-2.75447138e-07  9.16338857e-07  1.20360085e-06  2.98710349e-07
+ -8.87292688e-07 -1.17424325e-06]
+gmtr.GMTR_a[16, 15, k0, 4 AIJ, hn] -27764.125063144922
+gmtr.GMTR_p[16, 15, k0, 4 AIJ, hn] 1.9841946233805267e-11
+OPRT_coef_diff[16, 15, :, 2, 4] =  [-3.42687732e-07  4.31781755e-07  7.50644028e-07  2.96185648e-07
+ -4.74525845e-07 -7.94572735e-07]
+gmtr.GMTR_a[16, 15, k0, 4 AIJ, hn] -34541.74587950882
+gmtr.GMTR_p[16, 15, k0, 4 AIJ, hn] 1.9841946233805267e-11
++++ Module[vmtr]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** vmtrparam not found in toml file! Use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+*** setup metrics for 3-D control volume
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[45000. 45000. 45000.]
+grad X
+-2.0816681711721685e-17
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[45000. 45000. 45000.]
+grad Y
+-2.7755575615628914e-17
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[45000. 45000. 45000.]
+grad Z
+-8.673617379884035e-19
+var_pl BEFHR1:  [0. 0. 0. 0. 0. 0.]
+BFRHRR2P, -2.0816681711721685e-17
+other, 1.3877787807814457e-17
+BFRHRR2P, -2.188739921617222e-06
+other, -4.315115254664714e-07
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[46008.0955409  46008.0955409  46008.09280826]
+grad X
+1.0644305936668985e-08
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[46008.0955409  46008.0955409  46008.09280826]
+grad Y
+-7.73354100203072e-09
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[46008.0955409  46008.0955409  46008.09280826]
+grad Z
+7.954199304424647e-10
+var_pl BEFTR:  [0. 0. 0. 0. 0. 0.]
+BFRR2P, -2.698434819648758e-17
+var_pl AFTR:  [0. 0. 0. 0. 0. 0.]
++++ Module[Time]/Category[common share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}
+TIME_integ_type is RK3
+TIME_sstep_max is automatically set to: 6
+
+====== Time management ======
+--- Time integration scheme (large step): RK3
+--- Backward integration?               : False
+--- Time interval for large step        : 1200.0
+--- Time interval for small step        : 200.0
+--- Max steps of large step             : 6
+--- Max steps of small step             : 6
+--- Start time (sec)                    : 0.0
+--- End time   (sec)                    : 7200.0
+--- Start time (date)                   : 0000/01/01 - 00:00:00
+--- End time   (date)                   : 0000/01/01 - 02:00:00
+--- Total integration time              : 7200.0
+--- Time step at the start              : 0
+--- Time step at the end                : 6
++++ Module[runconf]/Category[nhm share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'NDIFF_LOCATION': 'IN_LARGE_STEP2'}
+Run with "Thuburn Limiter" in MIURA2004 Advection
++++ Module[chemvar]/Category[nhm share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** chemvarparam not found in toml file! use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+
+*** Prognostic Tracers
+|=========================================================|
+|       :varname         :description                     |
+|ID=   0 : qv               : VAPOR |
+|=========================================================|
+
+*** Thermodynamic (water) tracers
+---> 1 tracers (0-1)
++++ Module[saturation]/Category[nhm share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** grdparam not found in toml file! Use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+*** Temperature range for ice :  233.15 -  273.15
++++ Module[prgvar]/Category[nhm share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}
+
+*** io_mode for restart, input : json
+*** io_mode for restart, output: ADVANCED
+
+*** read restart/initial data
+*** reading json file
+
+====== Data Range Check: Diagnostic Variables ======
+--- pre             : max= 9.96774018155043450E+04, min= 1.92504553200686416E+02
+--- tem             : max= 3.09836909508397696E+02, min= 2.09262620458390188E+02
+--- vx              : max= 3.49768709210887110E+01, min=-3.49768709210887039E+01
+--- vy              : max= 3.49711769652509190E+01, min=-3.49711769652509687E+01
+--- vz              : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
+--- w               : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
+--- qv              : max= 0.00000000000000000E+00, min= 0.00000000000000000E+00
+
+====== Data Range Check: Prognostic Variables ======
+--- rhog            : max= 1.54807913885749349e+00, min= 2.57500090333386044e-03
+--- rhogvx          : max= 2.21215272992369627e+01, min=-2.21215272992370089e+01
+--- rhogvy          : max= 2.21218391212317904e+01, min=-2.21214400895640679e+01
+--- rhogvz          : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
+--- rhogw           : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
+--- rhoge           : max= 2.51305936021234549e+05, min= 4.84017298024299237e+02
+--- rhog * qv              : max= 0.00000000000000000e+00, min= 0.00000000000000000e+00
+
++++ Module[dynamics]/Category[nhm]
++++ Time integration type: RK3
++++ 3-stage Runge-Kutta
++++ Module[bndcnd]/Category[nhm share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** bndcndparam not found in toml file! Use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+*** Boundary setting type (temperature, top   ) : equal to uppermost atmosphere
+*** Boundary setting type (temperature, bottom) : equal to lowermost atmosphere
+*** Boundary setting type (momentum,    top   ) : free
+*** Boundary setting type (momentum,    bottom) : rigid
++++ Module[basic state]/Category[nhm share]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'ref_type': 'NOBASE'}
++++ Module[numfilter]/Category[nhm dynamics]
+*** input toml file is  ../../case/config/nhm_driver.toml
+{'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}
+
+-----   Horizontal numerical diffusion   -----
+=> used.
+
+-----   Horizontal numerical diffusion (1st order laplacian)   -----
+=> not used.
+
+-----   3D divergence damping   -----
+=> used.
+
+-----   2D divergence damping   -----
+=> not used.
++++ Module[forcing]/Category[nhm]
+*** input toml file is  ../../case/config/nhm_driver.toml
+*** forcing_param not found in toml file! Use default.
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
++++ Artificial forcing type: NONE
+### TIME = 0000/01/01 - 00:00:00 ( step =        0 /        6 )
+lstep starting, iteration number:  0
+th 249.19724306873903
+th 243.26709948432406
+eth 249013.60150042397
+eth 243055.60993300762
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 2.0206207025442887e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -2.0206212265517367e-05
+grhogscl_pl (0,20,0) 2.280383233e-314
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -5.722536803471456e-06
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 5.722518317228841e-06
+grhogscl_pl (0,20,0) 2.2803853043e-314
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.0
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -0.0
+grhogscl_pl (0,20,0) 2.280386581e-314
+self.vvx_pl (:,2,0) [1.1240e-320 1.1255e-320 0.0000e+000 5.5829e-321 1.1275e-320 1.1280e-320]
+self.vvy_pl (:,2,0) [2.28037909e-314 2.28037951e-314 2.28037975e-314 2.28038006e-314
+ 2.28038042e-314 2.28037018e-314]
+self.vvz_pl (:,2,0) [1.18575755e-322 1.14030351e-320 1.13882131e-320 4.04738577e-320
+ 2.28038245e-314 4.94065646e-324]
+self.dvvx_pl(:,2,0) [2.28038314e-314 2.28038347e-314 2.28038298e-314 2.28038413e-314
+ 0.00000000e+000 0.00000000e+000]
+self.dvvy_pl(:,2,0) [2.28038516e-314 2.28038549e-314 2.28038583e-314 0.00000000e+000
+ 5.47918801e-321 1.15413735e-320]
+self.dvvz_pl(:,2,0) [5.57306049e-321 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 0.00000000e+000 2.28038885e-314]
+OPRT_diffusion, update tend: 
+vtmp[6,5,2,0,:]
+[-5.87921207e-26 -2.15861059e-25 -0.00000000e+00 -0.00000000e+00
+ -4.75306176e-05  2.13556723e-12]
+vtmp_lap1[6,5,2,0,:]
+[0. 0. 0. 0. 0. 0.]
+tendency 0: 
+tendency[6,5,2,0,:]
+[-2.13556723e-12  9.79669427e-10  3.59695274e-09 -0.00000000e+00
+ -0.00000000e+00  4.75306176e-05]
+tendency 1: 
+tendency[6,5,2,0,:]
+[-2.13556723e-12  9.88957244e-10  3.59432004e-09 -1.66594163e-11
+ -0.00000000e+00  4.75306176e-05]
+BEFOREsmallstep
+DIAG[6, 5, 10, 1, :] [ 6.72988314e+04  2.81111271e+02  3.24784618e+00 -1.75589533e+01
+  0.00000000e+00  0.00000000e+00]
+PROG[6, 5, 10, 1, :] [ 8.32446519e-01  2.70365824e+00 -1.46168895e+01  0.00000000e+00
+  0.00000000e+00  1.67902246e+05]
+g_TEND[6, 5, 10, 1, :] [ 4.32893380e-13 -5.21143257e-04 -9.63562503e-05 -9.45205025e-04
+  1.88714021e-03 -1.81853063e-05]
+DIAG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(0, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(1, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(2, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(3, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(4, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(5, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -4.720654407087312e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+DDDDD
+CCCCC
+gdx_pl[0,3,0,:] nan
+gdy_pl[0,3,0,:] nan
+gdz_pl[0,3,0,:] nan
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[149.85930926 149.85930926 149.87029828]
+grad X
+-4.2816440945161885e-08
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[149.85930926 149.85930926 149.87029828]
+grad Y
+3.110796524435672e-08
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[149.85930926 149.85930926 149.87029828]
+grad Z
+-3.1998060553575867e-09
+ENTERing src.src_advection_convergence for drhoge_pl
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -0.00010870322884293238
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.00010898949300438757
+grhogscl_pl (0,20,0) nan
+BBBBB
+g_TEND_pl[0,3,0,:] [nan nan nan nan nan nan]
+g_TEND0_pl[0,3,0,:] [0. 0. 0. 0. 0. 0.]
+dpgrad_pl[0,3,0,:]  [0. 0. 0.]
+ddivdvx_2d_pl[0,3,0]  0.0
+ddivdvx_pl[0,3,0]  0.0
+NNNs num_of_itr  2
+ns  0
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[0. 0. 0.]
+grad X
+0.0
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[0. 0. 0.]
+grad Y
+0.0
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[0. 0. 0.]
+grad Z
+0.0
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [2.39351345e-05 1.85718716e-05 4.80003877e-05]
+PROG_split[6, 5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND[6, 5, 10, 1, :] [-9.54874796e-10  1.19675672e-07  9.28593579e-08  2.40001939e-07
+ -8.86082899e-03 -2.84570524e-04]
+PROG[6, 5, 10, 1, :] [ 8.32446519e-01  2.70365824e+00 -1.46168895e+01  0.00000000e+00
+  0.00000000e+00  1.67902246e+05]
+preg_prim_split[6, 5, 10, 1] 0.0
+eth[6, 5, 10, 1] 282376.2714697693
+drhogw[6, 5, 10, 1] -0.008860828986064107
+grhogetot0[6, 5, 10, 1] -1.818530629809772e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 3.467088664371344e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 8.961874108245542e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.001463101666130832
+grhogscl_pl (0,20,0) 0.0
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 0
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[8.95482224e-312 1.60567950e-315 0.00000000e+000 1.11107700e-310
+ 3.71871758e-310 8.90097454e-307]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 3.467088664371344e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[3.69095213e-086 2.96971938e+222 1.81271013e-152 1.20000000e+016
+ 1.20000000e+016 1.20000000e+016]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 5.04044322e+223 2.20476215e+214 1.20000000e+016
+ 1.20000000e+016 1.20000000e+016]
+
+rhog1 1.3888081174760225
+rhogvx1 -2.6351011339159016
+rhogvy1 -9.29561991876418
+rhogvz1 -0.0001018792783545704
+rhogw1 -5.6209204687813896e-05
+rhog1_pl 0,2  0.0
+rhogvx1_pl    2.003749897686007e-52
+rhogvy1_pl    0.0
+rhogvz1_pl    -0.0
+rhogw1_pl     -0.0
+rhog1_pl 2,2  0.0
+rhogvx1_pl    0.0
+rhogvy1_pl    0.0
+rhogvz1_pl    -0.0
+rhogw1_pl     -0.0
+rhogkin11         33.60878530237493
+rhogkin11_pl 0,2  0.42648935465872456
+rhogkin11_pl 2,2  0.48085518477323225
+rhogkin11_pl :,2  [0.42648935 0.00389106 0.48085518 1.41293663 0.05307647 0.        ]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -1.8406170109092786e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.25088782881628025
+grhogscl_pl (0,20,0) 1.9600920691947613e-224
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [ 1.44062434e-04 -2.18478643e-03  4.21234925e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  2
+ns  1
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[-0.62240649 -0.62240649 -0.62278267]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[-0.62240649 -0.62240649 -0.62278267]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[-0.62240649 -0.62240649 -0.62278267]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [-2.92373629e-05  1.87498081e-05 -4.51924933e-05]
+PROG_split[6, 5, 10, 1, :] [ 1.44062434e-04  2.39351345e-05  1.85718716e-05  4.80003877e-05
+ -2.18478643e-03  4.21234925e+01]
+g_TEND[6, 5, 10, 1, :] [-9.54874796e-10  1.19675672e-07  9.28593579e-08  2.40001939e-07
+ -8.86082899e-03 -2.84570524e-04]
+PROG[6, 5, 10, 1, :] [ 8.32446519e-01  2.70365824e+00 -1.46168895e+01  0.00000000e+00
+  0.00000000e+00  1.67902246e+05]
+preg_prim_split[6, 5, 10, 1] 16.849396996894875
+eth[6, 5, 10, 1] 282376.2714697693
+drhogw[6, 5, 10, 1] -0.008860828986064107
+grhogetot0[6, 5, 10, 1] -1.818530629809772e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 9.995297079430069e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.00026846822038808485
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.0028406269280026666
+grhogscl_pl (0,20,0) 1.3944118703135084
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 1
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[-3.04794347e-06  4.08017911e-05  1.38793612e-06 -2.28972697e-04
+ -2.16390867e-04 -7.40791013e-05]
+[nan nan nan nan nan nan]
+[1.40570188e-03 1.36153445e-02 1.14953400e-02            nan
+ 0.00000000e+00 2.62887771e-05]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 9.995297079430069e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[5.44436585e-067 1.95046302e+233 3.77102588e+151 0.00000000e+000
+ 0.00000000e+000 0.00000000e+000]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 4.57669157e-072 8.01768642e-096 0.00000000e+000
+ 0.00000000e+000 0.00000000e+000]
+
+rhog1 1.3890457183548246
+rhogvx1 -2.6359405627066823
+rhogvy1 -9.295384528178893
+rhogvz1 -0.0006070695555609266
+rhogw1 -7.18062671915091e-05
+rhog1_pl 0,2  0.00037815868858963504
+rhogvx1_pl    -3.6674007110458672e-06
+rhogvy1_pl    -0.00012006578049071407
+rhogvz1_pl    0.0006304348562415428
+rhogw1_pl     nan
+rhog1_pl 2,2  3.3255070815209337e-06
+rhogvx1_pl    2.8762143475042604e-05
+rhogvy1_pl    -4.257379193243913e-06
+rhogvz1_pl    0.00020836705583548727
+rhogw1_pl     0.0
+rhogkin11         33.60305400481905
+rhogkin11_pl 0,2  0.4274997146824879
+rhogkin11_pl 2,2  0.4819931356925877
+rhogkin11_pl :,2  [ 4.27499715e-01  3.90057846e-03  4.81993136e-01  1.41622506e+00
+ -0.00000000e+00  3.31144877e-07]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.0001608435832873969
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.2956156221398719
+grhogscl_pl (0,20,0) 5.722453179062078e-05
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [ 2.63769004e-04 -2.07184953e-03  7.72733856e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+AFTERsmallstep
+PROG[6, 5, 10, 1, :] [ 8.32710288e-01  2.70362901e+00 -1.46168708e+01 -4.51924933e-05
+ -2.07184953e-03  1.67979519e+05]
+PROG_split[6, 5, 10, 1, :] [ 2.63769004e-04 -2.92373629e-05  1.87498081e-05 -4.51924933e-05
+ -2.07184953e-03  7.72733856e+01]
+PROG_mean [6, 5, 10, 1, :] [ 8.32650435e-01  2.70365559e+00 -1.46168709e+01  1.40394722e-06
+ -2.12831798e-03]
+PROG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_mean_pl[0, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[1, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[2, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[3, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[4, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[5, 10, 1, :] [0. 0. 0. 0. 0.]
+ZEZE in lstep loop, nl =  0
+l =  0
+RHOG [0.83322062 0.83582198 0.83873327 0.8419205  0.84533572 0.84891936
+ 0.85260357 0.85631608 0.85998426 0.86353908 0.86691874 0.87007166
+ 0.87295873 0.87555448 0.87784746 0.87983949 0.88154407 0.88298347]
+RHOG [0.83873337 0.84196116 0.84542801 0.84907489 0.85283379 0.85663137
+ 0.86039313 0.86404753 0.86752986 0.87078558 0.87377277 0.87646352
+ 0.87884426 0.88091507 0.88268794 0.8841843 ]
+RHOG [0.83579157 0.83873337 0.84196116 0.84542801 0.84907489 0.85283379
+ 0.85663137 0.86039313 0.86404753 0.86752986 0.87078558 0.87377277
+ 0.87646352 0.87884426 0.88091507 0.88268794 0.8841843  0.88543157]
+RHOG [0.83322062 0.83582198 0.83873327 0.8419205  0.84533572 0.84891936
+ 0.85260357 0.85631608 0.85998426 0.86353908 0.86691874 0.87007166
+ 0.87295873 0.87555448 0.87784746 0.87983949 0.88154407 0.88298347]
+RHOG [0.82304974 0.82329865 0.82366174 0.82416568 0.82483725 0.82570213
+ 0.82678352 0.82810062 0.82966661 0.83148532 0.83354455 0.83580644
+ 0.83821294 0.84069944 0.84319662 0.84562751 0.84790708 0.8499554 ]
+WOW1
+WOW2
+ZDZD in lstep loop, nl =  0
+l =  0
+RHOG [0.83322062 0.83582198 0.83873327 0.8419205  0.84533572 0.84891936
+ 0.85260357 0.85631608 0.85998426 0.86353908 0.86691874 0.87007166
+ 0.87295873 0.87555448 0.87784746 0.87983949 0.88154407 0.88298347]
+RHOG [0.83873337 0.84196116 0.84542801 0.84907489 0.85283379 0.85663137
+ 0.86039313 0.86404753 0.86752986 0.87078558 0.87377277 0.87646352
+ 0.87884426 0.88091507 0.88268794 0.8841843 ]
+RHOG [0.83579157 0.83873337 0.84196116 0.84542801 0.84907489 0.85283379
+ 0.85663137 0.86039313 0.86404753 0.86752986 0.87078558 0.87377277
+ 0.87646352 0.87884426 0.88091507 0.88268794 0.8841843  0.88543157]
+RHOG [0.83322062 0.83582198 0.83873327 0.8419205  0.84533572 0.84891936
+ 0.85260357 0.85631608 0.85998426 0.86353908 0.86691874 0.87007166
+ 0.87295873 0.87555448 0.87784746 0.87983949 0.88154407 0.88298347]
+WOW11
+ZCZC in lstep loop, nl =  0
+l =  0
+RHOG [0.83322062 0.83582198 0.83873327 0.8419205  0.84533572 0.84891936
+ 0.85260357 0.85631608 0.85998426 0.86353908 0.86691874 0.87007166
+ 0.87295873 0.87555448 0.87784746 0.87983949 0.88154407 0.88298347]
+RHOG [0.83873337 0.84196116 0.84542801 0.84907489 0.85283379 0.85663137
+ 0.86039313 0.86404753 0.86752986 0.87078558 0.87377277 0.87646352
+ 0.87884426 0.88091507 0.88268794 0.8841843 ]
+lstep starting, iteration number:  1
+th 249.19741412254422
+th 243.26726951469828
+eth 249045.34566606395
+eth 243088.04536135567
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 2.0196279183250693e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -2.266824858995805e-05
+grhogscl_pl (0,20,0) 2.280383233e-314
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -5.732193031296886e-06
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -2.96169941643381e-06
+grhogscl_pl (0,20,0) 2.2803853043e-314
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -1.7637589029893838e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -4.387551814433159e-09
+grhogscl_pl (0,20,0) 2.280386581e-314
+self.vvx_pl (:,2,0) [1.1240e-320 1.1255e-320 0.0000e+000 5.5829e-321 1.1275e-320 1.1280e-320]
+self.vvy_pl (:,2,0) [2.28037909e-314 2.28037951e-314 2.28037975e-314 2.28038006e-314
+ 2.28038042e-314 2.28037018e-314]
+self.vvz_pl (:,2,0) [1.18575755e-322 1.14030351e-320 1.13882131e-320 4.04738577e-320
+ 2.28038245e-314 4.94065646e-324]
+self.dvvx_pl(:,2,0) [2.28038314e-314 2.28038347e-314 2.28038298e-314 2.28038413e-314
+ 0.00000000e+000 0.00000000e+000]
+self.dvvy_pl(:,2,0) [2.28038516e-314 2.28038549e-314 2.28038583e-314 0.00000000e+000
+ 5.47918801e-321 1.15413735e-320]
+self.dvvz_pl(:,2,0) [5.57306049e-321 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 0.00000000e+000 2.28038885e-314]
+OPRT_diffusion, update tend: 
+vtmp[6,5,2,0,:]
+[-5.91738003e-26 -2.15057326e-25  1.01299674e-28 -6.08275893e-31
+ -4.75403021e-05  2.13625484e-12]
+vtmp_lap1[6,5,2,0,:]
+[0. 0. 0. 0. 0. 0.]
+tendency 0: 
+tendency[6,5,2,0,:]
+[-2.13625484e-12  9.86341368e-10  3.58469349e-09 -1.68851855e-12
+  1.02213863e-14  4.75403021e-05]
+tendency 1: 
+tendency[6,5,2,0,:]
+[-2.13625484e-12  9.92563420e-10  3.58292980e-09 -1.28489190e-11
+  1.02213863e-14  4.75403021e-05]
+BEFOREsmallstep
+DIAG[6, 5, 10, 1, :] [ 6.73298043e+04  2.81151560e+02  3.24678228e+00 -1.75533688e+01
+ -5.42715683e-05 -2.41162098e-03]
+PROG[6, 5, 10, 1, :] [ 8.32710288e-01  2.70362901e+00 -1.46168708e+01 -4.51924933e-05
+ -2.07184953e-03  1.67979519e+05]
+g_TEND[6, 5, 10, 1, :] [ 4.33458118e-13 -5.18045643e-04 -1.13076098e-04 -9.45196299e-04
+  1.88712157e-03 -1.81881480e-05]
+DIAG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(0, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(1, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(2, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(3, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(4, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(5, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 5.274642672318579e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+DDDDD
+CCCCC
+gdx_pl[0,3,0,:] nan
+gdy_pl[0,3,0,:] nan
+gdz_pl[0,3,0,:] nan
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+ENTERing src.src_advection_convergence for drhoge_pl
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.00015965397722928854
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.2948791880988197
+grhogscl_pl (0,20,0) nan
+BBBBB
+g_TEND_pl[0,3,0,:] [nan nan nan nan nan nan]
+g_TEND0_pl[0,3,0,:] [0. 0. 0. 0. 0. 0.]
+dpgrad_pl[0,3,0,:]  [0. 0. 0.]
+ddivdvx_2d_pl[0,3,0]  0.0
+ddivdvx_pl[0,3,0]  0.0
+NNNs num_of_itr  3
+ns  0
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 6.72695253e-04 -3.34414742e-03  9.49379967e-05]
+PROG_split[6, 5, 10, 1, :] [-2.63769004e-04  2.92373629e-05 -1.87498081e-05  4.51924933e-05
+  2.07184953e-03 -7.72733856e+01]
+g_TEND[6, 5, 10, 1, :] [ 5.98532851e-07  2.71428721e-06 -1.67585800e-05 -6.76092884e-07
+ -9.33850514e-03  1.75450404e-01]
+PROG[6, 5, 10, 1, :] [ 8.32710288e-01  2.70362901e+00 -1.46168708e+01 -4.51924933e-05
+ -2.07184953e-03  1.67979519e+05]
+preg_prim_split[6, 5, 10, 1] -30.909354243101554
+eth[6, 5, 10, 1] 282416.74248658423
+drhogw[6, 5, 10, 1] -0.009338505140485509
+grhogetot0[6, 5, 10, 1] -1.8188148031094004e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -6.535747023756169e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -0.00017904675272235638
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -0.0013771173580607878
+grhogscl_pl (0,20,0) 0.0
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 2
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[3.59419974 6.72487766 5.25440592 6.7846903         nan        nan]
+[nan nan nan nan nan nan]
+[-0. -0. -0. -0. -0. -0.]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -6.535747023756169e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 5.59560187e-048  1.54491964e+262  1.15772159e+142 -9.28880245e-008
+  0.00000000e+000  0.00000000e+000]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 6.20848068e-071 7.58052221e-096             nan
+ 0.00000000e+000 0.00000000e+000]
+
+rhog1 1.38903413770553
+rhogvx1 -2.6355862559889056
+rhogvy1 -9.297329484403395
+rhogvz1 -0.00010217582564235638
+rhogw1 -0.0001237015426830969
+rhog1_pl 0,2  -0.0
+rhogvx1_pl    1.7789239042221336e-28
+rhogvy1_pl    0.0
+rhogvz1_pl    -0.0
+rhogw1_pl     -0.0
+rhog1_pl 2,2  -0.0
+rhogvx1_pl    -7.580320077224422e-07
+rhogvy1_pl    -4.6560038391694593e-14
+rhogvz1_pl    -0.0
+rhogw1_pl     -0.0
+rhogkin11         33.61567870565228
+rhogkin11_pl 0,2  nan
+rhogkin11_pl 2,2  nan
+rhogkin11_pl :,2  [nan nan nan nan nan nan]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -1.871327727640856e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.5322004483540992
+grhogscl_pl (0,20,0) 0.0
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [-2.74634989e-05 -1.93295344e-03 -7.98152008e+00]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  3
+ns  1
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 1.23525608e-03 -6.68848577e-03 -3.33281369e-06]
+PROG_split[6, 5, 10, 1, :] [-2.74634989e-05  6.72695253e-04 -3.34414742e-03  9.49379967e-05
+ -1.93295344e-03 -7.98152008e+00]
+g_TEND[6, 5, 10, 1, :] [ 5.98532851e-07  2.71428721e-06 -1.67585800e-05 -6.76092884e-07
+ -9.33850514e-03  1.75450404e-01]
+PROG[6, 5, 10, 1, :] [ 8.32710288e-01  2.70362901e+00 -1.46168708e+01 -4.51924933e-05
+ -2.07184953e-03  1.67979519e+05]
+preg_prim_split[6, 5, 10, 1] -3.1926080326316497
+eth[6, 5, 10, 1] 282416.74248658423
+drhogw[6, 5, 10, 1] -0.009338505140485509
+grhogetot0[6, 5, 10, 1] -1.8188148031094004e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 1.5705172260261004e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 4.542359824063805e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -4.637757997586857e-05
+grhogscl_pl (0,20,0) 1.2693130470397588e-76
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 3
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[ 0.          0.          0.         -8.42063499 -9.12934273 -5.940141  ]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 1.5705172260261004e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[4.62857338e-072 1.54491964e+262 1.15772159e+142 0.00000000e+000
+ 0.00000000e+000 0.00000000e+000]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 6.20848068e-071 7.58052221e-096 0.00000000e+000
+ 0.00000000e+000 0.00000000e+000]
+
+rhog1 1.3894696645588112
+rhogvx1 -2.6372346734799055
+rhogvy1 -9.298712418823168
+rhogvz1 -0.0008026408924246632
+rhogw1 -0.0001308825077690569
+rhog1_pl 0,2  0.0
+rhogvx1_pl    0.0
+rhogvy1_pl    0.0
+rhogvz1_pl    0.0
+rhogw1_pl     0.0
+rhog1_pl 2,2  0.0
+rhogvx1_pl    0.0
+rhogvy1_pl    0.0
+rhogvz1_pl    0.0
+rhogw1_pl     0.0
+rhogkin11         33.617524192239884
+rhogkin11_pl 0,2  0.42671011604066306
+rhogkin11_pl 2,2  0.48110052371471407
+rhogkin11_pl :,2  [0.42671012        nan 0.48110052 1.41347104        nan 0.53869554]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.00020637333835366
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.5419651963637577
+grhogscl_pl (0,20,0) -8.950948002147628
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [ 1.62251194e-04 -1.54019001e-03  4.78661143e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  3
+ns  2
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 0.00177758 -0.01004007 -0.00013944]
+PROG_split[6, 5, 10, 1, :] [ 1.62251194e-04  1.23525608e-03 -6.68848577e-03 -3.33281369e-06
+ -1.54019001e-03  4.78661143e+01]
+g_TEND[6, 5, 10, 1, :] [ 5.98532851e-07  2.71428721e-06 -1.67585800e-05 -6.76092884e-07
+ -9.33850514e-03  1.75450404e-01]
+PROG[6, 5, 10, 1, :] [ 8.32710288e-01  2.70362901e+00 -1.46168708e+01 -4.51924933e-05
+ -2.07184953e-03  1.67979519e+05]
+preg_prim_split[6, 5, 10, 1] 19.14644573020255
+eth[6, 5, 10, 1] 282416.74248658423
+drhogw[6, 5, 10, 1] -0.009338505140485509
+grhogetot0[6, 5, 10, 1] -1.8188148031094004e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 1.299425203844737e-09
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.00036581098764416203
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.0011859735450937814
+grhogscl_pl (0,20,0) 3.2638252750199823e-18
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 4
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[0.48925505 1.41191182 0.94098576 0.         0.         0.        ]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 1.299425203844737e-09
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06291094e-06 3.90646207e-03            nan 2.05220981e-06
+ 1.05188302e-06 2.10048224e-06]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0.00000000e+00 5.32799335e-02 1.37406808e-06            nan
+ 1.60936794e-06 1.82634342e-06]
+
+rhog1 1.3898619561852017
+rhogvx1 -2.6395681922119203
+rhogvy1 -9.299903677512246
+rhogvz1 -0.0019153485387622625
+rhogw1 -0.00011835734553319443
+rhog1_pl 0,2  0.0
+rhogvx1_pl    0.0
+rhogvy1_pl    0.0
+rhogvz1_pl    -5.149991536134298e-13
+rhogw1_pl     -0.0
+rhog1_pl 2,2  0.0
+rhogvx1_pl    0.0
+rhogvy1_pl    0.0
+rhogvz1_pl    -6.297433001356715e-17
+rhogw1_pl     -0.0
+rhogkin11         33.620436905353905
+rhogkin11_pl 0,2  -0.0
+rhogkin11_pl 2,2  -0.0
+rhogkin11_pl :,2  [-0. -0. -0. -0. -0. -0.]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.0005278336317431804
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.4881207494946892
+grhogscl_pl (0,20,0) 0.5383085690850483
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [ 3.07143436e-04 -1.01754648e-03  9.06956721e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+AFTERsmallstep
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+PROG_split[6, 5, 10, 1, :] [ 3.07143436e-04  1.77758464e-03 -1.00400746e-02 -1.39437646e-04
+ -1.01754648e-03  9.06956721e+01]
+PROG_mean [6, 5, 10, 1, :] [ 8.32857598e-01  2.70485752e+00 -1.46235617e+01 -6.11366476e-05
+ -3.56874618e-03]
+PROG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_mean_pl[0, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[1, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[2, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[3, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[4, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[5, 10, 1, :] [0. 0. 0. 0. 0.]
+ZEZE in lstep loop, nl =  1
+l =  0
+RHOG [0.83352809 0.83613027 0.8390424  0.84223045 0.84564642 0.8492307
+ 0.85291538 0.85662814 0.86029631 0.86385085 0.86722995 0.87038205
+ 0.87326804 0.87586255 0.87815415 0.88014475 0.88184789 0.8832859 ]
+RHOG [0.83904253 0.84227116 0.84573876 0.84938629 0.85314565 0.85694348
+ 0.86070521 0.86435928 0.86784097 0.87109577 0.87408175 0.87677108
+ 0.87915024 0.88121938 0.88299057 0.88448529]
+RHOG [0.83609989 0.83904253 0.84227116 0.84573876 0.84938629 0.85314565
+ 0.85694348 0.86070521 0.86435928 0.86784097 0.87109577 0.87408175
+ 0.87677108 0.87915024 0.88121938 0.88299057 0.88448529 0.88573101]
+RHOG [0.83352809 0.83613027 0.8390424  0.84223045 0.84564642 0.8492307
+ 0.85291538 0.85662814 0.86029631 0.86385085 0.86722995 0.87038205
+ 0.87326804 0.87586255 0.87815415 0.88014475 0.88184789 0.8832859 ]
+RHOG [0.8233536  0.82360258 0.82396579 0.8244699  0.8251417  0.82600687
+ 0.82708862 0.82840617 0.82997268 0.83179198 0.83385181 0.83611435
+ 0.83852153 0.8410087  0.84350648 0.84593788 0.84821785 0.85026664]
+WOW1
+WOW2
+ZDZD in lstep loop, nl =  1
+l =  0
+RHOG [0.83352809 0.83613027 0.8390424  0.84223045 0.84564642 0.8492307
+ 0.85291538 0.85662814 0.86029631 0.86385085 0.86722995 0.87038205
+ 0.87326804 0.87586255 0.87815415 0.88014475 0.88184789 0.8832859 ]
+RHOG [0.83904253 0.84227116 0.84573876 0.84938629 0.85314565 0.85694348
+ 0.86070521 0.86435928 0.86784097 0.87109577 0.87408175 0.87677108
+ 0.87915024 0.88121938 0.88299057 0.88448529]
+RHOG [0.83609989 0.83904253 0.84227116 0.84573876 0.84938629 0.85314565
+ 0.85694348 0.86070521 0.86435928 0.86784097 0.87109577 0.87408175
+ 0.87677108 0.87915024 0.88121938 0.88299057 0.88448529 0.88573101]
+RHOG [0.83352809 0.83613027 0.8390424  0.84223045 0.84564642 0.8492307
+ 0.85291538 0.85662814 0.86029631 0.86385085 0.86722995 0.87038205
+ 0.87326804 0.87586255 0.87815415 0.88014475 0.88184789 0.8832859 ]
+WOW11
+ZCZC in lstep loop, nl =  1
+l =  0
+RHOG [0.83352809 0.83613027 0.8390424  0.84223045 0.84564642 0.8492307
+ 0.85291538 0.85662814 0.86029631 0.86385085 0.86722995 0.87038205
+ 0.87326804 0.87586255 0.87815415 0.88014475 0.88184789 0.8832859 ]
+RHOG [0.83904253 0.84227116 0.84573876 0.84938629 0.85314565 0.85694348
+ 0.86070521 0.86435928 0.86784097 0.87109577 0.87408175 0.87677108
+ 0.87915024 0.88121938 0.88299057 0.88448529]
+lstep starting, iteration number:  2
+in 2nd lstep loop, nl =  2
+DIAG[6, 5, 41, 0, I_vx] -6.3687261473147405
+DIAG[6, 5, 41, 0, I_vy] -22.57665351154585
+DIAG[6, 5, 41, 0, I_vz] 0.017175967480412734
+DIAG[6, 5, 41, 0, I_w] 8.924965304177833e-16
+DIAG[6, 5, 41, 0, I_tem] 261.8590464063126
+DIAG[6, 5, 41, 0, I_pre] 156.66340259027334
+PROG[6, 5, 41, 0, I_RHOG] 0.002092179309697491
+PROG[6, 5, 41, 0, I_RHOGVX] -0.013324517074541317
+PROG[6, 5, 41, 0, I_RHOGVY] -0.047234407359065436
+PROG[6, 5, 41, 0, I_RHOGVZ] 3.593520378655647e-05
+PROG[6, 5, 41, 0, I_RHOGW] 2.1385079154954462e-18
+PROG[6, 5, 41, 0, I_RHOGE] 393.0867366454787
+th 249.1976954864417
+th 243.26754960101712
+eth 249104.2672084819
+eth 243147.46492749566
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 2.0201035291614966e-05
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -2.4292679410652e-05
+grhogscl_pl (0,20,0) 2.280383233e-314
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -5.754544141210214e-06
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -8.604602113905699e-06
+grhogscl_pl (0,20,0) 2.2803853043e-314
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -2.800135256072221e-10
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -1.252533877460479e-08
+grhogscl_pl (0,20,0) 2.280386581e-314
+self.vvx_pl (:,2,0) [1.1240e-320 1.1255e-320 0.0000e+000 5.5829e-321 1.1275e-320 1.1280e-320]
+self.vvy_pl (:,2,0) [2.28037909e-314 2.28037951e-314 2.28037975e-314 2.28038006e-314
+ 2.28038042e-314 2.28037018e-314]
+self.vvz_pl (:,2,0) [1.18575755e-322 1.14030351e-320 1.13882131e-320 4.04738577e-320
+ 2.28038245e-314 4.94065646e-324]
+self.dvvx_pl(:,2,0) [2.28038314e-314 2.28038347e-314 2.28038298e-314 2.28038413e-314
+ 0.00000000e+000 0.00000000e+000]
+self.dvvy_pl(:,2,0) [2.28038516e-314 2.28038549e-314 2.28038583e-314 0.00000000e+000
+ 5.47918801e-321 1.15413735e-320]
+self.dvvz_pl(:,2,0) [5.57306049e-321 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 0.00000000e+000 2.28038885e-314]
+OPRT_diffusion, update tend: 
+vtmp[6,5,2,0,:]
+[-5.99153233e-26 -2.14922730e-25  1.11874809e-28 -1.10589350e-30
+ -4.75624718e-05  2.13851864e-12]
+vtmp_lap1[6,5,2,0,:]
+[0. 0. 0. 0. 0. 0.]
+tendency 0: 
+tendency[6,5,2,0,:]
+[-2.13851864e-12  9.99288342e-10  3.58455511e-09 -1.86588649e-12
+  1.85941816e-14  4.75624718e-05]
+tendency 1: 
+tendency[6,5,2,0,:]
+[-2.13851864e-12  1.00241467e-09  3.58366893e-09 -7.47353780e-12
+  1.85941816e-14  4.75624718e-05]
+BEFOREsmallstep
+DIAG[6, 5, 10, 1, :] [ 6.73661570e+04  2.81199640e+02  3.24771906e+00 -1.75589493e+01
+ -2.21640187e-04 -3.59467243e-03]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+g_TEND[6, 5, 10, 1, :] [ 4.33773638e-13 -5.17460163e-04 -1.18258207e-04 -9.45850522e-04
+  1.88841855e-03 -1.81942899e-05]
+DIAG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+DIAG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(0, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(1, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(2, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(3, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(4, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+g_TEND_pl(5, 10, 1, :) [0. 0. 0. 0. 0. 0.]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 1.8268894710757455e-09
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+DDDDD
+CCCCC
+gdx_pl[0,3,0,:] nan
+gdy_pl[0,3,0,:] nan
+gdz_pl[0,3,0,:] nan
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+ENTERing src.src_advection_convergence for drhoge_pl
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) 0.000525447184426987
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.48695059488120673
+grhogscl_pl (0,20,0) nan
+BBBBB
+g_TEND_pl[0,3,0,:] [nan nan nan nan nan nan]
+g_TEND0_pl[0,3,0,:] [0. 0. 0. 0. 0. 0.]
+dpgrad_pl[0,3,0,:]  [0. 0. 0.]
+ddivdvx_2d_pl[0,3,0]  0.0
+ddivdvx_pl[0,3,0]  0.0
+NNNs num_of_itr  6
+ns  0
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [-0.00098779  0.00565951  0.00010353]
+PROG_split[6, 5, 10, 1, :] [-5.70912440e-04 -1.74834727e-03  1.00213247e-02  1.84630139e-04
+  3.08939602e-03 -1.67969058e+02]
+g_TEND[6, 5, 10, 1, :] [ 7.24461211e-07  3.30927986e-06 -2.19531313e-05 -1.31766901e-06
+ -5.00018697e-03  2.14060963e-01]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+preg_prim_split[6, 5, 10, 1] -67.18762309914455
+eth[6, 5, 10, 1] 282465.0385854746
+drhogw[6, 5, 10, 1] -0.005000186965611775
+grhogetot0[6, 5, 10, 1] -1.8194289877536297e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -1.906341659140288e-09
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -0.0005310885527208865
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) -0.0025796497270479416
+grhogscl_pl (0,20,0) -0.0
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 5
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[-0. -0. -0. -0. -0. -0.]
+[nan nan nan nan nan nan]
+[-0.00224219 -0.00513126 -0.00721167 -0.00628422 -0.00287042 -0.00087325]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -1.906341659140288e-09
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 1.26761521e-076  8.01768642e-096  1.05194027e-153 -7.91331688e-014
+  3.39827080e-011  4.09949096e-005]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 3.92219627e+223 2.11777118e+161 1.41860461e-013
+             nan 4.13213683e-005]
+
+rhog1 1.38914195487559
+rhogvx1 -2.6360052375618865
+rhogvy1 -9.29836451831203
+rhogvz1 -0.0001721952987574723
+rhogw1 -0.00015588744021111686
+rhog1_pl 0,2  -6.91706166191226e-05
+rhogvx1_pl    nan
+rhogvy1_pl    -2.7858175577087825e-05
+rhogvz1_pl    nan
+rhogw1_pl     3.6537709103269054e-22
+rhog1_pl 2,2  0.0
+rhogvx1_pl    nan
+rhogvy1_pl    6.563447782712704e-11
+rhogvz1_pl    nan
+rhogw1_pl     6.616108088304896e-07
+rhogkin11         33.6207923867275
+rhogkin11_pl 0,2  0.42648935465872456
+rhogkin11_pl 2,2  0.48085518477323225
+rhogkin11_pl :,2  [ 4.26489355e-01             nan  4.80855185e-01  1.41293663e+00
+ -6.82798448e-05  0.00000000e+00]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) -4.877687694715004e-06
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) 0.666532505862067
+grhogscl_pl (0,20,0) -0.0
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [-3.18422153e-04 -1.65110453e-03 -9.36689071e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  6
+ns  1
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [-0.00029526  0.00128116 -0.00010221]
+PROG_split[6, 5, 10, 1, :] [-3.18422153e-04 -9.87793339e-04  5.65950527e-03  1.03531156e-04
+ -1.65110453e-03 -9.36689071e+01]
+g_TEND[6, 5, 10, 1, :] [ 7.24461211e-07  3.30927986e-06 -2.19531313e-05 -1.31766901e-06
+ -5.00018697e-03  2.14060963e-01]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+preg_prim_split[6, 5, 10, 1] -37.46756283852664
+eth[6, 5, 10, 1] 282465.0385854746
+drhogw[6, 5, 10, 1] -0.005000186965611775
+grhogetot0[6, 5, 10, 1] -1.8194289877536297e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) nan
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 6
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[-5.82735305e+06 -3.60425133e+06 -1.81208611e+06 -1.82240186e-07
+ -2.92677542e+06 -6.00039832e+06]
+[nan nan nan nan nan nan]
+[-5.22702517e+06 -2.21290750e-01  4.80600211e+06  6.07398886e+06
+  5.87909742e+06  4.65435898e+05]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.26761521e-076 8.01768642e-096 1.05194027e-153             nan
+             nan             nan]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 3.92219627e+223 2.11777118e+161             nan
+             nan             nan]
+
+rhog1 nan
+rhogvx1 nan
+rhogvy1 nan
+rhogvz1 nan
+rhogw1 nan
+rhog1_pl 0,2  269836.2937342498
+rhogvx1_pl    4356612.169162504
+rhogvy1_pl    2739394.637504109
+rhogvz1_pl    116728.52922040132
+rhogw1_pl     nan
+rhog1_pl 2,2  2739394.6375040067
+rhogvx1_pl    890777.0283140669
+rhogvy1_pl    4783016.250611421
+rhogvz1_pl    23363.52054667076
+rhogw1_pl     nan
+rhogkin11         nan
+rhogkin11_pl 0,2  nan
+rhogkin11_pl 2,2  nan
+rhogkin11_pl :,2  [           nan            nan            nan 1.41363402e+00
+ 3.62333637e-18 7.56220967e-18]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) 1243787.7541892633
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [-1.16862393e-04 -1.06437426e-03 -3.41588033e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  6
+ns  2
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 0.00038463 -0.00310303 -0.00033203]
+PROG_split[6, 5, 10, 1, :] [-1.16862393e-04 -2.95255173e-04  1.28115998e-03 -1.02210361e-04
+ -1.06437426e-03 -3.41588033e+01]
+g_TEND[6, 5, 10, 1, :] [ 7.24461211e-07  3.30927986e-06 -2.19531313e-05 -1.31766901e-06
+ -5.00018697e-03  2.14060963e-01]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+preg_prim_split[6, 5, 10, 1] -13.663521338282804
+eth[6, 5, 10, 1] 282465.0385854746
+drhogw[6, 5, 10, 1] -0.005000186965611775
+grhogetot0[6, 5, 10, 1] -1.8194289877536297e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) nan
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 7
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[-0. -0. -0. -0. -0. -0.]
+[nan nan nan nan nan nan]
+[-0. -0. -0. -0. -0. -0.]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[7.06264249e-77 4.57668654e-72 9.99871396e-96 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 9.07448663e+130 2.96971938e+222 0.00000000e+000
+ 0.00000000e+000 0.00000000e+000]
+
+rhog1 nan
+rhogvx1 nan
+rhogvy1 nan
+rhogvz1 nan
+rhogw1 nan
+rhog1_pl 0,2  nan
+rhogvx1_pl    -0.013238292083621988
+rhogvy1_pl    0.0003074573166252363
+rhogvz1_pl    nan
+rhogw1_pl     0.001400815007074137
+rhog1_pl 2,2  -0.011562199458356497
+rhogvx1_pl    nan
+rhogvy1_pl    -0.0018394199517757141
+rhogvz1_pl    -8.486598748956345e-05
+rhogw1_pl     3.113267769376336e-05
+rhogkin11         nan
+rhogkin11_pl 0,2  nan
+rhogkin11_pl 2,2  nan
+rhogkin11_pl :,2  [            nan             nan             nan  2.75182399e-07
+             nan -2.36595533e-05]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) -1.0675570054351669e-24
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [ 3.71877486e-05 -4.03503503e-04  1.14887456e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  6
+ns  3
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 0.00107196 -0.00748892 -0.00054936]
+PROG_split[6, 5, 10, 1, :] [ 3.71877486e-05  3.84632284e-04 -3.10302918e-03 -3.32033569e-04
+ -4.03503503e-04  1.14887456e+01]
+g_TEND[6, 5, 10, 1, :] [ 7.24461211e-07  3.30927986e-06 -2.19531313e-05 -1.31766901e-06
+ -5.00018697e-03  2.14060963e-01]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+preg_prim_split[6, 5, 10, 1] 4.595498234752684
+eth[6, 5, 10, 1] 282465.0385854746
+drhogw[6, 5, 10, 1] -0.005000186965611775
+grhogetot0[6, 5, 10, 1] -1.8194289877536297e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) -3.8421381853955184e-05
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 8
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[9.23113528e-05 2.15737491e-04 5.14177301e-05 1.06382382e-04
+ 9.87255872e-05 3.00021859e-05]
+[nan nan nan nan nan nan]
+[-0.00166459  0.00107     0.00032536  0.00016153 -0.00128432 -0.00025093]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 7.06264249e-077  1.05132387e-153  4.57670884e-072 -5.57799091e-004
+ -1.47181575e-003 -3.33587398e-004]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 1.06544910e+200  2.13388842e+161  5.04044322e+223  2.86924875e-004
+ -2.70123442e-003 -7.91782068e-004]
+
+rhog1 nan
+rhogvx1 nan
+rhogvy1 nan
+rhogvz1 nan
+rhogw1 nan
+rhog1_pl 0,2  -0.00014049335258167512
+rhogvx1_pl    0.00030783042162888484
+rhogvy1_pl    0.00017541814272991558
+rhogvz1_pl    nan
+rhogw1_pl     0.0
+rhog1_pl 2,2  -8.32196487963297e-06
+rhogvx1_pl    -8.52633933356852e-06
+rhogvy1_pl    0.00023196951181211984
+rhogvz1_pl    nan
+rhogw1_pl     0.0
+rhogkin11         nan
+rhogkin11_pl 0,2  nan
+rhogkin11_pl 2,2  nan
+rhogkin11_pl :,2  [       nan        nan        nan 1.41080286        nan        nan]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) 3.21877279069521e-05
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [1.53258672e-04 2.26810806e-04 4.59953270e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  6
+ns  4
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 0.00177329 -0.01187489 -0.00074215]
+PROG_split[6, 5, 10, 1, :] [ 1.53258672e-04  1.07195788e-03 -7.48892182e-03 -5.49364810e-04
+  2.26810806e-04  4.59953270e+01]
+g_TEND[6, 5, 10, 1, :] [ 7.24461211e-07  3.30927986e-06 -2.19531313e-05 -1.31766901e-06
+ -5.00018697e-03  2.14060963e-01]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+preg_prim_split[6, 5, 10, 1] 18.39813079942073
+eth[6, 5, 10, 1] 282465.0385854746
+drhogw[6, 5, 10, 1] -0.005000186965611775
+grhogetot0[6, 5, 10, 1] -1.8194289877536297e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) nan
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 9
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[-4.95139283e-11             nan  1.07255518e-06  1.18246858e-06
+  1.26234656e-06             nan]
+[nan nan nan nan nan nan]
+[ 3.21590631e-27 -5.52508083e-17 -9.83499764e-16 -2.92296602e-15
+ -7.66657755e-16  0.00000000e+00]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 7.06264249e-077  1.05132387e-153  4.57670884e-072  2.81223096e-011
+ -6.82798448e-005  2.58262857e-314]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[1.06544910e+200 2.13388842e+161 5.04044322e+223 3.25668997e-011
+ 0.00000000e+000 2.58262588e-314]
+
+rhog1 nan
+rhogvx1 nan
+rhogvy1 nan
+rhogvz1 nan
+rhogw1 nan
+rhog1_pl 0,2  1.93502372480099e-14
+rhogvx1_pl    -3.12313655765652e-15
+rhogvy1_pl    -8.197489941352612e-15
+rhogvz1_pl    0.7996988934752278
+rhogw1_pl     nan
+rhog1_pl 2,2  3.4323693250089073e-14
+rhogvx1_pl    1.9244671991783824e-15
+rhogvy1_pl    -4.413075696747011e-16
+rhogvz1_pl    0.37167997136594094
+rhogw1_pl     nan
+rhogkin11         nan
+rhogkin11_pl 0,2  nan
+rhogkin11_pl 2,2  nan
+rhogkin11_pl :,2  [        nan         nan         nan  1.40825065 -0.                 nan]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) 1.1577215860828192e+142
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [2.40496552e-04 7.83144894e-04 7.19987192e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+NNNs num_of_itr  6
+ns  5
+CCCCC
+gdx_pl[0,3,0,:] 0.0
+gdy_pl[0,3,0,:] 0.0
+gdz_pl[0,3,0,:] 0.0
+vtmp2_pl[0,3,0,:] [0. 0. 0.]
+gradelements
+coef_grad X
+[ 2.15423458e-07 -1.41797329e-06 -4.73069266e-09  1.08219461e-06
+  1.33461394e-06  1.74514129e-07 -1.38404215e-06]
+scl
+[nan nan nan]
+grad X
+nan
+coef_grad Y
+[-1.56514303e-07 -6.44222465e-07 -1.40483324e-06 -7.86260404e-07
+  4.38616502e-07  1.54764843e-06  1.00556548e-06]
+scl
+[nan nan nan]
+grad Y
+nan
+coef_grad Z
+[ 2.21991723e-07 -6.21102869e-08 -8.28280179e-09  1.28228100e-08
+ -8.28280179e-09 -6.21102869e-08 -9.40283555e-08]
+scl
+[nan nan nan]
+grad Z
+nan
+BEFOREvimain
+diff_vh[6, 5, 10, 1, :] [ 0.00248995 -0.0162603  -0.00090789]
+PROG_split[6, 5, 10, 1, :] [ 2.40496552e-04  1.77329434e-03 -1.18748919e-02 -7.42149825e-04
+  7.83144894e-04  7.19987192e+01]
+g_TEND[6, 5, 10, 1, :] [ 7.24461211e-07  3.30927986e-06 -2.19531313e-05 -1.31766901e-06
+ -5.00018697e-03  2.14060963e-01]
+PROG[6, 5, 10, 1, :] [ 8.33017431e-01  2.70540659e+00 -1.46269109e+01 -1.84630139e-04
+ -3.08939602e-03  1.68070215e+05]
+preg_prim_split[6, 5, 10, 1] 28.799487688421266
+eth[6, 5, 10, 1] 282465.0385854746
+drhogw[6, 5, 10, 1] -0.005000186965611775
+grhogetot0[6, 5, 10, 1] -1.8194289877536297e-05
+diff_vh_pl[0, 10, 1, :] [nan nan nan]
+diff_vh_pl[1, 10, 1, :] [nan nan nan]
+diff_vh_pl[2, 10, 1, :] [nan nan nan]
+diff_vh_pl[3, 10, 1, :] [nan nan nan]
+diff_vh_pl[4, 10, 1, :] [nan nan nan]
+diff_vh_pl[5, 10, 1, :] [nan nan nan]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+g_TEND_pl[0, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[1, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[2, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[3, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[4, 10, 1, :] [nan nan nan nan nan nan]
+g_TEND_pl[5, 10, 1, :] [nan nan nan nan nan nan]
+preg_prim_split_pl[:, 10, 1] [nan nan nan nan nan nan]
+eth_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+drhogw_pl[:, 10, 1] [nan nan nan nan nan nan]
+grhogetot0_pl[:, 10, 1] [0. 0. 0. 0. 0. 0.]
+
+
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) 1.3980406762219997e-76
+
+rhogw_split1_pl before vi_rhow_solver
+counter= 10
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[            nan 714542.01146798 713914.90395191 714706.09450078
+             nan             nan]
+[nan nan nan nan nan nan]
+[ 5.32345542e-05  1.31704598e+02  9.33967955e+01  2.55949061e+01
+ -6.42825009e+00 -1.26383615e+01]
+
+rhogw_split1_pl after vi_rhow_solver
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+[nan nan nan nan nan nan]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+
+rhog_split1_pl before Satoh2002
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 7.06264249e-077  8.01768642e-096  1.05194027e-153  1.40825065e+000
+ -0.00000000e+000              nan]
+[nan nan nan nan nan nan]
+[0. 0. 0. 0. 0. 0.]
+[nan nan nan nan nan nan]
+[ 1.06544910e+200  3.92219627e+223  2.11777118e+161  1.17436280e+000
+ -0.00000000e+000              nan]
+
+rhog1 nan
+rhogvx1 nan
+rhogvy1 nan
+rhogvz1 nan
+rhogw1 nan
+rhog1_pl 0,2  -5.095513336298674
+rhogvx1_pl    -2.524910862521231e-05
+rhogvy1_pl    8.769507809247329e-07
+rhogvz1_pl    5.318205723095936e-05
+rhogw1_pl     -5.089453895834493
+rhog1_pl 2,2  -0.871480453441656
+rhogvx1_pl    -5.9794047565637556e-05
+rhogvy1_pl    0.0008427521055183708
+rhogvz1_pl    93.36610090301885
+rhogw1_pl     -0.8704003792337749
+rhogkin11         nan
+rhogkin11_pl 0,2  nan
+rhogkin11_pl 2,2  nan
+rhogkin11_pl :,2  [       nan        nan        nan        nan 0.00938092        nan]
+before flux convergence
+self.rhogvxscl_pl (:,2,0) [2.28038915e-314 5.54835720e-321 1.16303053e-320 1.16352460e-320
+ 0.00000000e+000 1.16451273e-320]
+self.rhogvyscl_pl (:,2,0) [0.00000000e+000 5.58294180e-321 1.16698306e-320 2.28039223e-314
+ 0.00000000e+000 0.00000000e+000]
+self.rhogvzscl_pl (:,2,0) [2.28039326e-314 2.28039359e-314 2.27703263e-314 5.56811983e-321
+ 1.17488811e-320 0.00000000e+000]
+self.rhogwscl_pl  (:,2,0) [5.55823852e-321 1.17637030e-320 5.55823852e-321 5.46930670e-321
+ 1.97626258e-323 2.28039694e-314]
+AFTEROPRT_divergence
+div_rhogvh(6,5,2,0) nan
+div_rhogvh_pl(:,2,0) [0. 0. 0. 0. 0. 0.]
+self.rhogvx_vm_pl(:,2,0) [0.00000000e+000 0.00000000e+000 2.28039797e-314 0.00000000e+000
+ 1.28457068e-322 1.18625162e-320]
+self.rhogvy_vm_pl(:,2,0) [5.5829e-321 0.0000e+000 5.5829e-321 1.1887e-320 5.5829e-321 1.1907e-320]
+self.rhogvz_vm_pl(:,2,0) [7.63918486e-313 0.00000000e+000 0.00000000e+000 0.00000000e+000
+ 2.28040268e-314 2.28040310e-314]
+after flux convergence
+grhogscl (6,5,2,0) nan
+grhogscl_pl (0,20,0) nan
+XXXX rhogw_split1_pl
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+AFTERvimain
+diff_we[6, 5, 10, 1, :] [3.06234859e-04 1.25315542e-03 9.16295854e+01]
+diff_we_pl[0, 10, 1, :] [nan nan nan]
+diff_we_pl[1, 10, 1, :] [nan nan nan]
+diff_we_pl[2, 10, 1, :] [nan nan nan]
+diff_we_pl[3, 10, 1, :] [nan nan nan]
+diff_we_pl[4, 10, 1, :] [nan nan nan]
+diff_we_pl[5, 10, 1, :] [nan nan nan]
+AFTERsmallstep
+PROG[6, 5, 10, 1, :] [ 8.33323666e-01  2.70789654e+00 -1.46431712e+01 -1.09251696e-03
+ -1.83624060e-03  1.68161844e+05]
+PROG_split[6, 5, 10, 1, :] [ 3.06234859e-04  2.48995070e-03 -1.62603043e-02 -9.07886824e-04
+  1.25315542e-03  9.16295854e+01]
+PROG_mean [6, 5, 10, 1, :] [ 8.33067747e-01  2.70614606e+00 -1.46322086e+01 -6.06315845e-04
+ -3.23204121e-03]
+PROG_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[0, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[1, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[2, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[3, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[4, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_split_pl[5, 10, 1, :] [0. 0. 0. 0. 0. 0.]
+PROG_mean_pl[0, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[1, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[2, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[3, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[4, 10, 1, :] [0. 0. 0. 0. 0.]
+PROG_mean_pl[5, 10, 1, :] [0. 0. 0. 0. 0.]
+ZEZE in lstep loop, nl =  2
+l =  0
+RHOG [0.83383466 0.83643626 0.83934759        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+RHOG [0.83934785        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan]
+RHOG [0.83640601 0.83934785        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+RHOG [0.83383466 0.83643626 0.83934759        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+RHOG [0.82366188 0.82391076 0.82427386 0.82477783 0.82544946 0.82631443
+ 0.82739595 0.82871321 0.83027939 0.83209837 0.83415758 0.83641926
+        nan        nan        nan        nan        nan        nan]
+WOW1
+WOW2
+WOW3
+ZDZD in lstep loop, nl =  2
+l =  0
+RHOG [0.83383466 0.83643626 0.83934759        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+RHOG [0.83934785        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan]
+RHOG [0.83640601 0.83934785        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+RHOG [0.83383466 0.83643626 0.83934759        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+ZCZC in lstep loop, nl =  2
+l =  0
+RHOG [0.83383466 0.83643626 0.83934759        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan]
+RHOG [0.83934785        nan        nan        nan        nan        nan
+        nan        nan        nan        nan        nan        nan
+        nan        nan        nan        nan]
+------------
++++ finalize MPI
