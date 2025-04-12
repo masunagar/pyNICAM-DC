@@ -68,7 +68,7 @@
 +++ Module[calender]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** cldrparam not found in toml file! use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 +++ Module[adm]
 *** input toml file is  ../../case/config/nhm_driver.toml
 +++ Module[rgnmng]
@@ -171,7 +171,7 @@
 --- process, managing south pole : 0
 +++ Module[comm]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
-{'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}
+{'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}
 
 ====== communication information ======
 *** rellist_nmax: 335
@@ -371,7 +371,7 @@ wk[:, 1, i, j] [ 1408697.87771423 -5066869.38017308 -3596505.14555281]
 +++ Module[vmtr]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** vmtrparam not found in toml file! Use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 *** setup metrics for 3-D control volume
 +++ Module[Time]/Category[common share]
 *** input toml file is  ../../case/config/nhm_driver.toml
@@ -400,7 +400,7 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 +++ Module[chemvar]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** chemvarparam not found in toml file! use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 
 *** Prognostic Tracers
 |=========================================================|
@@ -413,7 +413,7 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 +++ Module[saturation]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** grdparam not found in toml file! Use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 *** Temperature range for ice :  233.15 -  273.15
 +++ Module[prgvar]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
@@ -449,7 +449,7 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 +++ Module[bndcnd]/Category[nhm share]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** bndcndparam not found in toml file! Use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 *** Boundary setting type (temperature, top   ) : equal to uppermost atmosphere
 *** Boundary setting type (temperature, bottom) : equal to lowermost atmosphere
 *** Boundary setting type (momentum,    top   ) : free
@@ -475,7 +475,7 @@ Run with "Thuburn Limiter" in MIURA2004 Advection
 +++ Module[forcing]/Category[nhm]
 *** input toml file is  ../../case/config/nhm_driver.toml
 *** forcing_param not found in toml file! Use default.
-{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 7, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
+{'admparam': {'glevel': 5, 'rlevel': 1, 'vlayer': 40, 'rgnmngfname': '../../case/config/nhm_driver.toml', 'ADM_HGRID_SYSTEM': 'ICO', 'precision_single': False, 'debug': False}, 'param_io': {'h_source': 'src path', 'h_institute': 'pyNICAM-DC team', 'io_log_basename': 'msg', 'io_log_suppress': False, 'io_log_allnode': True, 'io_log_nml_suppress': False, 'io_aggregate': False}, 'commparam': {'COMM_apply_barrier': False, 'COMM_varmax': 15, 'debug': False, 'testonly': False}, 'cnstparam': {'earth_radius': 6371220.0, 'earth_angvel': 7.292e-05, 'earth_gravity': 9.80616, 'gas_cnst': 287.0, 'specific_heat_pre': 1004.5}, 'param_prof': {'prof_mpi_barrier': True, 'prof_rap_level': 10}, 'rgnmngparam': {'RGNMNG_in_fname': '../../case/prepdata/rl01-prc000008.toml', 'RGNMNG_out_fname': '../../case/output/tempout'}, 'grdparam': {'GRD_grid_type': 0, 'hgrid_io_mode': 'json', 'hgrid_fname': '../../case/json_gl05rl01pe08/bboundary_GL05RL01.pe', 'vgrid_fname': '../../case/json_gl05rl01pe08/vgrid40_stretch_45km.json', 'vgrid_scheme': 'HYBRID', 'h_efold': 40000, 'topo_io_mode': 'IDEAL', 'topo_fname': '', 'toposd_fname': '', 'hflat': -999.0, 'output_vgrid': False, 'hgrid_comm_flg': True, 'triangle_size': 0.0}, 'gmtrparam': {'GMTR_polygon_type': 'ON_SPHERE', 'GMTR_io_mode': 'ADVANCED', 'GMTR_fname': ''}, 'oprtparam': {'OPRT_io_mode': '', 'OPRT_fname': 'ADVANCED'}, 'timeparam': {'integ_type': 'RK3', 'dtl': 1200.0, 'lstep_max': 6, 'start_year': 0, 'start_month': 1, 'start_day': 1, 'start_hour': 0, 'start_min': 0, 'start_sec': 0}, 'runconfparam': {'NDIFF_LOCATION': 'IN_LARGE_STEP2'}, 'bsstateparam': {'ref_type': 'NOBASE'}, 'restartparam': {'input_io_mode': 'json', 'input_basename': '../../case/restart_JW_gl05rl01pe08/restart_all_GL05RL01z40.pe', 'output_io_mode': 'ADVANCED', 'output_basename': 'restart_all_GL05RL00z40', 'restart_layername': 'ZSALL42T'}, 'dycoretestparam': {'init_type': 'Jablonowski', 'test_case': '1'}, 'idealtopoparam': {'topo_type': 'JW'}, 'numfilterparam': {'hdiff_type': 'DIRECT', 'lap_order_hdiff': 2, 'gamma_h': 1.2e+16, 'divdamp_type': 'DIRECT', 'lap_order_divdamp': 2, 'alpha_d': 1.2e+16}, 'embudgetparam': {'MNT_ON': True, 'MNT_INTV': 72}, 'nmhisd': {'output_io_mode': 'ADVANCED', 'histall_fname': 'history', 'hist3D_layername': 'ZSDEF40T', 'NO_VINTRPL': False, 'output_type': 'SNAPSHOT', 'step': 3, 'doout_step0': True}, 'nmhist': {'item': 'ml_u', 'file': 'u', 'ktype': '3D'}}
 +++ Artificial forcing type: NONE
 ### TIME = 0000/01/01 - 00:00:00 ( step =        0 /        6 )
 lstep starting, iteration number:  0 / 2
@@ -511,11 +511,9 @@ counter= 0
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.13247561e-314 2.13247594e-314 2.13247547e-314 2.13247373e-314
- 2.13247547e-314 2.13247503e-314]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 9727.39459004 12976.59013504 15407.83831146 17989.46143314
- 22229.16701105 25261.05182617]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 1
@@ -523,11 +521,9 @@ counter= 1
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 1.73791736e-18 -7.91556940e-18  1.59007877e-17  0.00000000e+00
- -9.22276957e-17 -1.04182042e-16]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 2.71406275e-16 -2.04763930e-16  4.43819003e-15  1.14194114e-15
-  1.08845672e-16 -1.19411301e-17]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.58308896e-03  3.43497572e-02  1.06419537e-01 -6.00484008e-05
  -2.12409297e-04  1.07190191e+03]
@@ -589,11 +585,9 @@ counter= 2
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.60896323e-23  1.05019041e-25 -4.83396842e-26  4.60633379e-26
-  8.68366769e-26  9.49628448e-26]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 2.26154882e-04  1.09410725e-04  1.35633105e-03 -7.53642775e-06
- -1.90500565e-04  2.18442766e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 3
@@ -601,11 +595,9 @@ counter= 3
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 1.47010640e-03  5.18032685e-04  1.39550358e-04 -2.07363377e-04
-  1.73404767e-04 -2.23981334e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 3.30123268e-04  1.26638682e-04  3.01016339e-03  6.55768567e-05
- -1.96174556e-04  7.24280612e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 4
@@ -613,10 +605,9 @@ counter= 4
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-0.0008223  -0.00022908 -0.0024179  -0.00517695 -0.00151169  0.00220281]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.12953663e-03 -8.49229052e-04  3.96942766e-05 -6.72240913e-06
- -1.59221699e-05  5.15568737e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56790922e-03  3.41781420e-02  1.06034517e-01 -8.23787077e-05
  -2.06045482e-04  1.06851541e+03]
@@ -678,8 +669,7 @@ counter= 5
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 2.45274200e-03  9.37251691e-04 -2.42591193e-03 -1.87964668e-03
- -5.30874443e-04 -9.44212743e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
@@ -689,10 +679,9 @@ counter= 6
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[6.57461633e-03 2.09748433e-03 1.12164780e-04 2.95202429e+33
- 3.89918001e-03 3.60030933e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 0.00090327 -0.00247462 -0.00262338 -0.0012658   0.00154882  0.00097989]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 7
@@ -700,11 +689,9 @@ counter= 7
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.59071366e-05 1.84791564e-05 1.10660626e-04 4.55507845e-04
- 5.51106909e-04 3.17792766e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 2.92616256e-04  6.33181262e-05 -8.60282130e-04  1.24679188e-04
-  1.44253634e-05 -7.46046243e-07]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 8
@@ -712,11 +699,9 @@ counter= 8
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.05079913e-04 1.23206693e-04 6.16765297e-05 1.11635955e-04
- 4.22926571e-05 1.70276861e-13]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.88592172e-04 -5.83607969e-05 -5.61472654e-03 -4.18275491e-03
- -2.97296719e-04  1.09582469e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 9
@@ -724,10 +709,9 @@ counter= 9
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 0.00044554  0.00016986  0.0021048   0.00212081 -0.00059715 -0.0023741 ]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.43404454e-03  3.74236700e-04 -2.92490789e-03 -6.00015060e-04
- -4.57600927e-05  4.89925153e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 10
@@ -735,11 +719,9 @@ counter= 10
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[4.75811273e-04 1.44027336e-04 4.83828799e-04 3.65252567e-04
- 1.09841865e-04 1.37676968e-14]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[3.05007277e-04 4.80352743e-05 4.95238931e-15 1.41820257e-02
- 1.96571716e-02 6.34489599e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.55740000e-03  3.38699799e-02  1.05729499e-01 -1.82090097e-04
  -6.84693100e-05  1.06617467e+03]
@@ -801,10 +783,9 @@ counter= 11
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 0.          0.          0.         -0.99545008 -1.00457426  0.        ]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-6.14649340e-05 -1.28585575e-05 -1.24817624e-03 -1.48164819e-03
-  8.03824631e-04  1.79622131e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 12
@@ -812,11 +793,9 @@ counter= 12
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 2.43317208e-04  9.44676711e-05  2.39570843e-03  2.23831380e-03
- -9.14310309e-04 -2.55419079e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 5.75469332e-04  1.36799394e-04 -1.10043687e-03 -2.82819666e-04
- -2.22161801e-05  1.41188531e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.55957477e-03  3.37283689e-02  1.05703880e-01 -2.45585810e-04
   2.34449231e-05  1.06666422e+03]
@@ -878,11 +857,9 @@ counter= 13
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.29419029e-04 -3.92674040e-05 -1.58228446e-04 -1.18770027e-04
- -3.48277686e-05 -7.68320478e-23]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.78680457e-04  4.77959137e-05  1.78297822e-03  2.49661931e-03
- -5.21155942e-04 -2.10694423e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 14
@@ -890,10 +867,9 @@ counter= 14
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-5.16744696e-08 -1.75013763e-10  5.93059573e-11  0.00000000e+00
-  0.00000000e+00  0.00000000e+00]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-0.00472644  0.00072841  0.0017818   0.00124795  0.00042758  0.0001393 ]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 15
@@ -901,11 +877,9 @@ counter= 15
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.76969391e-04 -1.86505652e-05 -6.82539243e-05  6.22872746e-03
-  2.02446899e-03  5.59468999e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-2.12889785e-04 -1.02413302e-04 -1.40719854e-03  2.50275759e-04
-  1.19093533e-04 -3.10166253e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56481857e-03  3.37123260e-02  1.05883186e-01 -2.80893941e-04
   4.47193750e-05  1.06783701e+03]
@@ -967,10 +941,9 @@ counter= 16
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[1.13826438e-02 3.73658156e-03 1.37660525e-04 2.95028393e+33
- 6.83685670e-03 6.62106015e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-0.00098732  0.00027798 -0.00081321 -0.00037022 -0.00056947 -0.00016095]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 17
@@ -978,11 +951,9 @@ counter= 17
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-6.69961462e-06 -8.16239846e-06  1.36066346e-03  1.58338331e-03
- -9.08147130e-04 -1.87548549e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 9.89692971e-04  1.06324680e-03  1.37646116e-04  8.67196633e-05
-  4.65309336e-05 -4.74532100e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 18
@@ -990,10 +961,9 @@ counter= 18
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-2.32283258e-05 -3.02077724e-05  1.24454796e-05  3.23644143e-05
- -4.25238746e-05 -4.15439830e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-0.00424722 -0.00429318 -0.00029742  0.00150846  0.00121774  0.00030729]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 19
@@ -1001,11 +971,9 @@ counter= 19
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[1.54708092e-04 5.07494364e-05 1.09816480e-03 1.77170725e-03
- 9.95408559e-04 3.76267544e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.00795736e-03 -8.37980323e-04 -3.33017451e-05 -3.28883735e-05
- -2.35065757e-05  4.69795762e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 20
@@ -1013,10 +981,9 @@ counter= 20
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.17391642e-02 -3.97992662e-03 -1.02970165e-04  2.95028393e+33
- -7.20416103e-03 -7.30961160e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 0.00112651 -0.00033653  0.00056291  0.00034089  0.00055293  0.00015361]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 21
@@ -1024,11 +991,9 @@ counter= 21
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 5.26443586e-04  2.64650759e-04 -8.39146347e-05  1.93935344e-02
-  5.15890516e-03  8.44905753e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-3.47493322e-04 -1.89140921e-04 -1.41209245e-03  5.63489541e-04
-  1.47899740e-04 -3.05743617e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56948661e-03  3.36153830e-02  1.06126107e-01 -3.64550471e-04
   2.03474639e-05  1.06888921e+03]
@@ -1091,10 +1056,9 @@ counter= 22
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-4.31650442e-04 -2.07550123e-04 -4.00230416e-04 -8.66857923e-05
-  2.98696078e-06 -3.29247739e-17]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-0.00490279 -0.00319862 -0.0045681  -0.00537737 -0.00064592 -0.00078506]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 23
@@ -1102,11 +1066,9 @@ counter= 23
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 3.41956241e+33  0.00000000e+00  0.00000000e+00  0.00000000e+00
-  0.00000000e+00 -7.11174365e-19]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.74422901e-004  2.54970359e-005  2.38533658e-314 -3.97705535e-003
- -2.88135446e-003 -4.04660393e-004]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56970160e-03  3.35419350e-02  1.06232850e-01 -4.16003934e-04
   1.09761521e-06  1.06894408e+03]
@@ -1168,10 +1130,9 @@ counter= 24
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 0.00264053  0.00233303  0.00041399 -0.00071149 -0.00092117 -0.00033464]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-2.90609879e-04 -1.12699889e-04  1.80600380e-05 -6.52934591e-03
- -1.73060402e-03 -3.50046482e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 25
@@ -1179,11 +1140,9 @@ counter= 25
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-6.48581146e-06 -5.68797727e-04 -1.11523594e-04 -1.16135426e-05
-  1.75952001e-04  1.29440136e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-4.36190861e-06 -6.55239593e-04 -1.59320496e-04 -1.19864373e-05
- -3.69820466e-04 -1.72337625e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 26
@@ -1191,11 +1150,9 @@ counter= 26
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-3.58488337e-06 -4.36926855e-06  4.17502705e-16 -1.42063599e-08
-  9.29526983e-08  7.28132258e-07]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 8.37608500e-05  1.20313472e-05  0.00000000e+00 -8.84004195e-04
-  2.65324380e-04  6.20739255e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56881929e-03  3.35045543e-02  1.06256479e-01 -4.37454241e-04
  -5.18249151e-06  1.06875034e+03]
@@ -1257,10 +1214,9 @@ counter= 27
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 2.95145371e+33  3.53325254e+33 -1.31249297e-04  2.79544260e+33
- -1.09051564e-02  4.45276637e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 0.00278661  0.00238462 -0.0003151  -0.00085831 -0.00101817 -0.00056649]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 28
@@ -1268,11 +1224,9 @@ counter= 28
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 3.54192286e-05  1.99102508e-06  1.42465982e-05 -1.33608736e-03
-  3.21940338e-04  1.57735816e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.59941181e-03  5.92107049e-04 -8.48823680e-04 -8.68835147e-04
- -3.42811683e-04 -5.33707571e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 29
@@ -1280,11 +1234,9 @@ counter= 29
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 6.27899227e-04 -1.38172742e-04 -2.72857531e-04 -1.34706828e-04
- -3.60203753e-05 -9.70028432e-06]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[1.32927572e-05 3.59177124e-06 7.58147583e-06 1.71475654e-05
- 3.50395115e-05 3.22674914e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 30
@@ -1292,11 +1244,9 @@ counter= 30
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[7.59835499e-05 7.82269213e-05 8.33318807e-05 1.05706085e-04
- 3.32265702e-05 0.00000000e+00]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-3.03212775e-05 -8.17430927e-06 -2.26317174e-03 -8.42645224e-04
-  2.20742664e-04  2.15008310e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 31
@@ -1304,11 +1254,9 @@ counter= 31
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-7.77068069e-04  2.83869778e-04  1.81273502e-03  8.22613423e-04
-  8.97130203e-05 -1.50538600e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 3.57783286e+33 -7.13430736e-04  2.86040664e-03 -1.10329545e-02
- -2.56991597e-03 -4.11357273e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 32
@@ -1316,11 +1264,9 @@ counter= 32
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 1.92323474e-04  2.22115844e-04  2.35106228e-04  3.09083825e-04
-  9.57440992e-05 -2.00357263e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-5.37385899e-05 -1.59373238e-05 -6.25341182e-03 -1.86919850e-03
-  7.67527697e-04  5.08217109e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56829896e-03  3.34026631e-02  1.06366093e-01 -5.02898025e-04
  -2.33458712e-06  1.06864511e+03]
@@ -1383,11 +1329,9 @@ counter= 33
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-2.02155059e-04  1.96117872e-04  7.79151655e-04  3.42566339e-04
-  3.41899663e-05 -7.60803928e-06]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 3.57763313e+33 -3.84501255e-04  1.44394963e-03 -5.39909220e-03
- -1.28777934e-03 -2.11157269e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 34
@@ -1395,11 +1339,9 @@ counter= 34
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-5.56014525e-05 -3.34635987e-06 -2.11878255e-05  2.78518786e-03
- -8.04309044e-04 -3.82583570e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.49067682e-03  3.08270902e-04  1.84578849e-03  1.13778944e-03
-  2.26229753e-04 -3.45130413e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56850105e-03  3.33514492e-02  1.06453236e-01 -5.40737226e-04
  -7.33329602e-08  1.06869816e+03]
@@ -1461,11 +1403,9 @@ counter= 35
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-2.45470036e-05 -1.67342053e-05 -1.16810095e-04 -8.88214932e-05
- -2.34408004e-05  1.46287929e+00]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-6.90947666e-05 -9.37397836e-06  1.13446859e-15  1.31634559e-03
-  4.40658003e-04 -1.41949902e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 36
@@ -1473,11 +1413,9 @@ counter= 36
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-4.72354576e-16  5.96474457e-16 -1.05857004e-17 -4.16519614e-18
-  0.00000000e+00 -6.87856090e-15]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 0.00000000e+00 -4.08346952e-15  9.44694743e-16  8.39241819e-16
- -1.45097150e-16 -6.89275429e-16]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 37
@@ -1485,11 +1423,9 @@ counter= 37
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-3.48775039e-06 -2.17129829e-07  5.96991004e-05  4.72423981e-05
-  5.03522467e-06 -2.87721368e-06]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[2.21281425e-05 6.07181163e-05 5.20334722e-05 8.64304715e-05
- 2.61929041e-05 2.98810513e-01]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56869778e-03  3.33372154e-02  1.06506023e-01 -5.55661733e-04
   5.10279452e-07  1.06874597e+03]
@@ -1551,11 +1487,9 @@ counter= 38
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.51887951e-314 2.51888083e-314 1.86947829e-311 2.51914970e-314
- 2.51915103e-314 2.51915236e-314]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-5.53091267e-05 -2.71961847e-05  4.12750958e-04  6.34496780e-04
- -1.05684540e-03 -1.53988346e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 39
@@ -1563,11 +1497,9 @@ counter= 39
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-2.00232624e-04  2.72819854e-06 -1.89056837e-05 -6.74293001e-03
- -9.84499667e-04  1.72756467e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.50093306e-16  3.35910360e-17 -6.46591522e-17  0.00000000e+00
- -1.60305400e-15  5.94349636e-16]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 40
@@ -1575,10 +1507,9 @@ counter= 40
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 3.04712963e-06  8.88926337e-07  3.45549685e-05  6.15612449e-05
- -4.12977412e-05 -1.12453375e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 41
@@ -1586,8 +1517,7 @@ counter= 41
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-7.28617273e-05 -3.37093517e-06  6.46025702e-05  8.48004615e-05
-  1.88554542e-05  1.94956163e-07]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
@@ -1597,11 +1527,9 @@ counter= 42
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.12116007e-03 -5.27737029e-04 -5.97521095e-04 -1.20659127e-04
- -6.16226569e-06 -0.00000000e+00]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.91302778e-28 -8.44983898e-29 -4.68099125e-26  1.28032888e-27
-  6.02854851e-06 -2.90013219e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 43
@@ -1609,11 +1537,9 @@ counter= 43
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-8.18718284e-08  4.88591312e-06 -4.85064512e-04 -1.31019553e-04
- -1.44584585e-05 -5.72435841e-07]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 2.55686583e-25 -7.38623081e-05  2.16528783e-04  2.46198990e-07
-  6.45976543e-05  6.71311624e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56913376e-03  3.32979403e-02  1.06646361e-01 -5.96022680e-04
   7.50650240e-07  1.06885592e+03]
@@ -1676,10 +1602,9 @@ counter= 44
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.59223921e-05 -1.94242625e-07 -6.43123195e-06  1.38445814e-03
- -4.68452687e-04 -1.26808875e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[0. 0. 0. 0. 0. 0.]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 45
@@ -1687,11 +1612,9 @@ counter= 45
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 1.83247258e-04  9.62870113e-07  1.50502916e-04 -1.57329887e-04
- -2.89588805e-05 -2.39975969e-06]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-4.36283189e-05 -2.36149394e-06 -1.38128103e-05  3.36018215e-03
- -1.01145376e-03 -4.51619075e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56942998e-03  3.32860609e-02  1.06738267e-01 -6.15861920e-04
   1.07033839e-06  1.06893058e+03]
@@ -1753,11 +1676,9 @@ counter= 46
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 2.12206521e-06  6.42282682e-08 -7.95310188e-05 -9.87411890e-05
- -7.99079122e-06  9.17549407e-08]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 2.73185547e-05 -1.21901846e-05 -5.76693252e-05 -6.02098804e-05
- -1.52874238e-05  1.46287967e+00]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 47
@@ -1765,11 +1686,9 @@ counter= 47
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.75455075e-04 2.19948298e-05 4.72012183e-06 2.95129452e+33
- 7.84360592e-05 6.61406606e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-2.76559335e-04 -1.81406780e-04  3.70815387e-06  8.62690577e-05
-  6.11714684e-05  1.37045883e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 48
@@ -1777,11 +1696,9 @@ counter= 48
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-4.48726327e-03 -2.15412808e-03  1.29737122e-05  2.95129452e+33
- -3.48772914e-03 -3.50451034e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-2.51731058e-03 -1.48617362e-03  1.72381987e-05  5.63663667e-04
-  6.60210600e-04  2.45585860e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.56959195e-03  3.32905560e-02  1.06785596e-01 -6.21023941e-04
   1.19083931e-06  1.06897087e+03]
@@ -1843,10 +1760,9 @@ counter= 49
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 1.90436150e-25 -4.20297089e-28  3.98406503e-16  0.00000000e+00
- -4.37808917e-09 -2.48032830e-08]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[0.00737054 0.00660586 0.0086116  0.00973556 0.00188254 0.00083017]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 50
@@ -1854,11 +1770,9 @@ counter= 50
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 2.03012891e-05  1.06076049e-06  4.96593630e-06 -1.77583770e-03
-  5.30098478e-04  2.32612909e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-4.24084030e-25  4.20204116e-25  5.98605024e-16  3.52475296e-23
-  5.22653923e-17 -1.45966751e-15]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 51
@@ -1866,11 +1780,9 @@ counter= 51
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.56079133e-04 1.38999027e-05 4.47935462e-06 2.95131685e+33
- 6.98912837e-05 5.52424733e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.76188867e-04 -1.16310204e-04 -1.87192618e-06  5.99132640e-05
-  4.01432923e-05  6.37003826e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 52
@@ -1878,11 +1790,9 @@ counter= 52
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-4.35018840e-05  4.26486395e-05  1.71643516e-05  4.25670199e-05
-  1.49497186e-05 -1.18772836e-11]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.85650522e-06 -8.34463388e-06 -1.63500741e-03 -3.92002958e-04
-  3.53949164e-04  1.76588588e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 53
@@ -1890,11 +1800,9 @@ counter= 53
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-9.01622201e-03 -4.41009666e-03  2.11207617e-05  2.95131685e+33
- -7.06971661e-03 -7.20500875e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-4.79714300e-03 -2.84668106e-03  3.33701011e-05  1.06513925e-03
-  1.25756051e-03  4.67155530e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 54
@@ -1902,11 +1810,9 @@ counter= 54
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.04109912e-05 -1.62956679e-07  6.41724648e-04  5.25172300e-04
-  5.25381219e-05 -5.43854610e-06]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.59371103e-04  1.19905912e-04  2.55965121e-05  1.07767886e-04
-  3.93904282e-05 -5.72168101e-08]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.57005592e-03  3.33083038e-02  1.06918843e-01 -6.33130879e-04
   1.33614926e-06  1.06908676e+03]
@@ -1969,11 +1875,9 @@ counter= 55
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-6.53629663e-05  1.19697589e-05 -5.88322412e-06  2.84319185e-05
-  7.77445901e-06  1.46287010e+00]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 3.07464472e-05  2.87483580e-06  0.00000000e+00 -2.03142043e-03
- -5.39067455e-04  4.28313755e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 56
@@ -1981,11 +1885,9 @@ counter= 56
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 2.66865374e-04 -4.28179733e-05  1.11860662e-06  1.13877854e-02
-  3.74386974e-03  1.48948437e-03]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.81329497e-04  1.14807289e-05 -5.32329418e-05 -1.27038976e-04
- -1.71482638e-05  1.32219299e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.57036300e-03  3.33346321e-02  1.07003561e-01 -6.33662859e-04
   1.38760633e-06  1.06916312e+03]
@@ -2047,11 +1949,9 @@ counter= 57
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 3.69719242e-06 -3.29037468e-08 -2.85788657e-04 -2.11887179e-04
- -2.32921882e-05  1.59742569e-06]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 8.17948272e-05 -3.40602575e-05  2.33688490e-05 -1.56916722e-05
- -7.50283351e-06 -0.00000000e+00]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 58
@@ -2059,11 +1959,9 @@ counter= 58
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.36636598e-07  9.08741918e-10 -9.07492981e-06 -3.08535455e-06
- -3.87234771e-07 -4.26649256e-08]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 7.29551202e-07  2.12168544e-07 -1.10800093e-06 -4.81454236e-07
- -1.26578147e-09  1.46286876e+00]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 59
@@ -2071,11 +1969,9 @@ counter= 59
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[ 6.09736025e-05 -5.34606516e-05  2.35461044e-06  5.30362358e-03
-  1.75796831e-03  7.41248488e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 1.02265906e-04  1.18897356e-05 -1.76725258e-05 -6.69925360e-05
- -1.18933299e-05  1.14161954e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.57050203e-03  3.33572576e-02  1.07042716e-01 -6.28928125e-04
   1.29677397e-06  1.06919781e+03]
@@ -2137,11 +2033,9 @@ counter= 60
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-2.82617227e-04 -3.07357450e-05  3.34222140e-05 -1.11594844e-02
- -1.46532571e-03  8.03501977e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.88442754e-03  6.25796663e-04  8.97895879e-04  5.01293822e-04
- -2.33513996e-04 -5.94541025e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 61
@@ -2149,10 +2043,9 @@ counter= 61
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-0. -0. -0. -0. -0. -0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 2.62566955e-04 -1.48025124e-03 -9.66787889e-05 -1.62914653e-04
- -6.20991443e-05 -2.48307784e-05]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 62
@@ -2160,11 +2053,9 @@ counter= 62
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[2.89885167e-04 1.93127677e-05 3.96419184e-06 2.95139350e+33
- 8.26091376e-05 6.79021298e-05]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-1.12613191e-04 -7.35283215e-05  1.86987521e-05  3.52314586e-05
-  1.50029923e-05 -4.08665015e-06]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 63
@@ -2172,11 +2063,9 @@ counter= 63
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-1.02563046e-04  3.37930644e-05 -4.79053507e-05  2.84574552e-06
-  3.54303714e-06 -9.99990000e+30]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-2.42360137e-06 -2.19742244e-06 -1.51808197e-03 -3.54067182e-04
-  2.79329307e-04  1.96312023e-04]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 64
@@ -2184,10 +2073,9 @@ counter= 64
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-0. -0. -0. -0. -0.  0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[-0.00000000e+00  0.00000000e+00 -0.00000000e+00  7.94586589e-04
-  1.29242853e-10  5.91580653e-11]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 
 rhogw_split1_pl before vi_rhow_solver
 counter= 65
@@ -2195,11 +2083,9 @@ counter= 65
 [0. 0. 0. 0. 0. 0.]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 [0. 0. 0. 0. 0. 0.]
-[-2.24093266e-05 -5.61871454e-07  2.00581521e-05  5.63798598e-03
- -1.82137574e-03 -3.27558709e-04]
 [-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
-[ 3.57749821e+33 -2.09257552e-03  7.27815936e-03 -1.21255755e-02
- -6.01975575e-03 -8.45442970e-03]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
+[-9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30 -9.9999e+30]
 AFTERsmallstep
 PROG[6, 5, 37, 1, :] [ 5.57092678e-03  3.34298534e-02  1.07155560e-01 -6.11763104e-04
   1.52040919e-06  1.06930307e+03]
@@ -2232,40 +2118,40 @@ WOW3
 
 *** Computational Time Report
 *** Rap level is 2
-*** ID=000 : INIT_Initialize T=     2.943 N=1
-*** ID=001 : INIT_COMM_var T=     0.110 N=3
-*** ID=002 : INIT_COMM_data_transfer T=     0.238 N=7
-*** ID=003 : INIT_OPRT_gradient T=     0.015 N=2
+*** ID=000 : INIT_Initialize T=     2.951 N=1
+*** ID=001 : INIT_COMM_var T=     0.115 N=3
+*** ID=002 : INIT_COMM_data_transfer T=     0.253 N=7
+*** ID=003 : INIT_OPRT_gradient T=     0.016 N=2
 *** ID=004 : INIT_OPRT_horizontalize_vec T=     0.006 N=2
-*** ID=005 : MAIN_Main_Loop T=    30.548 N=1
-*** ID=006 : MAIN__Atmos T=    30.546 N=6
-*** ID=007 : MAIN___Dynamics T=    30.544 N=6
-*** ID=008 : MAIN____Pre_Post T=     1.352 N=48
-*** ID=009 : MAIN____Large_step T=     5.722 N=18
-*** ID=010 : MAIN_____src_advection_conv_m T=     0.696 N=18
-*** ID=011 : MAIN_____src_advection_conv T=     2.271 N=204
-*** ID=012 : MAIN_____src_flux_conv T=     3.764 N=354
-*** ID=013 : MAIN_OPRT_divergence T=     2.902 N=354
-*** ID=014 : MAIN_____numfilter_hdiffusion T=     4.992 N=18
-*** ID=015 : MAIN_OPRT_laplacian T=     0.191 N=180
-*** ID=016 : MAIN_COMM_data_transfer T=    15.483 N=282
-*** ID=017 : MAIN_OPRT_diffusion T=     1.343 N=36
-*** ID=018 : MAIN_OPRT_horizontalize_vec T=     0.597 N=204
-*** ID=019 : MAIN____Small_step T=    23.134 N=18
-*** ID=020 : MAIN_____vi_path0 T=     2.733 N=18
-*** ID=021 : MAIN_____numfilter_divdamp T=     7.664 N=84
-*** ID=022 : MAIN_OPRT3D_divdamp T=     1.943 N=84
-*** ID=023 : MAIN_OPRT_divdamp T=     1.411 N=84
-*** ID=024 : MAIN_____numfilter_divdamp_2d T=     0.003 N=84
-*** ID=025 : MAIN_____src_pres_gradient T=     1.407 N=84
-*** ID=026 : MAIN_OPRT_gradient T=     0.633 N=84
+*** ID=005 : MAIN_Main_Loop T=    30.870 N=1
+*** ID=006 : MAIN__Atmos T=    30.866 N=6
+*** ID=007 : MAIN___Dynamics T=    30.865 N=6
+*** ID=008 : MAIN____Pre_Post T=     1.424 N=48
+*** ID=009 : MAIN____Large_step T=     5.766 N=18
+*** ID=010 : MAIN_____src_advection_conv_m T=     0.689 N=18
+*** ID=011 : MAIN_____src_advection_conv T=     2.291 N=204
+*** ID=012 : MAIN_____src_flux_conv T=     3.819 N=354
+*** ID=013 : MAIN_OPRT_divergence T=     2.957 N=354
+*** ID=014 : MAIN_____numfilter_hdiffusion T=     5.045 N=18
+*** ID=015 : MAIN_OPRT_laplacian T=     0.193 N=180
+*** ID=016 : MAIN_COMM_data_transfer T=    15.517 N=282
+*** ID=017 : MAIN_OPRT_diffusion T=     1.385 N=36
+*** ID=018 : MAIN_OPRT_horizontalize_vec T=     0.611 N=204
+*** ID=019 : MAIN____Small_step T=    23.474 N=18
+*** ID=020 : MAIN_____vi_path0 T=     2.790 N=18
+*** ID=021 : MAIN_____numfilter_divdamp T=     7.759 N=84
+*** ID=022 : MAIN_OPRT3D_divdamp T=     1.960 N=84
+*** ID=023 : MAIN_OPRT_divdamp T=     1.457 N=84
+*** ID=024 : MAIN_____numfilter_divdamp_2d T=     0.024 N=84
+*** ID=025 : MAIN_____src_pres_gradient T=     1.450 N=84
+*** ID=026 : MAIN_OPRT_gradient T=     0.658 N=84
 *** ID=027 : MAIN_____src_buoyancy T=     0.016 N=18
-*** ID=028 : MAIN_____vi_rhow_update_matrix T=     0.113 N=18
-*** ID=029 : MAIN_____vi_path1 T=    10.568 N=66
-*** ID=030 : MAIN_____vi_path2 T=     8.396 N=66
-*** ID=031 : MAIN_____vi_rhow_solver T=     0.580 N=66
-*** ID=032 : MAIN_CNV_rhogkin T=     0.719 N=198
-*** ID=033 : MAIN_____vi_path3 T=     1.403 N=18
-*** ID=034 : MAIN____Tracer_Advection T=     0.332 N=18
+*** ID=028 : MAIN_____vi_rhow_update_matrix T=     0.116 N=18
+*** ID=029 : MAIN_____vi_path1 T=    10.739 N=66
+*** ID=030 : MAIN_____vi_path2 T=     8.505 N=66
+*** ID=031 : MAIN_____vi_rhow_solver T=     0.585 N=66
+*** ID=032 : MAIN_CNV_rhogkin T=     0.728 N=198
+*** ID=033 : MAIN_____vi_path3 T=     1.405 N=18
+*** ID=034 : MAIN____Tracer_Advection T=     0.196 N=18
 ------------
 +++ finalize MPI
