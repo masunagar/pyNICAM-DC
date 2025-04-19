@@ -1,6 +1,12 @@
 macOSX  Sonoma 14.7.4
 [Apple M2 Max chip],  12 (8 + 4) CPU,  30 GPU [Metal 3],  64GB memory,	
 
+zarr needs to be downgraded to zarr=2.15  for temporary output (20250419)
+cartopy needed for quicklook (20250419)
+micromamba install -c conda-forge zarr=2.15
+micromamba install -c conda-forge cartopy
+
+
 micromamba
 Xcodes
 python 3.11
