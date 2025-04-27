@@ -78,6 +78,8 @@ start_sec = 0
 
 [runconfparam]
 NDIFF_LOCATION = 'IN_LARGE_STEP2'
+THUBURN_LIM = true
+CHEM_TYPE   = 'NONE'
 
 [bsstateparam]
 ref_type = 'NOBASE'
